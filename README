@@ -1,7 +1,7 @@
 # XIV Free Company Page Script
 A small script to present some information about Free Company (guild) from [Final Fantasy XIV](http://eu.finalfantasyxiv.com)
 
-It uses XIVSync by @viion to grab information from Lodestone.
+It uses XIVSync by [@viion](https://github.com/viion/XIVPads-LodestoneAPI) to grab information from Lodestone.
 
 ## What it looks like?
 At first glance it's just showing you the same stuff that Lodestone does: name of the Company, list of activities the Company participates in, plot information, number of members (and there avatars)
