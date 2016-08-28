@@ -20,8 +20,8 @@ But even that is not all: this page suggests new ranks to existing members based
 
 ## How to use
 Main settings contain of 2 things:
-1. `$fcid` parameter in `config.php` which stands for the ID of your Free Company. For example, my Company is listed in Lodestone like this `http://eu.finalfantasyxiv.com/lodestone/freecompany/9234631035923213559/`. This means, that the ID is `9234631035923213559`
-2. Careful setup of `fcranks.json` file
+- `$fcid` parameter in `config.php` which stands for the ID of your Free Company. For example, my Company is listed in Lodestone like this `http://eu.finalfantasyxiv.com/lodestone/freecompany/9234631035923213559/`. This means, that the ID is `9234631035923213559`
+- Careful setup of `fcranks.json` file
 `config.php` also has some extra styling options for you.
 
 ### fcranks.json
@@ -155,8 +155,8 @@ For FurnishingPrivileges `0` means `No Access`, `1` means `Place`, `2` means `Pl
 
 ## How tracking works?
 Tracking system uses sub-folder `cache`. It has 2 other subfolders for storing images:
-1. `emblem` stores emblem images (it consists of 3 images)
-2. `ranks` stores images of company ranks
+- `emblem` stores emblem images (it consists of 3 images)
+- `ranks` stores images of company ranks
 These folders are created automatically, if they do not exist.
 The main juice are the files in there.
 
