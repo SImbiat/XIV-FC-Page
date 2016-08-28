@@ -1,5 +1,6 @@
 # XIV Free Company Page Script
 A small script to present some information about Free Company (guild) from [Final Fantasy XIV](http://eu.finalfantasyxiv.com)
+
 It uses XIVSync by @viion to grab information from Lodestone.
 
 ## What it looks like?
@@ -7,7 +8,9 @@ At first glance it's just showing you the same stuff that Lodestone does: name o
 
 ## What it really is?
 It's way more than that, though. It's a tracking page. It tracks 2 main things: company weekly ranking and its members information.
+
 Company ranking is showed as a small graph when hovering over the question mark near current ranking. Nothing fancy.
+
 Main feature is tracking of members' stats. It tracks the following:
 - Name change
 - Free Company rank change
@@ -54,12 +57,19 @@ Level of the rank, where `0` is the highest rank. For Mog Street Kids the lowest
 		},
 ```
 `assign` is used to determine whether the rank should be used for next promotion suggestions. Set it to `false` to skip.
+
 `minage` is for setting minimum number of dates to be present in company to be suggested this particular rank.
+
 `minfclvl` is mimimum __current__ rank level to be suggested this particular rank. Set to `0` to disable.
+
 `recrank is a name of a rank which should be considered the direct predecessor of this one. For example, we have 2 DPS-based ranks with different permissions. Essentially, if a member has the lowest of them he will be suggested for the higher rank on priority.
+
 `mintotlvl` is minimum Total Level required. Total Level stands for cummulative level for all classes. Set to `0` to disable.
+
 `mingathlvl`, `mincraftlvl`, `mindpslvl`, `minheallvl`, `mintanklvl` are mimimum levels of gather, crafter, DPS, healer and tank classes required. For example, if you set `mintanklvl` to 60, it will mean, that to get this rank a member needs to have at least 1 tank class at level 60.
+
 `classtypes` sets number of different classes that have to be of at least level 2. This is checked before all class specific levels, becuase you may want to promote some people only if they have, for example, both DPS, healer and tank.
+
 All paramters below are for Free Company permissions, that should represent the same settings that you have in-game.
 ```
 		"generalsettings": {
