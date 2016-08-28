@@ -11,6 +11,8 @@ set_time_limit(320);
 	$zip->addFile("api-autoloader.php");
 	$zip->addFile("chardet.php");
 	$zip->addFile("Chart.js");
+	$zip->addFile("README");
+	$zip->addFile("README.md");
 	$zip->addFile("jquery-3.1.0.min.js");
 	$zip->addFile("composer.json");
 	$zip->addFile("config.php");
