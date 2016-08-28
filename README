@@ -7,7 +7,7 @@ It uses XIVSync by [@viion](https://github.com/viion/XIVPads-LodestoneAPI) to gr
 At first glance it's just showing you the same stuff that Lodestone does: name of the Company, list of activities the Company participates in, plot information, number of members (and there avatars)
 
 ## What it really is?
-It's way more than that, though. It's a tracking page. It tracks 2 main things: company weekly ranking and its members information.
+It's way more than that, though. It's a tracking page. It tracks 2 main things: company weekly ranking and its members’ information.
 
 Company ranking is showed as a small graph when hovering over the question mark near current ranking. Nothing fancy.
 
@@ -62,15 +62,15 @@ Level of the rank, where `0` is the highest rank. For Mog Street Kids the lowest
 
 `minfclvl` is mimimum __current__ rank level to be suggested this particular rank. Set to `0` to disable.
 
-`recrank is a name of a rank which should be considered the direct predecessor of this one. For example, we have 2 DPS-based ranks with different permissions. Essentially, if a member has the lowest of them he will be suggested for the higher rank on priority.
+`recrank` is a name of a rank which should be considered the direct predecessor of this one. For example, we have 2 DPS-based ranks with different permissions. Essentially, if a member has the lowest of them he will be suggested for the higher rank on priority.
 
-`mintotlvl` is minimum Total Level required. Total Level stands for cummulative level for all classes. Set to `0` to disable.
+`mintotlvl` is minimum Total Level required. Total Level stands for cumulative level for all classes. Set to `0` to disable.
 
 `mingathlvl`, `mincraftlvl`, `mindpslvl`, `minheallvl`, `mintanklvl` are mimimum levels of gather, crafter, DPS, healer and tank classes required. For example, if you set `mintanklvl` to 60, it will mean, that to get this rank a member needs to have at least 1 tank class at level 60.
 
-`classtypes` sets number of different classes that have to be of at least level 2. This is checked before all class specific levels, becuase you may want to promote some people only if they have, for example, both DPS, healer and tank.
+`classtypes` sets number of different classes that have to be of at least level 2. This is checked before all class specific levels, because you may want to promote some people only if they have, for example, both DPS, healer and tank.
 
-All paramters below are for Free Company permissions, that should represent the same settings that you have in-game.
+All parameters below are for Free Company permissions, that should represent the same settings that you have in-game.
 ```
 		"generalsettings": {
 			"Settings": {
@@ -177,7 +177,7 @@ The main juice are the files in there.
 This file contains general Free Company information grabbed by XIVSync script, including list of members used further during updates to grab detailed info for them.
 
 ### ranking.json
-This file contains information on the weekly company ranking: date the rank changed and the new rank. Does not get updated unless the date differece between current date and the date in the list is less than 7 days.
+This file contains information on the weekly company ranking: date the rank changed and the new rank. Does not get updated unless the date difference between current date and the date in the list is less than 7 days.
 
 ### members.json
-This file cotains all the members' information. The one grabbed by XIVSync and calculated by the tracker, including suggested ranks. There is one special paramter there called `rankover` which should be used as an override. The tracker also checks for correct assignments and in some cases you may want to ignore the _wrongly_ assigned ones. Generally when you had a set of members __before__ running the tracker.
+This file contains all the members' information. The one grabbed by XIVSync and calculated by the tracker, including suggested ranks. There is one special parameter there called `rankover` which should be used as an override. The tracker also checks for correct assignments and in some cases you may want to ignore the _wrongly_ assigned ones. Generally, when you had a set of members __before__ running the tracker.
