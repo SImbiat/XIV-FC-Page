@@ -12,22 +12,33 @@ if (isset($_GET['basic'])){
 }
 $maint = false;
 $refreshpage = false;
-$fcranks=json_decode(file_get_contents('fcranks.json'), true);
-#Checking age of HTML cache and removing it if it's old enough
-$cacheage=$curtime;
 
+#Check if fcranks exists
+if (!file_exists("./fcranks.json")) {
+	Echo "Free Company Ranks description is missing. Can't continue without it";
+	exit;
+}
+
+#Get the file with FC ranks descriptions
+$fcranks=json_decode(file_get_contents('fcranks.json'), true);
+
+#Checking company cache. If it's missing - request it. If not - load existing data
+$cacheage=$curtime;
 if (!file_exists("./cache/freecompany.json") or !file_exists('cache/members.json')) {
 	echo "No cache exists. Need to grab data<br><iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	exit;
 } else {
 	$cacheage=filemtime("./cache/freecompany.json");
 }
 
+#Setting main variables
 $fcdata = json_decode(file_get_contents('cache/freecompany.json'), true);
 $members = $fcdata['members'];
 $roles = $fcdata['roles'];
 $focus = $fcdata['focus'];
-
 $memberstats = json_decode(file_get_contents('cache/members.json'), true);
+
+#Sorting members by FC rank, join date and total level
 foreach ($memberstats as $key => $row) {
     $fclvlsort[$key]  = $row['fc']['ranklvl'];
     $joinedsort[$key] = date("Ymd", $row['joined']);
@@ -58,7 +69,10 @@ $fcpage = $fcpage . "
 $(document).ready ( function () {
 	$(document).on ('click', '.intlink', function () {
 		return false;
-	});
+	});";
+
+#JavaScript to highlight members on search
+$fcpage = $fcpage . "
 	$(\"#search_input\").on('change paste input', function(){
 		var search = document.getElementById('search_input');
 		var elements = Array.from(document.getElementsByTagName('img'));
@@ -98,7 +112,10 @@ function loadFile (sURL, fCallback /*, argumentToPass1, argumentToPass2, etc. */
   oReq.onerror = xhrError;
   oReq.open(\"get\", sURL, true);
   oReq.send(null);
-}
+}";
+
+#Add pulse effect to some of the elements
+$fcpage = $fcpage . "
 function shadowlnks(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"hvr-pulse\";
@@ -121,14 +138,20 @@ function showtip(rank) {
 		e.innerHTML = \"\";
 		e.style.display = \"none\";
 	}
-}
+}";
+
+#JS to show rank description
+$fcpage = $fcpage . "
 function showtipload(rank) {
 	loadFile('./fcranks.php?fcname=' + rank, showtipcb);
 }
 function showtipcb() {
 	var e = document.getElementById('fcranktip');
 	e.innerHTML = this.responseText;
-}
+}";
+
+#JS to show member details
+$fcpage = $fcpage . "
 function showchar(memberid) {
 	var e = document.getElementById('chardetail');
 	e.innerHTML = '<table width=\"872px\" class=\"memberstbl\"><tr><td><img width=\"252\" height=\"252\" src=\"./img/loading.gif\"></td></tr></table>';
@@ -142,7 +165,10 @@ function showcharcb() {
 	e.innerHTML = this.responseText;
 	var e = document.getElementById('fcranktip');
 }
-</script>
+</script>";
+
+#Prepare general FC info
+$fcpage = $fcpage . "
 <div name=\"main\" style=\"margin: auto;width: 100%;text-align:center;\">
 <div style=\"align:center;\">
 <span style=\"display: inline-block;position: relative;text-align:right;vertical-align:top;\">We are</span>
@@ -156,12 +182,16 @@ function showcharcb() {
 </div>
 <div style=\"align:center;\"><i>".$fcdata['slogan']."</i></div>
 <div style=\"align:center;\"><br><br><table style=\"border: 0px;\" class=\"memberstbl\"><tr><td style=\"border: 0px;padding-right:5px;\">We participate in</td><td style=\"border: 0px;padding-left:5px;\">We are looking for</td></tr><tr><td style=\"border: 0px;padding-right:5px;\">";
+
+#Show all activities the Company is interested in
 foreach($focus as $interest) {
 	if ($interest['active'] == 1) {
 		$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/focus/".imgnamesane($interest['name']).".png\" title=\"".$interest['name']."\"></span>";
 	}
 }	
 $fcpage = $fcpage . "</td><td style=\"border: 0px;padding-left:5px;\">";
+
+#Show all roles the Company is looking for
 foreach($roles as $role) {
 	if ($role['active'] == 1) {
 		$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/roles/".imgnamesane($role['name']).".png\" title=\"".$role['name']."\"></span>";
@@ -169,6 +199,7 @@ foreach($roles as $role) {
 }
 $fcpage = $fcpage . "</td></tr></table></div><div style=\"align:center;\"><br>We were found on <span style=\"".$formeddate."\">".date("d F Y" ,$fcdata['formed'])."</span> as affiliate of <span style=\"";
 
+#Show Company affiliation
 if (strtolower($fcdata['company']) == strtolower("Order of the Twin Adder")) {
 	$fcpage = $fcpage . $gctwinadder;
 } elseif (strtolower($fcdata['company']) == strtolower("Maelstrom")) {
@@ -176,6 +207,8 @@ if (strtolower($fcdata['company']) == strtolower("Order of the Twin Adder")) {
 } elseif (strtolower($fcdata['company']) == strtolower("Immortal Flames")) {
 	$fcpage = $fcpage . $gcimmortalflames;
 }
+
+#Get last 10 Company ranks
 $lastranks=getlastranks($fcdata['ranking']['weekly']);
 
 $fcpage = $fcpage . "\">".$fcdata['company']."</span><br><br>
@@ -185,6 +218,7 @@ We live in <span style=\"".$estatename."\">".$fcdata['estate']['zone']."</span> 
 We have <b><span style=\"".$membercount."\">".$fcdata['memberCount']."</span></b> members and counting. Want to join? Search for those with <span style=\"".$membertag."\">".$fcdata['tag']."</span> tag on them.<br>
 </div>";
 
+#Prepare ranking chart
 $fcpage = $fcpage . "
 <script>
 var ctx = document.getElementById(\"myChart\");
@@ -254,23 +288,29 @@ var myChart = new Chart(ctx, {
 </script>
 
 ";
+
+#Load updater in iframe, so that update can be done in background
 $fcpage = $fcpage . "<iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+
+#Add search fieild
 $fcpage = $fcpage . "<div><input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"Type Name or ID to highlight a member\" size=\"40px\"><br><br></div><div id=\"newtable\"><div style=\"display: none;\" id=\"chardetail\"></div>";
 
-
+#Output members in a nice table way, maximum of  in one line
 $fcpage = $fcpage . "<table class=\"memberstbl\">";
 $tdnum=1;
 foreach ($memberstats as $memberid=>$member) {
 	if (!is_null($member['bio']['name'])) {
 		$id = $member['id'];
-		include("./chardet.php");
+		//include("./chardet.php");
 		if ($tdnum == 1) {
 			$fcpage = $fcpage . "<tr>";
 		}
+		#Overlay FC rank image and images corresponding to rank up\down, whether member should be removed, can be promoted or has a wrong rank assigned
 		$fcpage = $fcpage . "<td><span onclick=\"showchar(".$member['id'].")\" title=\"".$member['fc']['rank']." ".$member['bio']['name']."\" style=\"display: inline-block;position: relative;width: 64px;height: 64px;cursor:pointer;\"><a class=\"intlink\" href=\"chardet.php?id=".$member['id']."\">
 					<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">
 					<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 45; left: 45;\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\">";
-					if ($member['fc']['ranklvl'] == 6 && $curtime - $member['fc']['ranklvlupd'] > 5184000) {
+					#Check if
+					if ($member['fc']['ranklvl'] == $lazy && $curtime - $member['fc']['ranklvlupd'] > $lazytime) {
 						$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/delete.png\">";
 					} else {
 						if ($member['fc']['wronprom'] == true && $member['fc']['rankover'] == false) {
@@ -279,16 +319,17 @@ foreach ($memberstats as $memberid=>$member) {
 							if ($member['fc']['nextprom'] != "") {
 								$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/rankup.png\">";
 							} else {
-								if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < 604799) {
+								#Show rank up\down only for a set period of time
+								if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
 									$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/lvldown.png\">";
-								} elseif ($member['fc']['ranklvl'] < $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < 604799) {
+								} elseif ($member['fc']['ranklvl'] < $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
 									$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/lvlup.png\">";
 								}
 							}
 						}
 					}
 					$fcpage = $fcpage . "</a></span></td>";
-		if ($tdnum == 13) {
+		if ($tdnum == $memonline) {
 			$fcpage = $fcpage . "</tr>";
 			$tdnum = 0;
 		}
@@ -297,7 +338,6 @@ foreach ($memberstats as $memberid=>$member) {
 }
 
 $fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"zip.php\">here</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.ru\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
-//@file_put_contents("./cache/ffxiv_fcpage.txt", $fcpage);
 unset($api);
 
 echo $fcpage;

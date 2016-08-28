@@ -29,6 +29,9 @@ Main settings contain of 2 things:
 
 `config.php` also has some extra styling options for you.
 
+### Installation
+Essentially, just place all the files (except for `cache` folder) to webserver with PHP, update `fcranks.json`, update `config.php` or `style.css` if required and run `index.php`
+
 ### fcranks.json
 For script to properly work you need to carefully setup list of ranks actually present in-game. Here's how you set it up.
 ```

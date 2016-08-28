@@ -14,9 +14,9 @@ if (isset($_GET['basic'])){
 $maint = false;
 $refreshpage = false;
 $fcranks=json_decode(file_get_contents('fcranks.json'), true);
-#Checking age of HTML cache and removing it if it's old enough
-$cacheage=$curtime;
 
+#Checking if update is required
+$cacheage=$curtime;
 if (!file_exists("./cache/freecompany.json") or (file_exists("./cache/freecompany.json") and $curtime-filemtime("./cache/freecompany.json") > $cachelife) or !file_exists('cache/members.json') or (file_exists('cache/members.json') and $curtime-filemtime("./cache/members.json") > $cachelife)) {
 	$fcdatatmp = $api->Search->FreeCompany($fcid, true);
 	if (is_null($fcdatatmp->name)) {
@@ -34,7 +34,6 @@ if (!file_exists("./cache/freecompany.json") or (file_exists("./cache/freecompan
 	echo "<div style=\"font-size:xx-small;text-align:center\" id=\"contents\">Data presented is dated ".date("d F Y H:i" ,$cacheage)."</div>";
 }
 
-//file_put_contents('cachecreate.flag', "true");
 ignore_user_abort(true);
 #Checking age of Free Company data cache and grabbing it if required. Preparing to reload page if missing or old
 if ($refreshpage == true) {
@@ -91,6 +90,7 @@ if ($refreshpage == true) {
 		echo "Getting info for member ".$charid." (".$i." out of ".$len.")...<br><script type=\"text/javascript\">document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;</script>";
 		ob_flush();
 		flush();
+		#Trying to get data for the member
 		$charstat = $api->Search->Character($charid);
 		if (is_null($charstat->name)) {
 			echo "Failed to get info for member ".$charid." in 1 try. 2<sup>nd</sup> retry in 5 seconds...<br><script type=\"text/javascript\">document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;</script>";
@@ -125,6 +125,7 @@ if ($refreshpage == true) {
 				}
 			}
 		}
+		#Setting defaults based on the data grab
 		$fc = [];
 		$fc['rank'] = $fc['rankprev'] = $member['rank']['title'];
 		imgcaching($member['rank']['icon'], "ranks/".imgnamesane($fc['rank']), $ranksupd);
@@ -195,10 +196,12 @@ if ($refreshpage == true) {
 	if (file_exists('cache/members.json')) {
 		$old_members=json_decode(file_get_contents('cache/members.json'), true);
 		foreach($old_members as $key=>$member) {
+			#Check if member is an old one
 			if (array_key_exists($key, $memberstats)) {
 				if (is_null($memberstats[$key]['bio']['name'])) {
 					$memberstats[$key] = $old_members[$key];
 				} else {
+					#Checking for name change
 					if (array_key_exists('prevname', $old_members[$key]['bio'])) {
 						if ($memberstats[$key]['bio']['name'] != $old_members[$key]['bio']['name']) {
 							$memberstats[$key]['bio']['prevname'] = $old_members[$key]['bio']['name'];
@@ -206,6 +209,7 @@ if ($refreshpage == true) {
 							$memberstats[$key]['bio']['prevname'] = $old_members[$key]['bio']['prevname'];
 						}
 					}
+					#Checking for FC rank change
 					if (array_key_exists('ranklvl', $old_members[$key]['fc'])) {
 						if ($memberstats[$key]['fc']['ranklvl'] != $old_members[$key]['fc']['ranklvl']) {
 							if (!is_null($old_members[$key]['fc']['ranklvl'])) {
@@ -218,11 +222,13 @@ if ($refreshpage == true) {
 							$memberstats[$key]['fc']['ranklvlupd'] = $old_members[$key]['fc']['ranklvlupd'];
 						}
 					}
+					#Checking if override rank is set
 					if (array_key_exists('rankover', $old_members[$key]['fc'])) {
 						if ($old_members[$key]['fc']['rankover'] == true) {
 							$memberstats[$key]['fc']['rankover'] = true;
 						}
 					}
+					#Check for lvl changes
 					foreach($memberstats[$key]['levels']['curr'] as $lvlkey=>$level) {
 						if (array_key_exists($lvlkey, $old_members[$key]['levels']['init'])) {
 							$memberstats[$key]['levels']['init'][$lvlkey] = $old_members[$key]['levels']['init'][$lvlkey];
@@ -240,15 +246,22 @@ if ($refreshpage == true) {
 							}
 						}
 					}
+					#Checking if joined date is known already
 					if (array_key_exists('joined', $old_members[$key])) {
 						$memberstats[$key]['joined'] = $old_members[$key]['joined'];
 					}
+					#Suggest ranks
 					foreach ($fcranks as $rankkey=>$posrank) {
+						#Check if rank is to assignable
 						if ($posrank['requirements']['assign'] == true) {
-							if ($memberstats[$key]['fc']['ranklvl'] != 6 && ($memberstats[$key]['fc']['ranklvlprev'] != 6 || ($memberstats[$key]['fc']['ranklvlprev'] == 6 && $curtime - $memberstats[$key]['fc']['ranklvlupd'] >= 2592000))) {
+							#Check if member is lazy or was recently lazy
+							if ($memberstats[$key]['fc']['ranklvl'] != $lazy && ($memberstats[$key]['fc']['ranklvlprev'] != $lazy || ($memberstats[$key]['fc']['ranklvlprev'] == $lazy && $curtime - $memberstats[$key]['fc']['ranklvlupd'] >= $lazyover))) {
+								#Check if current rank is high enough to get promoted
 								if ($memberstats[$key]['fc']['ranklvl'] <= $posrank['requirements']['minfclvl']) {
 	      								$skiprank = false;
+									#Check if total level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['totallvl'] >= $posrank['requirements']['mintotlvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = "Total level (".$memberstats[$key]['levels']['curr']['totallvl'].") is lower than required (".$posrank['requirements']['mintotlvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -256,7 +269,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if member has enough class diversity
 	      								if (!(classdivcheck($memberstats[$key]['levels']['curr']['maxtank'], $memberstats[$key]['levels']['curr']['maxdps'], $memberstats[$key]['levels']['curr']['maxheal'], $memberstats[$key]['levels']['curr']['maxgath'], $memberstats[$key]['levels']['curr']['maxcraft'], $posrank['requirements']['classtypes']))) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Class types number is lower than required (".$posrank['requirements']['classtypes'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -264,7 +279,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if max DPS level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['maxdps'] >= $posrank['requirements']['mindpslvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Maximum DPS class level (".$memberstats[$key]['levels']['curr']['maxdps'].") is lower than required (".$posrank['requirements']['mindpslvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -272,7 +289,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if max Tank level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['maxtank'] >= $posrank['requirements']['mintanklvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Maximum Tank class level (".$memberstats[$key]['levels']['curr']['maxtank'].") is lower than required (".$posrank['requirements']['mintanklvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -280,7 +299,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if max Healer level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['maxheal'] >= $posrank['requirements']['minheallvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Maximum Healer class level (".$memberstats[$key]['levels']['curr']['maxheal'].") is lower than required (".$posrank['requirements']['minheallvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -288,7 +309,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if Crafter level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['maxcraft'] >= $posrank['requirements']['mincraftlvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Maximum Crafter class level (".$memberstats[$key]['levels']['curr']['maxcraft'].") is lower than required (".$posrank['requirements']['mincraftlvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -296,7 +319,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if Gatherer level is enough
 	      								if (!($memberstats[$key]['levels']['curr']['maxgath'] >= $posrank['requirements']['mingathlvl'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Maximum Gatherer class level (".$memberstats[$key]['levels']['curr']['maxgath'].") is lower than required (".$posrank['requirements']['mingathlvl'].").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -304,7 +329,9 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#Check if member has been in the Company long enough
 	      								if (!($curtime - $memberstats[$key]['joined'] >= $posrank['requirements']['minage'])) {
+										#Check if rank is wrongly assigned
 	      									if ($memberstats[$key]['fc']['rank'] == $rankkey && $memberstats[$key]['fc']['rankover'] == false) {
 	      										$memberstats[$key]['fc']['wronreas'] = $memberstats[$key]['fc']['wronreas'] . "Number of days in company (".intval(($curtime - $memberstats[$key]['joined'])/86400).") is lower than required (".intval($posrank['requirements']['minage']/86400).").";
 	      										$memberstats[$key]['fc']['wronprom'] = true;
@@ -312,14 +339,18 @@ if ($refreshpage == true) {
 	      										$skiprank = true;
 	      									}
 	      								}
+									#If the rank is not current (and wrongly assigned) and we are not skipping it for one reason or another, check if current rank is higher and then skip it, if it is
 									if ($memberstats[$key]['fc']['wronprom'] == false && $skiprank == false) {
 										if ($memberstats[$key]['fc']['ranklvl'] < $posrank['level']) {
 											$skiprank = true;
 										}
 									}
 	      								if ($skiprank == false) {
-	      									if ($curtime - $memberstats[$key]['fc']['ranklvlupd'] >= 1296000 || $memberstats[$key]['fc']['wronprom'] == true) {
+										#If we are not skipping, check if there was no rank change recently or if we have a case of wrong assignment
+	      									if ($curtime - $memberstats[$key]['fc']['ranklvlupd'] >= $rankchage || $memberstats[$key]['fc']['wronprom'] == true) {
+											#Skip rank if member already has it
 	      										if ($memberstats[$key]['fc']['rank'] !== $rankkey) {
+												#Populate list of possible or alternative promotions
 	      											if ($memberstats[$key]['fc']['ranklvl'] != $posrank['level']) {
 	      												if (is_null($posrank['requirements']['recrank'])) {
 	      													$memberstats[$key]['fc']['nextprom'] = $memberstats[$key]['fc']['nextprom'].",".$rankkey;
@@ -340,12 +371,14 @@ if ($refreshpage == true) {
 							}
 						}
 					}
+					#Cleaning up the promotions
 					if ($memberstats[$key]['fc']['nextprom'] != "") {
 						$memberstats[$key]['fc']['nextprom'] = ltrim($memberstats[$key]['fc']['nextprom'], ",");
 					} else {
 						if ($memberstats[$key]['fc']['wronprom'] == true) {
 							foreach ($fcranks as $rankkey=>$posrank) {
-								if ($posrank['level'] == 5) {
+								#If no ranks were suggested, suggest lowest one
+								if ($posrank['level'] == $defrank) {
 									$memberstats[$key]['fc']['nextprom'] = $memberstats[$key]['fc']['nextprom'].",".$rankkey;
 								}
 							}
@@ -360,12 +393,10 @@ if ($refreshpage == true) {
 					if ($memberstats[$key]['fc']['altprom'] != "") {
 						$memberstats[$key]['fc']['altprom'] = ltrim($memberstats[$key]['fc']['altprom'], ",");
 					}
-					@unlink("./cache/chars/".$memberstats[$key]['id'].".txt");
 				}
-			} else {
-				@unlink("./cache/chars/".$memberstats[$key]['id'].".txt");
 			}
 		}
+		#Write the data to the file
 		file_put_contents('cache/members.json', json_encode($memberstats, JSON_PRETTY_PRINT));
 	}
 	error_reporting($preverrors);
@@ -374,6 +405,7 @@ if ($refreshpage == true) {
 }
 unset($api);
 
+#Refresh main page if required
 if ($refreshpage == true) {
 //<script type=\"text/javascript\">document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;</script>
 	Echo "Refreshing page in 5 seconds...<br><script type=\"text/javascript\">document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;</script>";

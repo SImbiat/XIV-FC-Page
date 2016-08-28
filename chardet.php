@@ -7,33 +7,37 @@ misdircreate();
 $curtime=time();
 $fcranks=json_decode(file_get_contents('fcranks.json'), true);
 $memberstats = json_decode(file_get_contents('cache/members.json'), true);
-$output = true;
+
+#Check if ID was provided and exists
 if (empty($_GET['id']) && empty($id)) {
 	exit;
 } else {
 	if (empty($_GET['id']) ) {
-		//Do Nothing
-		$output = false;
+		echo "<head>
+			<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+			</head><title>Wrong ID</title>ID not provided.<br><a href=\"index.php\">Return</a>";
+		exit;
 	} else {
 		$id=$_GET['id'];
 	}
 }
-if ($output == true) {
-	if (file_exists("./cache/chars/".$id.".txt")) {
-			echo file_get_contents("./cache/chars/".$id.".txt");
-			exit;
-	}
-}
+
 if (is_null($memberstats[$id])) {
 	echo "<head>
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
 		</head><title>Wrong ID</title>ID not found.<br><a href=\"index.php\">Return</a>";
 	exit;
 } 
+
+#Generate member details
 $member = $memberstats[$id];
 $charpage = "<head>
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
-		</head><title>".$member['bio']['name']."</title><script>
+		</head><title>".$member['bio']['name']."</title>";
+
+#Copy of some of the JS from main page for consistency
+$charpage = $charpage . "
+<script>
 function shadowlnks(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"hvr-pulse\";
@@ -66,7 +70,12 @@ function showtipcb() {
 }
 </script>
 ";
-$charpage = $charpage . "<table width=\"872px\" class=\"memberstbl\"><tr><td><table style=\"height: 436px;\" class=\"levelstbl\">
+#Output main table
+$charpage = $charpage . "<table width=\"872px\" class=\"memberstbl\"><tr><td>";
+
+#Output levels details for the member
+$charpage = $charpage . "
+<table style=\"height: 436px;\" class=\"levelstbl\">
 <tr><td class=\"dpsclass\" style=\"border-left: 1px solid black; border-top: 1px solid black\" rowspan=\"3\" title=\"Total: ".($member['levels']['curr']['Pugilist'] + $member['levels']['curr']['Rogue'] + $member['levels']['curr']['Lancer'])."\">M<br>E<br>L<br>E<br>E</td><td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Pugilist\" src=\"img/jobs/Pugilist.png\"></td><td class=\"dpsclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".$member['levels']['curr']['Pugilist']."</td><td class=\"tankclass\" style=\"border-left: 1px solid black;border-top: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totaltank']."\" rowspan=\"3\"><span>T<br>A<br>N<br>K<br>S</span></td><td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Gladiator\" src=\"img/jobs/Gladiator.png\"></td><td class=\"tankclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".$member['levels']['curr']['Gladiator']."</td></tr>
 <tr><td><img width=\"12px\" height=\"12px\" title=\"Rogue\" src=\"img/jobs/Rogue.png\"></td><td class=\"dpsclass\" style=\"border-right: 1px solid black\">".$member['levels']['curr']['Rogue']."</td><td><img width=\"12px\" height=\"12px\" title=\"Marauder\" src=\"img/jobs/Marauder.png\"></td><td class=\"tankclass\" style=\"border-right: 1px solid black\">".$member['levels']['curr']['Marauder']."</td></tr>
 <tr><td><img width=\"12px\" height=\"12px\" title=\"Lancer\" src=\"img/jobs/Lancer.png\"></td><td class=\"dpsclass\" style=\"border-right: 1px solid black\">".$member['levels']['curr']['Lancer']."</td><td><img width=\"12px\" height=\"12px\" title=\"Dark Knight\" src=\"img/jobs/DarkKnight.png\"></td><td class=\"tankclass\" style=\"border-right: 1px solid black\">".$member['levels']['curr']['Dark Knight']."</td></tr>
@@ -79,8 +88,11 @@ $charpage = $charpage . "<table width=\"872px\" class=\"memberstbl\"><tr><td><ta
 <tr><td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Alchemist\" src=\"img/jobs/Alchemist.png\"></td><td class=\"craftclass\" style=\"border-bottom: 1px solid black\">".$member['levels']['curr']['Alchemist']."</td><td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Culinarian\" src=\"img/jobs/Culinarian.png\"></td><td class=\"craftclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".$member['levels']['curr']['Culinarian']."</td></tr>
 <tr><td class=\"gathclass\" style=\"border-right: 1px solid black;border-top: 1px solid black;border-left: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totalgath']."\" colspan=\"6\">GATHERERS</td></tr>
 <tr><td style=\"border-left: 1px solid black;border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Miner\" src=\"img/jobs/Miner.png\"></td><td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".$member['levels']['curr']['Miner']."</td><td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Botanist\" src=\"img/jobs/Botanist.png\"></td><td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".$member['levels']['curr']['Botanist']."</td><td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Fisher\" src=\"img/jobs/Fisher.png\"></td><td class=\"gathclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".$member['levels']['curr']['Fisher']."</td></tr>
-<tr><td class=\"totalclass\" colspan=\"6\">Total: ".$member['levels']['curr']['totallvl']."</td><tr></table></td><td>
-<span style=\"display: inline-block;position: relative;width: 320px;height: 436px;\">
+<tr><td class=\"totalclass\" colspan=\"6\">Total: ".$member['levels']['curr']['totallvl']."</td><tr></table></td>";
+
+#Output member image with overlay images (FC rank, GC rank, .etc)
+$charpage = $charpage . "
+<td><span style=\"display: inline-block;position: relative;width: 320px;height: 436px;\">
 <img style=\"position: absolute; top: 0; left: 0;\" width=\"320\" height=\"436\" src=\"".$member['bio']['portrait']."\">
 <img onmouseover=\"shadowlnks('guard');\" onmouseout=\"shadowlnkh('guard');\" id=\"lnkguardimg\" style=\"position: absolute; top: 5; left: 5;\" title=\"".$member['bio']['guardian']."\" src=\"./img/guardians/".imgnamesane($member['bio']['guardian']).".png\">
 <img onmouseover=\"shadowlnks('city');\" onmouseout=\"shadowlnkh('city');\" id=\"lnkcityimg\" style=\"position: absolute; top: 5; left: 283;\" src=\"./img/cities/".imgnamesane($member['bio']['city']).".png\" title=\"".$member['bio']['city']."\">
@@ -90,7 +102,11 @@ if ($member['gc']['name'] != "") {
 }
 $charpage = $charpage . "<img onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkrankimg\" style=\"position: absolute; top: 411; left: 295;\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\" title=\"".$member['fc']['rank']."\">
 <span>
-</td><td>
+</td>";
+
+#Output information in a type of a dossier
+$charpage = $charpage . "
+<td>
 This ".$member['bio']['gender']." ".$member['bio']['race']." of ".$member['bio']['clan']." clan, <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['name']."</a>";
 if ($member['bio']['name'] != $member['bio']['prevname']) {
 	$charpage = $charpage." (a.k.a. <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['prevname']."</a>)";
@@ -105,9 +121,11 @@ if ($member['gc']['name'] != "") {
 if ($member['bio']['title'] != "") {
 	$charpage = $charpage . " Among ".sexcheck($member['bio']['gender'])[2]." many alliases ".sexcheck($member['bio']['gender'])[0]." seems to prefer <i>".$member['bio']['title']."</i>.";
 }
-if ($member['fc']['ranklvl'] == 6) {
+
+#Output rank checks and suggestions
+if ($member['fc']['ranklvl'] == $lazy) {
 	$charpage = $charpage . "<br>This <span id=\"lnkprevrank\" onclick=\"showtip('".$member['fc']['rankprev']."');\" style=\"cursor:help;\">".$member['fc']['rankprev']."</span> has been a <span onclick=\"showtip('".$member['fc']['rank']."');\" style=\"cursor:help;\" onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkranktext\">".$member['fc']['rank']."</span> for ".intval((($curtime-$member['fc']['ranklvlupd'])/86400))." days";
-	if ($curtime - $member['fc']['ranklvlupd'] > 5184000) {
+	if ($curtime - $member['fc']['ranklvlupd'] > $lazytime) {
 		$charpage = $charpage . " and it's time to kick ".sexcheck($member['bio']['gender'])[1]." out";
 	}
 	$charpage = $charpage . ".";
@@ -116,7 +134,7 @@ if ($member['fc']['ranklvl'] == 6) {
 		$charpage = $charpage . "<br>By some mistake ".sexcheck($member['bio']['gender'])[0]." was assigned the rank of <span onclick=\"showtip('".$member['fc']['rank']."');\" style=\"cursor:help;\" onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkranktext\">".$member['fc']['rank']."</span> and this needs to be addressed.";
 		$charpage = $charpage . "<br>".$member['fc']['wronreas'];
 	}
-	if ($member['fc']['ranklvl'] != $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < 604799) {
+	if ($member['fc']['ranklvl'] != $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
 		$charpage = $charpage . "<br>From the rank of <span id=\"lnkprevrank\" onclick=\"showtip('".$member['fc']['rankprev']."');\" style=\"cursor:help;\">".$member['fc']['rankprev']."</span> ".sexcheck($member['bio']['gender'])[0]." was ";
 		if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev']) {
 			$charpage = $charpage . "demoted ";
@@ -175,8 +193,5 @@ if ($member['fc']['ranklvl'] == 6) {
 	}
 }
 $charpage = $charpage . "</td></table><div id=\"fcranktip\" style=\"display: none;\"></div>";
-//@file_put_contents("./cache/chars/".$id.".txt", $charpage);
-if ($output == true) {
-	echo $charpage;
-}
+echo $charpage;
 ?>

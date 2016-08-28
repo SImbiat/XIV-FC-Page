@@ -6,6 +6,8 @@ require_once 'config.php';
 misdircreate();
 $curtime=time();
 $fcranks=json_decode(file_get_contents('fcranks.json'), true);
+
+#Checks if rank name was provided
 echo "<head>
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
 		</head>";
@@ -21,8 +23,9 @@ if (empty($_GET['fcname'])) {
 		exit;
 	}
 }
-$fcpage = $fcpage . "<table width=\"872px\" border=1 class=\"memberstbl\">";
 
+#Output the table static data (row names)
+$fcpage = $fcpage . "<table width=\"872px\" border=1 class=\"memberstbl\">";
 $rankname="<tr><td colspan=\"4\">Rank Name";
 if ($fcname != "") {
 	$rankname=$rankname." <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
@@ -143,6 +146,7 @@ foreach($fcranks as $key=>$rank) {
 	break;
 }
 
+#SHow columns with actual data
 foreach($fcranks as $key=>$rank) {
 	if (strtolower ($fcname) == strtolower ($key) || $fcname == "") {
 		$rankname = $rankname . "<td>".$key."</td>";
@@ -544,6 +548,7 @@ $ExploratoryVoyageDeployment = $ExploratoryVoyageDeployment . "</tr>";
 $ExploratoryVoyageFinalization = $ExploratoryVoyageFinalization . "</tr>";
 $ExploratoryMissionEmbarkation = $ExploratoryMissionEmbarkation . "</tr>";
 
+#Prepare the whole page
 $fcpage = $fcpage.$rankname.$ranklvl.$minage.$minfclvl.$recrank.$classtypes.$mintotlvl.$mindpslvl.$mintanklvl.$minheallvl.$mincraftlvl.$mingathlvl.$howto.
 $CompanyProfile.
 $RankSettings.

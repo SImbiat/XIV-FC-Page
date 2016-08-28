@@ -1,4 +1,7 @@
 <?php
+
+# File to give source files into a zip and sent it to users
+
 ignore_user_abort(true);
 
 set_time_limit(320);

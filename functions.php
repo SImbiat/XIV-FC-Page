@@ -1,4 +1,5 @@
 <?php
+//Function is used to determine lowest (maximum) available value in weekly ranking
 function maxValueInArray($array, $keyToSearch) {
     $currentMax = NULL;
     foreach($array as $arr)
@@ -14,6 +15,8 @@ function maxValueInArray($array, $keyToSearch) {
 
     return $currentMax;
 }
+
+//Function is used to determine highest (minimum) available value in weekly ranking
 function minValueInArray($array, $keyToSearch) {
     $currentMin = 99999999;
     foreach($array as $arr)
@@ -29,9 +32,8 @@ function minValueInArray($array, $keyToSearch) {
 
     return $currentMin;
 }
-function show($data) {
-	echo '<pre>'. print_r($data, true) .'</pre>';
-}
+
+//Function used to check if member has enough class diversity
 function classdivcheck($tank, $dps, $healer, $gatherer, $crafter, $classes) {
 	$classcount = 0;
 	if ($tank > 1) {
@@ -55,6 +57,8 @@ function classdivcheck($tank, $dps, $healer, $gatherer, $crafter, $classes) {
 		return false;
 	}
 }
+
+//Function to use proper forms of he\she depending on sex of a member
 function sexcheck($sex) {
 	if ($sex == "female") {
 		$out[0] = "she";
@@ -71,6 +75,7 @@ function sexcheck($sex) {
 	}
 }
 
+//Functions used to download images
 function checkRemoteFile($url) {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
@@ -87,7 +92,6 @@ function checkRemoteFile($url) {
         return false;
     }
 }
-
 function imgcaching($imgurl, $newname, $update) {
 	if (strpos($imgurl, "?")) {
 		$imgurl = substr($imgurl, 0, strpos($imgurl, "?"));
@@ -109,10 +113,12 @@ function imgcaching($imgurl, $newname, $update) {
 	}
 }
 
+//Function to sanitize image files' names
 function imgnamesane($imgname) {
 	return preg_replace("/[^A-Za-z0-9]/", '', $imgname);
 }
 
+//Function to create missing directories
 function misdircreate() {
 	if (!is_dir("./cache")) {
 		mkdir("./cache");
@@ -125,6 +131,7 @@ function misdircreate() {
 	}
 }
 
+//Function to create or update FC ranking file and return last 10 results
 function getlastranks($curfcrank) {
 	if (file_exists('cache/ranking.json')) {
 		$lastranks=json_decode(file_get_contents('cache/ranking.json'), true);
