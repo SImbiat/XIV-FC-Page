@@ -13,15 +13,17 @@ $fcid = "9234631035923213559";
 $lazy = 6;
 #Minimum (or default) rank level
 $defrank = 5;
-#Time required to be in the above rank to be suggested for a kick in seconds
-$lazytime = 5184000;
-#Time to ignore rank checks if member is lazy in seconds
-$lazyover = 2592000;
+#Time required to be in the above rank to be suggested for a kick in days
+$lazytime = 60;
+#Time to ignore rank checks if member is lazy in days
+$lazyover = 30;
+#Time for member to be treated as new in days
+$newbie = 7;
 
-#Time to show rank up\down overlay in seconds
-$rankotime = 604799;
-#Limit the time between rank changes in seconds
-$rankchage = 1296000;
+#Time to show rank up\down overlay in days
+$rankotime = 7;
+#Limit the time between rank changes in days
+$rankchage = 14;
 
 #Life of cache in seconds
 $cachelife = 43200;

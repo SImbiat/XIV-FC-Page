@@ -307,10 +307,13 @@ foreach ($memberstats as $memberid=>$member) {
 		}
 		#Overlay FC rank image and images corresponding to rank up\down, whether member should be removed, can be promoted or has a wrong rank assigned
 		$fcpage = $fcpage . "<td><span onclick=\"showchar(".$member['id'].")\" title=\"".$member['fc']['rank']." ".$member['bio']['name']."\" style=\"display: inline-block;position: relative;width: 64px;height: 64px;cursor:pointer;\"><a class=\"intlink\" href=\"chardet.php?id=".$member['id']."\">
-					<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">
-					<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 45; left: 45;\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\">";
+					<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">";
+		if ($member['fc']['altprom'] != "") {
+				$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 50; left: 25;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./img/altav.png\">";
+		}
+		$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 45; left: 45;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\">";
 					#Check if
-					if ($member['fc']['ranklvl'] == $lazy && $curtime - $member['fc']['ranklvlupd'] > $lazytime) {
+					if ($member['fc']['ranklvl'] == $lazy && ($curtime - $member['fc']['ranklvlupd']) / 86400 > $lazytime) {
 						$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/delete.png\">";
 					} else {
 						if ($member['fc']['wronprom'] == true && $member['fc']['rankover'] == false) {
@@ -320,10 +323,12 @@ foreach ($memberstats as $memberid=>$member) {
 								$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/rankup.png\">";
 							} else {
 								#Show rank up\down only for a set period of time
-								if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
+								if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev'] && ($curtime - $member['fc']['ranklvlupd']) / 86400 < $rankotime) {
 									$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/lvldown.png\">";
-								} elseif ($member['fc']['ranklvl'] < $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
+								} elseif ($member['fc']['ranklvl'] < $member['fc']['ranklvlprev'] && ($curtime - $member['fc']['ranklvlupd']) / 86400 < $rankotime) {
 									$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/lvlup.png\">";
+								} elseif (($curtime - $member['joined']) / 86400 <= $newbie) {
+									$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/new.png\">";
 								}
 							}
 						}

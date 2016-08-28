@@ -107,7 +107,11 @@ $charpage = $charpage . "<img onmouseover=\"shadowlnks('rank');\" onmouseout=\"s
 #Output information in a type of a dossier
 $charpage = $charpage . "
 <td>
-This ".$member['bio']['gender']." ".$member['bio']['race']." of ".$member['bio']['clan']." clan, <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['name']."</a>";
+This ";
+if (($curtime - $member['joined']) / 86400 <= $newbie) {
+	$charpage = $charpage . "newly recruited ";
+}
+$charpage = $charpage .$member['bio']['gender']." ".$member['bio']['race']." of ".$member['bio']['clan']." clan, <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['name']."</a>";
 if ($member['bio']['name'] != $member['bio']['prevname']) {
 	$charpage = $charpage." (a.k.a. <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['prevname']."</a>)";
 }
@@ -125,7 +129,7 @@ if ($member['bio']['title'] != "") {
 #Output rank checks and suggestions
 if ($member['fc']['ranklvl'] == $lazy) {
 	$charpage = $charpage . "<br>This <span id=\"lnkprevrank\" onclick=\"showtip('".$member['fc']['rankprev']."');\" style=\"cursor:help;\">".$member['fc']['rankprev']."</span> has been a <span onclick=\"showtip('".$member['fc']['rank']."');\" style=\"cursor:help;\" onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkranktext\">".$member['fc']['rank']."</span> for ".intval((($curtime-$member['fc']['ranklvlupd'])/86400))." days";
-	if ($curtime - $member['fc']['ranklvlupd'] > $lazytime) {
+	if (($curtime - $member['fc']['ranklvlupd']) / 86400 > $lazytime) {
 		$charpage = $charpage . " and it's time to kick ".sexcheck($member['bio']['gender'])[1]." out";
 	}
 	$charpage = $charpage . ".";
@@ -134,7 +138,7 @@ if ($member['fc']['ranklvl'] == $lazy) {
 		$charpage = $charpage . "<br>By some mistake ".sexcheck($member['bio']['gender'])[0]." was assigned the rank of <span onclick=\"showtip('".$member['fc']['rank']."');\" style=\"cursor:help;\" onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkranktext\">".$member['fc']['rank']."</span> and this needs to be addressed.";
 		$charpage = $charpage . "<br>".$member['fc']['wronreas'];
 	}
-	if ($member['fc']['ranklvl'] != $member['fc']['ranklvlprev'] && $curtime - $member['fc']['ranklvlupd'] < $rankotime) {
+	if ($member['fc']['ranklvl'] != $member['fc']['ranklvlprev'] && ($curtime - $member['fc']['ranklvlupd']) / 86400 <= $rankotime) {
 		$charpage = $charpage . "<br>From the rank of <span id=\"lnkprevrank\" onclick=\"showtip('".$member['fc']['rankprev']."');\" style=\"cursor:help;\">".$member['fc']['rankprev']."</span> ".sexcheck($member['bio']['gender'])[0]." was ";
 		if ($member['fc']['ranklvl'] > $member['fc']['ranklvlprev']) {
 			$charpage = $charpage . "demoted ";

@@ -255,7 +255,7 @@ if ($refreshpage == true) {
 						#Check if rank is to assignable
 						if ($posrank['requirements']['assign'] == true) {
 							#Check if member is lazy or was recently lazy
-							if ($memberstats[$key]['fc']['ranklvl'] != $lazy && ($memberstats[$key]['fc']['ranklvlprev'] != $lazy || ($memberstats[$key]['fc']['ranklvlprev'] == $lazy && $curtime - $memberstats[$key]['fc']['ranklvlupd'] >= $lazyover))) {
+							if ($memberstats[$key]['fc']['ranklvl'] != $lazy && ($memberstats[$key]['fc']['ranklvlprev'] != $lazy || ($memberstats[$key]['fc']['ranklvlprev'] == $lazy && ($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $lazyover))) {
 								#Check if current rank is high enough to get promoted
 								if ($memberstats[$key]['fc']['ranklvl'] <= $posrank['requirements']['minfclvl']) {
 	      								$skiprank = false;
@@ -347,7 +347,7 @@ if ($refreshpage == true) {
 									}
 	      								if ($skiprank == false) {
 										#If we are not skipping, check if there was no rank change recently or if we have a case of wrong assignment
-	      									if ($curtime - $memberstats[$key]['fc']['ranklvlupd'] >= $rankchage || $memberstats[$key]['fc']['wronprom'] == true) {
+	      									if (($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $rankchage || $memberstats[$key]['fc']['wronprom'] == true) {
 											#Skip rank if member already has it
 	      										if ($memberstats[$key]['fc']['rank'] !== $rankkey) {
 												#Populate list of possible or alternative promotions
