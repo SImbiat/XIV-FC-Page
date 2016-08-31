@@ -1,4 +1,25 @@
 <?php
+//Function to show level of a class and show that it changed, if it did
+function showcurlvl($levels, $class, $curtime, $lvlupdate, $lvlchange) {
+	$lvlret = "";
+	$lvlret = "<span title=\"Came to us at level ".$levels['init'][$class];
+	if ($levels['curr'][$class] > $levels['init'][$class]) {
+		$lvlret = $lvlret . " and last record shows growth to ".$levels['curr'][$class];
+		if ($levels['curr'][$class] > $levels['prev'][$class] && $levels['prev'][$class] > $levels['init'][$class]) {
+			$lvlret = $lvlret . " (with previous to last record showing level ".$levels['prev'][$class].")\"";
+		} else {
+			$lvlret = $lvlret . "\"";
+		}
+	} else {
+		$lvlret = $lvlret . " and no change has been recorded since\"";
+	}
+	if ($levels['curr'][$class] > $levels['prev'][$class] && ($curtime - $lvlupdate) / 86400 <= $lvlchange) {
+		$lvlret = $lvlret . " style=\"background-image:url(img/lvlup.png);background-size:contain;box-shadow:0px 0px 3px #000000;\"";
+	}
+	$lvlret = $lvlret . ">".$levels['curr'][$class]."</span>";
+	return $lvlret;
+}
+
 //Function is used to determine lowest (maximum) available value in weekly ranking
 function maxValueInArray($array, $keyToSearch) {
     $currentMax = NULL;

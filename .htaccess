@@ -1,0 +1,17 @@
+<Files .htpasswd> 
+   deny from all 
+</Files>
+
+RewriteRule ^char/([0-9-]+)?$ ./chardet.php?id=$1 [NC]
+RewriteRule ^update$ ./update.php [NC]
+RewriteRule ^update/$ ./update.php [NC]
+RewriteRule ^zip$ ./zip.php [NC]
+RewriteRule ^zip/$ ./zip.php [NC]
+RewriteRule ^char$ ./chardet.php [NC]
+RewriteRule ^char/$ ./chardet.php [NC]
+RewriteRule ^rank/([a-zA-Z0-9-]+)?$ ./fcranks.php?fcname=$1 [NC]
+RewriteRule ^rank$ ./fcranks.php [NC]
+RewriteRule ^rank/$ ./fcranks.php [NC]
+RewriteRule ^char/(.*)?$ ./$1 [NC]
+RewriteRule ^rank/(.*)?$ ./$1 [NC]
+RewriteRule ^update/(.*)?$ ./$1 [NC]

@@ -9,6 +9,10 @@ $fcpage = "";
 #Free Company ID
 $fcid = "9234631035923213559";
 
+#ModRewrite setting. Whether to use it to provide neater links. Change to "false" if you
+#do not have it enabled on server or do not want to use it for some reason
+$modrw = true;
+
 #Rank level to be treated as the one for inactive person
 $lazy = 6;
 #Minimum (or default) rank level
@@ -24,6 +28,10 @@ $newbie = 7;
 $rankotime = 7;
 #Limit the time between rank changes in days
 $rankchage = 14;
+#Limit the time to show that level has changed in days
+$lvlchange = 7;
+#Limit the time for tracking level changes in days
+$lvltrack = 7;
 
 #Life of cache in seconds
 $cachelife = 43200;

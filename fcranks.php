@@ -19,7 +19,11 @@ if (empty($_GET['fcname'])) {
 	$fcpage = $fcpage . "<title>Rank Details: ".$fcname."</title>";
 	if (!(array_key_exists($fcname, $fcranks))) {
 		echo $fcpage;
-		echo "Wrong rank selected. <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+		if ($modrw == true) {
+			echo "Wrong rank selected. <a target=\"_blank\" href=\"./rank\">Full list</a>";
+		} else {
+			echo "Wrong rank selected. <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+		}
 		exit;
 	}
 }
@@ -28,7 +32,11 @@ if (empty($_GET['fcname'])) {
 $fcpage = $fcpage . "<table width=\"872px\" border=1 class=\"memberstbl\">";
 $rankname="<tr><td colspan=\"4\">Rank Name";
 if ($fcname != "") {
-	$rankname=$rankname." <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+	if ($modrw == true) {
+		$rankname=$rankname." <a target=\"_blank\" href=\"./rank\">Full list</a>";
+	} else {
+		$rankname=$rankname." <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+	}
 }
 $rankname=$rankname."</td>";
 $ranklvl="<tr><td colspan=\"4\">Rank Level</td>";

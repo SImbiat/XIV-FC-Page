@@ -14,7 +14,7 @@ Company ranking is showed as a small graph when hovering over the question mark 
 Main feature is tracking of members' stats. It tracks the following:
 - Name change
 - Free Company rank change
-- Levels of all classes (not actively used in current version)
+- Levels of all classes
 - Levels of all classes on time of joining
 - Time of joining
 - Time of level update
@@ -30,7 +30,7 @@ Main settings contain of 2 things:
 `config.php` also has some extra styling options for you.
 
 ### Installation
-Essentially, just place all the files (except for `cache` folder) to webserver with PHP, update `fcranks.json`, update `config.php` or `style.css` if required and run `index.php`
+Essentially, just place all the files (except for `cache` folder) to webserver with PHP, update `fcranks.json`, update `config.php` or `style.css` if required and run `index.php`. Live version can be checked out [here](http://simbiat.net/mogst)
 
 ### fcranks.json
 For script to properly work you need to carefully setup list of ranks actually present in-game. Here's how you set it up.

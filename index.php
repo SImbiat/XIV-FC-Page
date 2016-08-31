@@ -25,7 +25,11 @@ $fcranks=json_decode(file_get_contents('fcranks.json'), true);
 #Checking company cache. If it's missing - request it. If not - load existing data
 $cacheage=$curtime;
 if (!file_exists("./cache/freecompany.json") or !file_exists('cache/members.json')) {
-	echo "No cache exists. Need to grab data<br><iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	if ($modrw == true) {
+		echo "No cache exists. Need to grab data<br><iframe src=\"./update\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	} else {
+		echo "No cache exists. Need to grab data<br><iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	}
 	exit;
 } else {
 	$cacheage=filemtime("./cache/freecompany.json");
@@ -142,8 +146,13 @@ function showtip(rank) {
 
 #JS to show rank description
 $fcpage = $fcpage . "
-function showtipload(rank) {
-	loadFile('./fcranks.php?fcname=' + rank, showtipcb);
+function showtipload(rank) {";
+	if ($modrw == true) {
+		$fcpage = $fcpage . "loadFile('./rank/' + rank, showtipcb);";
+	} else {
+		$fcpage = $fcpage . "loadFile('./fcranks.php?fcname=' + rank, showtipcb);";
+	}
+$fcpage = $fcpage . "
 }
 function showtipcb() {
 	var e = document.getElementById('fcranktip');
@@ -157,8 +166,13 @@ function showchar(memberid) {
 	e.innerHTML = '<table width=\"872px\" class=\"memberstbl\"><tr><td><img width=\"252\" height=\"252\" src=\"./img/loading.gif\"></td></tr></table>';
 	if (e.style.display == \"none\") {
 		e.style.display = \"\";
+	}";
+	if ($modrw == true) {
+		$fcpage = $fcpage . "loadFile('./char/' + memberid, showcharcb);";
+	} else {
+		$fcpage = $fcpage . "loadFile('./chardet.php?id=' + memberid, showcharcb);";
 	}
-	loadFile('./chardet.php?id=' + memberid, showcharcb);
+$fcpage = $fcpage . "	
 }
 function showcharcb() {
 	var e = document.getElementById('chardetail');
@@ -290,7 +304,11 @@ var myChart = new Chart(ctx, {
 ";
 
 #Load updater in iframe, so that update can be done in background
-$fcpage = $fcpage . "<iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+if ($modrw == true) {
+	$fcpage = $fcpage . "<iframe src=\"./update\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+} else {
+	$fcpage = $fcpage . "<iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+}
 
 #Add search fieild
 $fcpage = $fcpage . "<div><input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"Type Name or ID to highlight a member\" size=\"40px\"><br><br></div><div id=\"newtable\"><div style=\"display: none;\" id=\"chardetail\"></div>";
@@ -301,13 +319,17 @@ $tdnum=1;
 foreach ($memberstats as $memberid=>$member) {
 	if (!is_null($member['bio']['name'])) {
 		$id = $member['id'];
-		//include("./chardet.php");
 		if ($tdnum == 1) {
 			$fcpage = $fcpage . "<tr>";
 		}
 		#Overlay FC rank image and images corresponding to rank up\down, whether member should be removed, can be promoted or has a wrong rank assigned
-		$fcpage = $fcpage . "<td><span onclick=\"showchar(".$member['id'].")\" title=\"".$member['fc']['rank']." ".$member['bio']['name']."\" style=\"display: inline-block;position: relative;width: 64px;height: 64px;cursor:pointer;\"><a class=\"intlink\" href=\"chardet.php?id=".$member['id']."\">
-					<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">";
+		$fcpage = $fcpage . "<td><span onclick=\"showchar(".$member['id'].")\" title=\"".$member['fc']['rank']." ".$member['bio']['name']."\" style=\"display: inline-block;position: relative;width: 64px;height: 64px;cursor:pointer;\">";
+		if ($modrw == true) {
+			$fcpage = $fcpage . "<a class=\"intlink\" href=\"char/".$member['id']."\">";
+		} else {
+			$fcpage = $fcpage . "<a class=\"intlink\" href=\"chardet.php?id=".$member['id']."\">";
+		}
+		$fcpage = $fcpage . "<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">";
 		if ($member['fc']['altprom'] != "") {
 				$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 50; left: 25;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./img/altav.png\">";
 		}
@@ -342,7 +364,13 @@ foreach ($memberstats as $memberid=>$member) {
 	}
 }
 
-$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"zip.php\">here</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.ru\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
+$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
+if ($modrw == true) {
+	$fcpage = $fcpage . "zip";
+} else {
+	$fcpage = $fcpage . "zip.php";
+}
+$fcpage = $fcpage . "\">here</a> or on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
 unset($api);
 
 echo $fcpage;

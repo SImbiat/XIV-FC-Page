@@ -181,6 +181,8 @@ if ($refreshpage == true) {
 		$levels['curr']['totaltank'] = $levels['prev']['totaltank'] = $levels['init']['totaltank'] = $totaltank;
 		$levels['curr']['totalheal'] = $levels['prev']['totalheal'] = $levels['init']['totalheal'] = $totalheal;
 		$levels['curr']['totaldps'] = $levels['prev']['totaldps'] = $levels['init']['totaldps'] = $totaldps;
+		$levels['curr']['totaldpsm'] = $levels['prev']['totaldpsm'] = $levels['init']['totaldpsm'] = $tempclasses['1']['level'] + $tempclasses['3']['level'] + $tempclasses['5']['level'];
+		$levels['curr']['totaldpsr'] = $levels['prev']['totaldpsr'] = $levels['init']['totaldpsr'] = $tempclasses['4']['level'] + $tempclasses['7']['level'] + $tempclasses['10']['level'];
 		$levels['curr']['totalgath'] = $levels['prev']['totalgath'] = $levels['init']['totalgath'] = $totalgath;
 		$levels['curr']['totalcraft'] = $levels['prev']['totalcraft'] = $levels['init']['totalcraft'] = $totalcraft;
 		$levels['curr']['maxtank'] = $levels['prev']['maxtank'] = $levels['init']['maxtank'] = $maxtank;
@@ -229,23 +231,31 @@ if ($refreshpage == true) {
 						}
 					}
 					#Check for lvl changes
+					$lvlwasupd = false;
 					foreach($memberstats[$key]['levels']['curr'] as $lvlkey=>$level) {
 						if (array_key_exists($lvlkey, $old_members[$key]['levels']['init'])) {
 							$memberstats[$key]['levels']['init'][$lvlkey] = $old_members[$key]['levels']['init'][$lvlkey];
 						}
 						if (array_key_exists($lvlkey, $old_members[$key]['levels']['curr'])) {
-							if ($memberstats[$key]['lvlupdate']-$old_members[$key]['lvlupdate'] > 604799) {
+							if (($memberstats[$key]['lvlupdate'] - $old_members[$key]['lvlupdate']) / 86400 > $lvltrack) {
 								if ($memberstats[$key]['levels']['curr'][$lvlkey] != $old_members[$key]['levels']['curr'][$lvlkey]) {
+									$lvlwasupd = true;
 									$memberstats[$key]['levels']['prev'][$lvlkey] = $old_members[$key]['levels']['curr'][$lvlkey];
 								} else {
-									$memberstats[$key]['lvlupdate'] = $old_members[$key]['lvlupdate'];
 									$memberstats[$key]['levels']['prev'][$lvlkey] = $old_members[$key]['levels']['prev'][$lvlkey];
 								}
 							} else {
-								$memberstats[$key]['lvlupdate'] = $old_members[$key]['lvlupdate'];
+								$memberstats[$key]['levels']['prev'][$lvlkey] = $old_members[$key]['levels']['prev'][$lvlkey];
 							}
 						}
 					}
+					if ($lvlwasupd == false) {
+						$memberstats[$key]['lvlupdate'] = $old_members[$key]['lvlupdate'];
+					}
+					$memberstats[$key]['levels']['prev']['totaldpsm'] = $memberstats[$key]['levels']['prev']['Puglist'] + $memberstats[$key]['levels']['prev']['Rogue'] + $memberstats[$key]['levels']['prev']['Lancer'];
+					$memberstats[$key]['levels']['prev']['totaldpsr'] = $memberstats[$key]['levels']['prev']['Archer'] + $memberstats[$key]['levels']['prev']['Machinist'] + $memberstats[$key]['levels']['prev']['Thaumaturge'];
+					$memberstats[$key]['levels']['init']['totaldpsm'] = $memberstats[$key]['levels']['init']['Puglist'] + $memberstats[$key]['levels']['init']['Rogue'] + $memberstats[$key]['levels']['init']['Lancer'];
+					$memberstats[$key]['levels']['init']['totaldpsr'] = $memberstats[$key]['levels']['init']['Archer'] + $memberstats[$key]['levels']['init']['Machinist'] + $memberstats[$key]['levels']['init']['Thaumaturge'];
 					#Checking if joined date is known already
 					if (array_key_exists('joined', $old_members[$key])) {
 						$memberstats[$key]['joined'] = $old_members[$key]['joined'];
