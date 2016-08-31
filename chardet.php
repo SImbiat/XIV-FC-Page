@@ -96,84 +96,84 @@ $charpage = $charpage . "<table width=\"872px\" class=\"memberstbl\"><tr><td>";
 $charpage = $charpage . "
 <table style=\"height: 436px;\" class=\"levelstbl\">
 <tr>
-<td class=\"dpsclass\" style=\"border-left: 1px solid black; border-top: 1px solid black\" rowspan=\"3\" title=\"Total: ".($member['levels']['curr']['Pugilist'] + $member['levels']['curr']['Rogue'] + $member['levels']['curr']['Lancer'])."\">M<br>E<br>L<br>E<br>E</td>
+<td class=\"dpsclass\" style=\"border-left: 1px solid black; border-top: 1px solid black\" rowspan=\"3\" title=\"".showcurlvl($member['levels'], "totaldpsm", $curtime, $member['lvlupdate'], $lvlchange, false)."\">M<br>E<br>L<br>E<br>E</td>
 <td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Pugilist\" src=\"img/jobs/Pugilist.png\"></td>
-<td class=\"dpsclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Pugilist", $curtime, $member['lvlupdate'], $lvlchange)."</td>
-<td class=\"tankclass\" style=\"border-left: 1px solid black;border-top: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totaltank']."\" rowspan=\"3\"><span>T<br>A<br>N<br>K<br>S</span></td>
+<td class=\"dpsclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Pugilist", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
+<td class=\"tankclass\" style=\"border-left: 1px solid black;border-top: 1px solid black\" title=\"".showcurlvl($member['levels'], "totaltank", $curtime, $member['lvlupdate'], $lvlchange, false)."\" rowspan=\"3\"><span>T<br>A<br>N<br>K<br>S</span></td>
 <td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Gladiator\" src=\"img/jobs/Gladiator.png\"></td>
-<td class=\"tankclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Gladiator", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"tankclass\" style=\"border-top: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Gladiator", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td><img width=\"12px\" height=\"12px\" title=\"Rogue\" src=\"img/jobs/Rogue.png\"></td>
-<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Rogue", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Rogue", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Marauder\" src=\"img/jobs/Marauder.png\"></td>
-<td class=\"tankclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Marauder", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"tankclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Marauder", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td><img width=\"12px\" height=\"12px\" title=\"Lancer\" src=\"img/jobs/Lancer.png\"></td>
-<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Lancer", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Lancer", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Dark Knight\" src=\"img/jobs/DarkKnight.png\"></td>
-<td class=\"tankclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Dark Knight", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"tankclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Dark Knight", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
-<td class=\"dpsclass\" style=\"border-left: 1px solid black;border-bottom: 1px solid black\" rowspan=\"3\" title=\"Total: ".($member['levels']['curr']['Archer'] + $member['levels']['curr']['Machinist'] + $member['levels']['curr']['Thaumaturge'])."\">R<br>A<br>N<br>G<br>E<br>D</td>
+<td class=\"dpsclass\" style=\"border-left: 1px solid black;border-bottom: 1px solid black\" rowspan=\"3\" title=\"".showcurlvl($member['levels'], "totaldpsr", $curtime, $member['lvlupdate'], $lvlchange, false)."\">R<br>A<br>N<br>G<br>E<br>D</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Archer\" src=\"img/jobs/Archer.png\"></td>
-<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Archer", $curtime, $member['lvlupdate'], $lvlchange)."</td>
-<td class=\"healclass\" style=\"border-left: 1px solid black;border-bottom: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totalheal']."\" rowspan=\"3\"><span>H<br>E<br>A<br>L<br>E<br>R<br>S</span></td>
+<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Archer", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
+<td class=\"healclass\" style=\"border-left: 1px solid black;border-bottom: 1px solid black\" title=\"".showcurlvl($member['levels'], "totalheal", $curtime, $member['lvlupdate'], $lvlchange, false)."\" rowspan=\"3\"><span>H<br>E<br>A<br>L<br>E<br>R<br>S</span></td>
 <td><img width=\"12px\" height=\"12px\" title=\"Conjurer\" src=\"img/jobs/Conjurer.png\"></td>
-<td class=\"healclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Conjurer", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"healclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Conjurer", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td><img width=\"12px\" height=\"12px\" title=\"Machinist\" src=\"img/jobs/Machinist.png\"></td>
-<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Machinist", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"dpsclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Machinist", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Arcanist\" src=\"img/jobs/Arcanist.png\"></td>
-<td class=\"healclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Arcanist", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"healclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Arcanist", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Thaumaturge\" src=\"img/jobs/Thaumaturge.png\"></td>
-<td class=\"dpsclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Thaumaturge", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"dpsclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Thaumaturge", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Astrologian\" src=\"img/jobs/Astrologian.png\"></td>
-<td class=\"healclass\" style=\"border-bottom: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Astrologian", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"healclass\" style=\"border-bottom: 1px solid black;border-right: 1px solid black\">".showcurlvl($member['levels'], "Astrologian", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
-<td class=\"craftclass\" style=\"border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totalcraft']."\" rowspan=\"4\"><span>C<br>R<br>A<br>F<br>T<br>E<br>R<br>S</td>
+<td class=\"craftclass\" style=\"border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black\" title=\"".showcurlvl($member['levels'], "totalcraft", $curtime, $member['lvlupdate'], $lvlchange, false)."\" rowspan=\"4\"><span>C<br>R<br>A<br>F<br>T<br>E<br>R<br>S</td>
 <td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Armorer\" src=\"img/jobs/Armorer.png\"></td>
-<td class=\"craftclass\" style=\"border-top: 1px solid black\">".showcurlvl($member['levels'], "Armorer", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-top: 1px solid black\">".showcurlvl($member['levels'], "Armorer", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td style=\"border-bottom: 1px solid black;bottom-top: 1px solid black\" rowspan=\"4\"></td>
 <td style=\"border-top: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Blacksmith\" src=\"img/jobs/Blacksmith.png\"></td>
-<td class=\"craftclass\" style=\"border-right: 1px solid black;border-top: 1px solid black\">".showcurlvl($member['levels'], "Blacksmith", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-right: 1px solid black;border-top: 1px solid black\">".showcurlvl($member['levels'], "Blacksmith", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td><img width=\"12px\" height=\"12px\" title=\"Leatherworker\" src=\"img/jobs/Leatherworker.png\"></td>
-<td class=\"craftclass\">".showcurlvl($member['levels'], "Leatherworker", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\">".showcurlvl($member['levels'], "Leatherworker", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Weaver\" src=\"img/jobs/Weaver.png\"></td>
-<td class=\"craftclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Weaver", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Weaver", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td><img width=\"12px\" height=\"12px\" title=\"Carpenter\" src=\"img/jobs/Carpenter.png\"></td>
-<td class=\"craftclass\">".showcurlvl($member['levels'], "Carpenter", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\">".showcurlvl($member['levels'], "Carpenter", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td><img width=\"12px\" height=\"12px\" title=\"Goldsmith\" src=\"img/jobs/Goldsmith.png\"></td>
-<td class=\"craftclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Goldsmith", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-right: 1px solid black\">".showcurlvl($member['levels'], "Goldsmith", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Alchemist\" src=\"img/jobs/Alchemist.png\"></td>
-<td class=\"craftclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Alchemist", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Alchemist", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Culinarian\" src=\"img/jobs/Culinarian.png\"></td>
-<td class=\"craftclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Culinarian", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"craftclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Culinarian", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
-<td class=\"gathclass\" style=\"border-right: 1px solid black;border-top: 1px solid black;border-left: 1px solid black\" title=\"Total: ".$member['levels']['curr']['totalgath']."\" colspan=\"6\">GATHERERS</td>
+<td class=\"gathclass\" style=\"border-right: 1px solid black;border-top: 1px solid black;border-left: 1px solid black\" title=\"".showcurlvl($member['levels'], "totalgath", $curtime, $member['lvlupdate'], $lvlchange, false)."\" colspan=\"6\">GATHERERS</td>
 </tr>
 <tr>
 <td style=\"border-left: 1px solid black;border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Miner\" src=\"img/jobs/Miner.png\"></td>
-<td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Miner", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Miner", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Botanist\" src=\"img/jobs/Botanist.png\"></td>
-<td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Botanist", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"gathclass\" style=\"border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Botanist", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <td style=\"border-bottom: 1px solid black\"><img width=\"12px\" height=\"12px\" title=\"Fisher\" src=\"img/jobs/Fisher.png\"></td>
-<td class=\"gathclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Fisher", $curtime, $member['lvlupdate'], $lvlchange)."</td>
+<td class=\"gathclass\" style=\"border-right: 1px solid black;border-bottom: 1px solid black\">".showcurlvl($member['levels'], "Fisher", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 </tr>
 <tr>
-<td class=\"totalclass\" colspan=\"6\">Total: ".$member['levels']['curr']['totallvl']."</td>
+<td class=\"totalclass\" colspan=\"6\">Total: ".showcurlvl($member['levels'], "totallvl", $curtime, $member['lvlupdate'], $lvlchange, true)."</td>
 <tr>
 </table></td>";
 
