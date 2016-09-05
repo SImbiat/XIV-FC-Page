@@ -34,7 +34,7 @@ if (!file_exists("./cache/freecompany.json") or (file_exists("./cache/freecompan
 	echo "<div style=\"font-size:xx-small;text-align:center\" id=\"contents\">Data presented is dated ".date("d F Y H:i" ,$cacheage)."</div>";
 }
 
-ignore_user_abort(true);
+//ignore_user_abort(true);
 #Checking age of Free Company data cache and grabbing it if required. Preparing to reload page if missing or old
 if ($refreshpage == true) {
 	echo "<div style=\"font-size:xx-small;text-align:center\" id=\"contents\">";
