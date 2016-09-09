@@ -4,6 +4,11 @@
 require_once 'functions.php';
 require_once 'api-autoloader.php';
 require_once 'config.php';
+if (empty($_GET['fcid'])) {
+	$fcid = "9234631035923213559";
+} else {
+	$fcid = $_GET['fcid'];
+}
 use Viion\Lodestone\LodestoneAPI;
 misdircreate();
 $curtime=time();
@@ -13,24 +18,24 @@ if (isset($_GET['basic'])){
 }
 $maint = false;
 $refreshpage = false;
-$fcranks=json_decode(file_get_contents('fcranks.json'), true);
+$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
 
 #Checking if update is required
 $cacheage=$curtime;
-if (!file_exists("./cache/freecompany.json") or (file_exists("./cache/freecompany.json") and $curtime-filemtime("./cache/freecompany.json") > $cachelife) or !file_exists('cache/members.json') or (file_exists('cache/members.json') and $curtime-filemtime("./cache/members.json") > $cachelife)) {
+if (!file_exists("./cache/fc/".$fcid.".json") or (file_exists("./cache/fc/".$fcid.".json") and $curtime-filemtime("./cache/fc/".$fcid.".json") > $cachelife) or !file_exists("./cache/members/".$fcid.".json") or (file_exists("./cache/members/".$fcid.".json") and $curtime-filemtime("./cache/members/".$fcid.".json") > $cachelife)) {
 	$fcdatatmp = $api->Search->FreeCompany($fcid, true);
 	if (is_null($fcdatatmp->name)) {
 		$maint = true;
 	}
-	if ($maint == true and (!file_exists("./cache/freecompany.json") or !file_exists("./cache/members.json"))) {
+	if ($maint == true and (!file_exists("./cache/fc/".$fcid.".json") or !file_exists("./cache/members/".$fcid.".json"))) {
 		echo "Lodestone is under maintenance or wrong free company ID and the site has no cache saved.<br>Unable to load data";
 		exit;
 	} else {
-		$cacheage=filemtime("./cache/freecompany.json");
+		$cacheage=filemtime("./cache/fc/".$fcid.".json");
 		$refreshpage = true;
 	}
 } else {
-	$cacheage=filemtime("./cache/freecompany.json");
+	$cacheage=filemtime("./cache/fc/".$fcid.".json");
 	echo "<div style=\"font-size:xx-small;text-align:center\" id=\"contents\">Data presented is dated ".date("d F Y H:i" ,$cacheage)."</div>";
 }
 
@@ -43,13 +48,13 @@ if ($refreshpage == true) {
 	ob_flush();
 	flush();
 	//$fcdatatmp = $api->Search->FreeCompany($fcid, true);
-	file_put_contents('cache/freecompany.json', json_encode($fcdatatmp, JSON_PRETTY_PRINT));
+	file_put_contents("./cache/fc/".$fcid.".json", json_encode($fcdatatmp, JSON_PRETTY_PRINT));
 	$refreshpage = true;	
 }
 $cacheage=$curtime;
 
 #Prepare working data from Free Company cache
-$fcdata = json_decode(file_get_contents('cache/freecompany.json'), true);
+$fcdata = json_decode(file_get_contents("./cache/fc/".$fcid.".json"), true);
 $members = $fcdata['members'];
 $roles = $fcdata['roles'];
 $focus = $fcdata['focus'];
@@ -129,7 +134,9 @@ if ($refreshpage == true) {
 		$fc = [];
 		$fc['rank'] = $fc['rankprev'] = $member['rank']['title'];
 		imgcaching($member['rank']['icon'], "ranks/".imgnamesane($fc['rank']), $ranksupd);
+		imgcaching($member['rank']['icon'], "ranks/".str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']), $ranksupd);
 		$fc['ranklvl'] = $fc['ranklvlprev'] = $fcranks[$fc['rank']]['level'];
+		$fc['rankicon'] = str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']);
 		$fc['ranklvlupd'] = $curtime;
 		$fc['rankover'] = false;
 		$fc['nextprom'] = "";
@@ -195,8 +202,8 @@ if ($refreshpage == true) {
 		set_time_limit(180);
 	}
 	#If members list existed before get trackable data (joined date, previous total level, .etc)
-	if (file_exists('cache/members.json')) {
-		$old_members=json_decode(file_get_contents('cache/members.json'), true);
+	if (file_exists("./cache/members/".$fcid.".json")) {
+		$old_members=json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
 		foreach($old_members as $key=>$member) {
 			#Check if member is an old one
 			if (array_key_exists($key, $memberstats)) {
@@ -407,11 +414,13 @@ if ($refreshpage == true) {
 			}
 		}
 		#Write the data to the file
-		file_put_contents('cache/members.json', json_encode($memberstats, JSON_PRETTY_PRINT));
+		file_put_contents("./cache/members/".$fcid.".json", json_encode($memberstats, JSON_PRETTY_PRINT));
+	} else {
+		file_put_contents("./cache/members/".$fcid.".json", json_encode($memberstats, JSON_PRETTY_PRINT));
 	}
 	error_reporting($preverrors);
 } else {
-	$memberstats = json_decode(file_get_contents('cache/members.json'), true);
+	$memberstats = json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
 }
 unset($api);
 

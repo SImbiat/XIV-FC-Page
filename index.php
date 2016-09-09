@@ -3,6 +3,11 @@
 require_once 'functions.php';
 require_once 'api-autoloader.php';
 require_once 'config.php';
+if (empty($_GET['fcid'])) {
+	$fcid = "9234631035923213559";
+} else {
+	$fcid = $_GET['fcid'];
+}
 use Viion\Lodestone\LodestoneAPI;
 misdircreate();
 $curtime=time();
@@ -14,33 +19,39 @@ $maint = false;
 $refreshpage = false;
 
 #Check if fcranks exists
-if (!file_exists("./fcranks.json")) {
+if (!file_exists('./fcranks.json')) {
 	Echo "Free Company Ranks description is missing. Can't continue without it";
 	exit;
 }
 
 #Get the file with FC ranks descriptions
-$fcranks=json_decode(file_get_contents('fcranks.json'), true);
+$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
 
 #Checking company cache. If it's missing - request it. If not - load existing data
 $cacheage=$curtime;
-if (!file_exists("./cache/freecompany.json") or !file_exists('cache/members.json')) {
+if (!file_exists('./cache/fc/'.$fcid.'.json') or !file_exists("./cache/members/".$fcid.".json")) {
 	if ($modrw == true) {
-		echo "No cache exists. Need to grab data<br><iframe src=\"./update\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+		echo "<head>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+</head>
+<title>XIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update/".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 	} else {
-		echo "No cache exists. Need to grab data<br><iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+		echo "<head>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+</head>
+<title>XIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update.php?fcid=".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 	}
 	exit;
 } else {
-	$cacheage=filemtime("./cache/freecompany.json");
+	$cacheage=filemtime('./cache/fc/'.$fcid.'.json');
 }
 
 #Setting main variables
-$fcdata = json_decode(file_get_contents('cache/freecompany.json'), true);
+$fcdata = json_decode(file_get_contents("./cache/fc/".$fcid.".json"), true);
 $members = $fcdata['members'];
 $roles = $fcdata['roles'];
 $focus = $fcdata['focus'];
-$memberstats = json_decode(file_get_contents('cache/members.json'), true);
+$memberstats = json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
 
 #Sorting members by FC rank, join date and total level
 foreach ($memberstats as $key => $row) {
@@ -66,7 +77,7 @@ $fcpage = $fcpage . "
 <meta property=\"og:url\"    content=\"http://".$_SERVER['SERVER_NAME']."/mogst/\" />
 <meta property=\"og:title\"  content=\"".$fcdata['name']."\" />
 <meta property=\"og:description\"  content=\"Tracker page for ".$fcdata['name']." free company\" />
-<meta property=\"og:image\"  content=\"http://".$_SERVER['SERVER_NAME']."/mogst/cache/emblem/3.png\" />
+<meta property=\"og:image\"  content=\"http://".$_SERVER['SERVER_NAME']."/mogst/cache/emblem/".$fcid."-2.png\" />
 <script src=\"Chart.js\"></script>
 <script src=\"jquery-3.1.0.min.js\"></script>
 <script>
@@ -168,9 +179,9 @@ function showchar(memberid) {
 		e.style.display = \"\";
 	}";
 	if ($modrw == true) {
-		$fcpage = $fcpage . "loadFile('./char/' + memberid, showcharcb);";
+		$fcpage = $fcpage . "loadFile('./member/".$fcid."/' + memberid, showcharcb);";
 	} else {
-		$fcpage = $fcpage . "loadFile('./chardet.php?id=' + memberid, showcharcb);";
+		$fcpage = $fcpage . "loadFile('./chardet.php?fcid=".$fcid."&id=' + memberid, showcharcb);";
 	}
 $fcpage = $fcpage . "	
 }
@@ -187,9 +198,9 @@ $fcpage = $fcpage . "
 <div style=\"align:center;\">
 <span style=\"display: inline-block;position: relative;text-align:right;vertical-align:top;\">We are</span>
 <a href=\"http://eu.finalfantasyxiv.com/lodestone/freecompany/".$fcid."/\"><span style=\"display: inline-block;position: relative;margin-left: -65px;margin-top:15px;width: 68px;height: 68px;\">
-<img style=\"position: absolute; top: 0; left: 0;\" src=\"".imgcaching($fcdata['emblum'][0], "emblem/0", $emblemupd)."\" height=\"64\" width=\"64\">
-<img style=\"position: absolute; top: 0; left: 0;\" src=\"".imgcaching($fcdata['emblum'][1], "emblem/1", $emblemupd)."\" height=\"64\" width=\"64\">
-<img style=\"position: absolute; top: 0; left: 0;\" src=\"".imgcaching($fcdata['emblum'][2], "emblem/2", $emblemupd)."\" height=\"64\" width=\"64\">
+<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdata['emblum'][0]."\" height=\"64\" width=\"64\">
+<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdata['emblum'][1]."\" height=\"64\" width=\"64\">
+<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdata['emblum'][2]."\" height=\"64\" width=\"64\">
 </span>
 <span style=\"display: inline-block;position: relative;height: 68px;text-align:center;vertical-align:middle;margin-left:-10px;margin-right:-90px;margin-top:-70px;margin-bottom:20px;".$fcnamecss."\">".$fcdata['name']."</span></a>
 <span style=\"height: 68px;text-align:right;vertical-align:bottom;\">from <span style=\"".$serverncss."\">".$fcdata['server']."</span>
@@ -223,7 +234,7 @@ if (strtolower($fcdata['company']) == strtolower("Order of the Twin Adder")) {
 }
 
 #Get last 10 Company ranks
-$lastranks=getlastranks($fcdata['ranking']['weekly']);
+$lastranks=getlastranks($fcdata['ranking']['weekly'], $fcid);
 
 $fcpage = $fcpage . "\">".$fcdata['company']."</span><br><br>
 We live in <span style=\"".$estatename."\">".$fcdata['estate']['zone']."</span> <span style=\"".$estateaddress."\">(".$fcdata['estate']['address'].")</span> and rank <span style=\"".$ranknum."\" onmouseover=\"document.getElementById('ranking').style.display = 'inline-block';\" onmouseout=\"document.getElementById('ranking').style.display = 'none';\">".$fcdata['ranking']['weekly']."<sup>[?]</sup><div id=\"ranking\" style=\"position:absolute;z-index: 100;background-color:gray;display:none;width:300px;height:200px;\"><canvas id=\"myChart\"></canvas></div>
@@ -305,9 +316,9 @@ var myChart = new Chart(ctx, {
 
 #Load updater in iframe, so that update can be done in background
 if ($modrw == true) {
-	$fcpage = $fcpage . "<iframe src=\"./update\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	$fcpage = $fcpage . "<iframe src=\"./update/".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 } else {
-	$fcpage = $fcpage . "<iframe src=\"./update.php\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+	$fcpage = $fcpage . "<iframe src=\"./update.php?fcid=".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 }
 
 #Add search fieild
@@ -325,15 +336,15 @@ foreach ($memberstats as $memberid=>$member) {
 		#Overlay FC rank image and images corresponding to rank up\down, whether member should be removed, can be promoted or has a wrong rank assigned
 		$fcpage = $fcpage . "<td><span onclick=\"showchar(".$member['id'].")\" title=\"".$member['fc']['rank']." ".$member['bio']['name']."\" style=\"display: inline-block;position: relative;width: 64px;height: 64px;cursor:pointer;\">";
 		if ($modrw == true) {
-			$fcpage = $fcpage . "<a class=\"intlink\" href=\"char/".$member['id']."\">";
+			$fcpage = $fcpage . "<a class=\"intlink\" href=\"member/".$fcid."/".$member['id']."\">";
 		} else {
-			$fcpage = $fcpage . "<a class=\"intlink\" href=\"chardet.php?id=".$member['id']."\">";
+			$fcpage = $fcpage . "<a class=\"intlink\" href=\"chardet.php?fcid=".$fcid."&id=".$member['id']."\">";
 		}
 		$fcpage = $fcpage . "<img class=\"membertd\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0;\" width=\"64px\" height=\"64px\" src=\"".$member['bio']['avatar']."\">";
 		if ($member['fc']['altprom'] != "") {
 				$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 50; left: 25;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./img/altav.png\">";
 		}
-		$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 45; left: 45;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\">";
+		$fcpage = $fcpage . "<img class=\"membertdover\" style=\"position: absolute; top: 45; left: 45;\" id=\"".$member['bio']['name']." ".$member['id']."\" src=\"./img/fcranks/".$member['fc']['rankicon']."\">";
 					#Check if
 					if ($member['fc']['ranklvl'] == $lazy && ($curtime - $member['fc']['ranklvlupd']) / 86400 > $lazytime) {
 						$fcpage = $fcpage . "<img class=\"membertdover\" id=\"".$member['bio']['name']." ".$member['id']."\" style=\"position: absolute; top: 0; left: 0; opacity: 0.5; filter: alpha(opacity=50);\" width=\"64px\" height=\"64px\" src=\"img/delete.png\">";

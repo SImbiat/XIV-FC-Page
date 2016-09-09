@@ -5,7 +5,7 @@ require_once 'functions.php';
 require_once 'config.php';
 misdircreate();
 $curtime=time();
-$fcranks=json_decode(file_get_contents('fcranks.json'), true);
+$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
 
 #Checks if rank name was provided
 echo "<head>

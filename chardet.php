@@ -3,10 +3,15 @@
 #Back-end initialization
 require_once 'functions.php';
 require_once 'config.php';
+if (empty($_GET['fcid'])) {
+	$fcid = "9234631035923213559";
+} else {
+	$fcid = $_GET['fcid'];
+}
 misdircreate();
 $curtime=time();
-$fcranks=json_decode(file_get_contents('fcranks.json'), true);
-$memberstats = json_decode(file_get_contents('cache/members.json'), true);
+$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
+$memberstats = json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
 
 #Check if ID was provided and exists
 if (empty($_GET['id']) && empty($id)) {
@@ -187,7 +192,7 @@ $charpage = $charpage . "
 if ($member['gc']['name'] != "") {
 	$charpage = $charpage . "<img onmouseover=\"shadowlnks('gc');\" onmouseout=\"shadowlnkh('gc');\" id=\"lnkgcimg\" style=\"position: absolute; top: 399; left: 5;\" src=\"./img/grandcompany/".imgnamesane($member['gc']['rank']).".png\" title=\"".$member['gc']['rank']." of ".$member['gc']['name']."\">";
 }
-$charpage = $charpage . "<img onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkrankimg\" style=\"position: absolute; top: 411; left: 295;\" src=\"./cache/ranks/".imgnamesane($member['fc']['rank']).".png\" title=\"".$member['fc']['rank']."\">
+$charpage = $charpage . "<img onmouseover=\"shadowlnks('rank');\" onmouseout=\"shadowlnkh('rank');\" id=\"lnkrankimg\" style=\"position: absolute; top: 411; left: 295;\" src=\"./img/fcranks/".$member['fc']['rankicon']."\" title=\"".$member['fc']['rank']."\">
 <span>
 </td>";
 

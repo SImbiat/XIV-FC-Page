@@ -154,8 +154,14 @@ function misdircreate() {
 	if (!is_dir("./cache")) {
 		mkdir("./cache");
 	}
-	if (!is_dir("./cache/emblem")) {
-		mkdir("./cache/emblem");
+	if (!is_dir("./cache/fc")) {
+		mkdir("./cache/fc");
+	}
+	if (!is_dir("./cache/members")) {
+		mkdir("./cache/members");
+	}
+	if (!is_dir("./cache/ranking")) {
+		mkdir("./cache/ranking");
 	}
 	if (!is_dir("./cache/ranks")) {
 		mkdir("./cache/ranks");
@@ -163,17 +169,17 @@ function misdircreate() {
 }
 
 //Function to create or update FC ranking file and return last 10 results
-function getlastranks($curfcrank) {
-	if (file_exists('cache/ranking.json')) {
-		$lastranks=json_decode(file_get_contents('cache/ranking.json'), true);
+function getlastranks($curfcrank, $fcid) {
+	if (file_exists("./cache/ranking/".$fcid.".json")) {
+		$lastranks=json_decode(file_get_contents("./cache/ranking/".$fcid.".json"), true);
 		if (end($lastranks)['rank'] != $curfcrank) {
 			array_push($lastranks, array("date"=>time(), "rank"=>$curfcrank));
-			file_put_contents('cache/ranking.json', json_encode($lastranks, JSON_PRETTY_PRINT));
+			file_put_contents("./cache/ranking/".$fcid.".json", json_encode($lastranks, JSON_PRETTY_PRINT));
 		}
 	} else {
 		$lastranks=[];
 		array_push($lastranks, array("date"=>time(), "rank"=>$curfcrank));
-		file_put_contents('cache/ranking.json', json_encode($lastranks, JSON_PRETTY_PRINT));
+		file_put_contents("./cache/ranking/".$fcid.".json", json_encode($lastranks, JSON_PRETTY_PRINT));
 	}
 	return array_slice($lastranks, -10, 10, true);
 }
