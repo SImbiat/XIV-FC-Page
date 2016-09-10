@@ -2,27 +2,40 @@
 <?php
 #Back-end initialization
 require_once 'functions.php';
-require_once 'config.php';
-misdircreate();
+if (empty($_GET['fcid'])) {
+	header("Location: ./index.php");
+	die();
+} else {
+	$fcid = $_GET['fcid'];
+	misdircreate($fcid);
+	$fcconfig=json_decode(file_get_contents("./cache/".$fcid."/config.json"), true);
+}
 $curtime=time();
-$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
+$fcranks=json_decode(file_get_contents("./cache/".$fcid."/fcranks.json"), true);
 
 #Checks if rank name was provided
 echo "<head>
-		<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"./cache/".$fcid."/style.css\">
 		</head>";
 if (empty($_GET['fcname'])) {
 	$fcname = "";
 	$fcpage = $fcpage . "<title>Full Ranks List</title>";
 } else {
 	$fcname = $_GET['fcname'];
+	$rankexist = false;
+	foreach($fcranks as $key=>$rank) {
+		if (imgnamesane($key) == $fcname) {
+			$fcname = $key;
+			break;
+		}
+	}
 	$fcpage = $fcpage . "<title>Rank Details: ".$fcname."</title>";
 	if (!(array_key_exists($fcname, $fcranks))) {
 		echo $fcpage;
 		if ($modrw == true) {
-			echo "Wrong rank selected. <a target=\"_blank\" href=\"./rank\">Full list</a>";
+			echo "Wrong rank selected. <a target=\"_blank\" href=\"./rank/".$fcid."\">Full list</a>";
 		} else {
-			echo "Wrong rank selected. <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+			echo "Wrong rank selected. <a target=\"_blank\" href=\"./fcranks.php?fcid=".$fcid."\">Full list</a>";
 		}
 		exit;
 	}
@@ -33,9 +46,9 @@ $fcpage = $fcpage . "<table width=\"872px\" border=1 class=\"memberstbl\">";
 $rankname="<tr><td colspan=\"4\">Rank Name";
 if ($fcname != "") {
 	if ($modrw == true) {
-		$rankname=$rankname." <a target=\"_blank\" href=\"./rank\">Full list</a>";
+		$rankname=$rankname." <a target=\"_blank\" href=\"./rank/".$fcid."\">Full list</a>";
 	} else {
-		$rankname=$rankname." <a target=\"_blank\" href=\"./fcranks.php\">Full list</a>";
+		$rankname=$rankname." <a target=\"_blank\" href=\"./fcranks.php?fcid=".$fcid."\">Full list</a>";
 	}
 }
 $rankname=$rankname."</td>";

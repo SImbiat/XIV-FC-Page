@@ -1,0 +1,166 @@
+body{
+border-color: whitesmoke;
+color: black;
+font-family:Microsoft Sans Serif;
+font-size:10pt;
+background:#C0C0C0 none;
+}
+
+.forumblock{
+background-color: transparent;
+}
+
+table, th, td, tr{
+border-color: whitesmoke;
+color: black;
+font-family:Microsoft Sans Serif;
+font-size:10pt;
+}
+
+a:link {text-decoration:none;}
+a:link {color:#A52A2A;}
+a:visited {color:#A52A2A;}
+a:hover {color:#A52A2A;}
+a:active {color:#A52A2A;}
+
+
+.back-to-top {
+position: fixed;
+border-radius: 15px;
+bottom: 1pt;
+right: 0px;
+text-decoration: none;
+color: #000000;
+background-color: rgba(151, 151, 151, 0.80);
+font-size: 12px;
+padding: 2pt;
+display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(151, 151, 151, 0.50);
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+table.memberstbl {
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.memberstbl td {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+table.levelstbl {
+	margin-left:auto;
+	margin-right:auto;
+	border: 0px solid black;
+	border-collapse: collapse;
+}
+.levelstbl td {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	border: 0px solid black;
+	border-collapse: collapse;
+}
+.hvr-pulse {
+  -webkit-animation-name: pulsate;
+  animation-name: pulsate;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+	0%	{transform: scale(1);}
+	50%	{transform: scale(1.75);}
+	100%	{transform: scale(1);}
+}
+
+/* Standard syntax */
+@keyframes pulsate {
+	0%	{transform: scale(1);}
+	50%	{transform: scale(1.75);}
+	100%	{transform: scale(1);}
+}
+span[id^="lnk"] {
+	font-style:italic;
+	color: #999967;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.dpsclass {
+	color:#990000;
+	text-shadow:0px 0px 10px #ff0000, 0 0 1em #ff0000;
+}
+.tankclass {
+	color:#000099;
+	text-shadow:0px 0px 10px #0000ff, 0 0 1em #0000ff;
+}
+.healclass {
+	color:#009900;
+	text-shadow:0px 0px 10px #00ff00, 0 0 1em #00ff00;
+}
+.craftclass {
+	color:#8000FF;
+	text-shadow:0px 0px 10px #4c0099, 0 0 1em #4c0099;
+}
+.gathclass {
+	color:#666600;
+	text-shadow:0px 0px 10px #c0c000, 0 0 1em #c0c000;
+}
+.totalclass {
+	text-shadow:0px 0px 10px #ff0000, 0px 0px 8px #0000ff, 0px 0px 6px #00ff00, 0px 0px 4px #4c0099, 0px 0px 2px #c0c000;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+input { 
+    text-align: center; 
+}

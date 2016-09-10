@@ -150,36 +150,36 @@ function imgnamesane($imgname) {
 }
 
 //Function to create missing directories
-function misdircreate() {
+function misdircreate($fcid) {
 	if (!is_dir("./cache")) {
 		mkdir("./cache");
 	}
-	if (!is_dir("./cache/fc")) {
-		mkdir("./cache/fc");
+	if (!is_dir("./cache/".$fcid)) {
+		mkdir("./cache/".$fcid);
 	}
-	if (!is_dir("./cache/members")) {
-		mkdir("./cache/members");
+	if (!file_exists("./cache/".$fcid."/fcranks.json")) {
+		@copy("./defaults/fcranks.json", "./cache/".$fcid."/fcranks.json");
 	}
-	if (!is_dir("./cache/ranking")) {
-		mkdir("./cache/ranking");
+	if (!file_exists("./cache/".$fcid."/config.json")) {
+		@copy("./defaults/config.php", "./cache/".$fcid."/config.json");
 	}
-	if (!is_dir("./cache/ranks")) {
-		mkdir("./cache/ranks");
+	if (!file_exists("./cache/".$fcid."/style.css")) {
+		@copy("./defaults/style.css", "./cache/".$fcid."/style.css");
 	}
 }
 
 //Function to create or update FC ranking file and return last 10 results
 function getlastranks($curfcrank, $fcid) {
-	if (file_exists("./cache/ranking/".$fcid.".json")) {
-		$lastranks=json_decode(file_get_contents("./cache/ranking/".$fcid.".json"), true);
+	if (file_exists("./cache/".$fcid."/ranking.json")) {
+		$lastranks=json_decode(file_get_contents("./cache/".$fcid."/ranking.json"), true);
 		if (end($lastranks)['rank'] != $curfcrank) {
 			array_push($lastranks, array("date"=>time(), "rank"=>$curfcrank));
-			file_put_contents("./cache/ranking/".$fcid.".json", json_encode($lastranks, JSON_PRETTY_PRINT));
+			file_put_contents("./cache/".$fcid."/ranking.json", json_encode($lastranks, JSON_PRETTY_PRINT));
 		}
 	} else {
 		$lastranks=[];
 		array_push($lastranks, array("date"=>time(), "rank"=>$curfcrank));
-		file_put_contents("./cache/ranking/".$fcid.".json", json_encode($lastranks, JSON_PRETTY_PRINT));
+		file_put_contents("./cache/".$fcid."/ranking.json", json_encode($lastranks, JSON_PRETTY_PRINT));
 	}
 	return array_slice($lastranks, -10, 10, true);
 }

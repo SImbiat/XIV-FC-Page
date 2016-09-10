@@ -3,14 +3,16 @@
 #Back-end initialization
 require_once 'functions.php';
 require_once 'api-autoloader.php';
-require_once 'config.php';
 if (empty($_GET['fcid'])) {
-	$fcid = "9234631035923213559";
+	header("Location: ./index.php");
+	die();
 } else {
 	$fcid = $_GET['fcid'];
+	misdircreate($fcid);
+	$fcconfig=json_decode(file_get_contents("./cache/".$fcid."/config.json"), true);
 }
 use Viion\Lodestone\LodestoneAPI;
-misdircreate();
+misdircreate($fcid);
 $curtime=time();
 $api = new LodestoneAPI();
 if (isset($_GET['basic'])){
@@ -18,24 +20,36 @@ if (isset($_GET['basic'])){
 }
 $maint = false;
 $refreshpage = false;
-$fcranks=json_decode(file_get_contents('./fcranks.json'), true);
+$fcranks=json_decode(file_get_contents("./cache/".$fcid."/fcranks.json"), true);
 
 #Checking if update is required
 $cacheage=$curtime;
-if (!file_exists("./cache/fc/".$fcid.".json") or (file_exists("./cache/fc/".$fcid.".json") and $curtime-filemtime("./cache/fc/".$fcid.".json") > $cachelife) or !file_exists("./cache/members/".$fcid.".json") or (file_exists("./cache/members/".$fcid.".json") and $curtime-filemtime("./cache/members/".$fcid.".json") > $cachelife)) {
+if (!file_exists("./cache/".$fcid."/fc.json") or (file_exists("./cache/".$fcid."/fc.json") and $curtime-filemtime("./cache/".$fcid."/fc.json") > $fcconfig['cachelife']) or !file_exists("./cache/".$fcid."/members.json") or (file_exists("./cache/".$fcid."/members.json") and $curtime-filemtime("./cache/".$fcid."/members.json") > $fcconfig['cachelife'])) {
 	$fcdatatmp = $api->Search->FreeCompany($fcid, true);
 	if (is_null($fcdatatmp->name)) {
 		$maint = true;
 	}
-	if ($maint == true and (!file_exists("./cache/fc/".$fcid.".json") or !file_exists("./cache/members/".$fcid.".json"))) {
-		echo "Lodestone is under maintenance or wrong free company ID and the site has no cache saved.<br>Unable to load data";
+	if ($maint == true and (!file_exists("./cache/".$fcid."/fc.json") or !file_exists("./cache/".$fcid."/members.json"))) {
+		if (!file_exists("./cache/".$fcid."/fc.json") or !file_exists("./cache/".$fcid."/members.json")) {
+			@unlink("./cache/".$fcid."/fcranks.json");
+			@unlink("./cache/".$fcid."/config.json");
+			@unlink("./cache/".$fcid."/fc.json");
+			@unlink("./cache/".$fcid."/members.json");
+			@unlink("./cache/".$fcid."/ranking.json");
+			@unlink("./cache/".$fcid."/style.css");
+			@rmdir("./cache/".$fcid);
+		}
+		echo "<head>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\">
+</head>
+<title>XIV Free Company Tracker</title>Lodestone is under maintenance or wrong free company ID and the site has no cache saved.<br>Unable to load data";
 		exit;
 	} else {
-		$cacheage=filemtime("./cache/fc/".$fcid.".json");
+		$cacheage=filemtime("./cache/".$fcid."/fc.json");
 		$refreshpage = true;
 	}
 } else {
-	$cacheage=filemtime("./cache/fc/".$fcid.".json");
+	$cacheage=filemtime("./cache/".$fcid."/fc.json");
 	echo "<div style=\"font-size:xx-small;text-align:center\" id=\"contents\">Data presented is dated ".date("d F Y H:i" ,$cacheage)."</div>";
 }
 
@@ -48,13 +62,13 @@ if ($refreshpage == true) {
 	ob_flush();
 	flush();
 	//$fcdatatmp = $api->Search->FreeCompany($fcid, true);
-	file_put_contents("./cache/fc/".$fcid.".json", json_encode($fcdatatmp, JSON_PRETTY_PRINT));
+	file_put_contents("./cache/".$fcid."/fc.json", json_encode($fcdatatmp, JSON_PRETTY_PRINT));
 	$refreshpage = true;	
 }
 $cacheage=$curtime;
 
 #Prepare working data from Free Company cache
-$fcdata = json_decode(file_get_contents("./cache/fc/".$fcid.".json"), true);
+$fcdata = json_decode(file_get_contents("./cache/".$fcid."/fc.json"), true);
 $members = $fcdata['members'];
 $roles = $fcdata['roles'];
 $focus = $fcdata['focus'];
@@ -62,7 +76,7 @@ $focus = $fcdata['focus'];
 #Push Company name to page title if we are planning to refresh the page
 if ($refreshpage == true) {
 	echo "<head>
-		<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"./cache/".$fcid."/style.css\">
 		</head>
 		<title>".$fcdata['name']."</title>";
 	ob_flush();
@@ -78,7 +92,7 @@ if ($refreshpage == true) {
 	#Push Company name to page title since we are planning to refresh the page. Do only if Free Company data check did not trigger this
 	if ($refreshpage == false) {
 		echo "<head>
-			<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">
+			<link rel=\"stylesheet\" type=\"text/css\" href=\"./cache/".$fcid."/style.css\">
 			</head>
 			<title>".$fcdata['name']."</title>";
 		echo "<div id=\"contents\">";
@@ -133,10 +147,16 @@ if ($refreshpage == true) {
 		#Setting defaults based on the data grab
 		$fc = [];
 		$fc['rank'] = $fc['rankprev'] = $member['rank']['title'];
-		imgcaching($member['rank']['icon'], "ranks/".imgnamesane($fc['rank']), $ranksupd);
-		imgcaching($member['rank']['icon'], "ranks/".str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']), $ranksupd);
+		$fc['rankid'] = $fc['rankidprev'] = str_replace(".png", "", str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']));
+		foreach($fcranks as $fcranktag=>$fcrankval){
+			if ($fcrankval['id'] == $fc['rankid']) {
+				if ($fcranktag != $fc['rank']) {
+					$fcranks[$fc['rank']] = $fcranks[$fcranktag];
+					unset($fcranks[$fcranktag]);
+				}
+			}
+		}
 		$fc['ranklvl'] = $fc['ranklvlprev'] = $fcranks[$fc['rank']]['level'];
-		$fc['rankicon'] = str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']);
 		$fc['ranklvlupd'] = $curtime;
 		$fc['rankover'] = false;
 		$fc['nextprom'] = "";
@@ -201,9 +221,10 @@ if ($refreshpage == true) {
 		$i++;
 		set_time_limit(180);
 	}
+	file_put_contents("./cache/".$fcid."/fcranks.json", json_encode($fcranks, JSON_PRETTY_PRINT));
 	#If members list existed before get trackable data (joined date, previous total level, .etc)
-	if (file_exists("./cache/members/".$fcid.".json")) {
-		$old_members=json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
+	if (file_exists("./cache/".$fcid."/members.json")) {
+		$old_members=json_decode(file_get_contents("./cache/".$fcid."/members.json"), true);
 		foreach($old_members as $key=>$member) {
 			#Check if member is an old one
 			if (array_key_exists($key, $memberstats)) {
@@ -223,9 +244,19 @@ if ($refreshpage == true) {
 						if ($memberstats[$key]['fc']['ranklvl'] != $old_members[$key]['fc']['ranklvl']) {
 							if (!is_null($old_members[$key]['fc']['ranklvl'])) {
 								$memberstats[$key]['fc']['ranklvlprev'] = $old_members[$key]['fc']['ranklvl'];
+								if (array_key_exists('rankidprev', $old_members[$key]['fc'])) {
+									$memberstats[$key]['fc']['rankidprev'] = $old_members[$key]['fc']['rankid'];
+								} else {
+									$memberstats[$key]['fc']['rankidprev'] = $old_members[$key]['fc']['ranklvl'];
+								}
 							}
 							$memberstats[$key]['fc']['rankprev'] = $old_members[$key]['fc']['rank'];
 						} else {
+							if (array_key_exists('rankidprev', $old_members[$key]['fc'])) {
+								$memberstats[$key]['fc']['rankidprev'] = $old_members[$key]['fc']['rankidprev'];
+							} else {
+								$memberstats[$key]['fc']['rankidprev'] = $old_members[$key]['fc']['ranklvlprev'];
+							}
 							$memberstats[$key]['fc']['ranklvlprev'] = $old_members[$key]['fc']['ranklvlprev'];
 							$memberstats[$key]['fc']['rankprev'] = $old_members[$key]['fc']['rankprev'];
 							$memberstats[$key]['fc']['ranklvlupd'] = $old_members[$key]['fc']['ranklvlupd'];
@@ -244,7 +275,7 @@ if ($refreshpage == true) {
 							$memberstats[$key]['levels']['init'][$lvlkey] = $old_members[$key]['levels']['init'][$lvlkey];
 						}
 						if (array_key_exists($lvlkey, $old_members[$key]['levels']['curr'])) {
-							if (($memberstats[$key]['lvlupdate'] - $old_members[$key]['lvlupdate']) / 86400 > $lvltrack) {
+							if (($memberstats[$key]['lvlupdate'] - $old_members[$key]['lvlupdate']) / 86400 > $fcconfig['lvltrack']) {
 								if ($memberstats[$key]['levels']['curr'][$lvlkey] != $old_members[$key]['levels']['curr'][$lvlkey]) {
 									$lvlwasupd = true;
 									$memberstats[$key]['levels']['prev'][$lvlkey] = $old_members[$key]['levels']['curr'][$lvlkey];
@@ -272,7 +303,7 @@ if ($refreshpage == true) {
 						#Check if rank is to assignable
 						if ($posrank['requirements']['assign'] == true) {
 							#Check if member is lazy or was recently lazy
-							if ($memberstats[$key]['fc']['ranklvl'] != $lazy && ($memberstats[$key]['fc']['ranklvlprev'] != $lazy || ($memberstats[$key]['fc']['ranklvlprev'] == $lazy && ($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $lazyover))) {
+							if ($memberstats[$key]['fc']['rankid'] != $fcconfig['lazy'] && ($memberstats[$key]['fc']['rankidprev'] != $fcconfig['lazy'] || ($memberstats[$key]['fc']['rankidprev'] == $fcconfig['lazy'] && ($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $fcconfig['lazyover']))) {
 								#Check if current rank is high enough to get promoted
 								if ($memberstats[$key]['fc']['ranklvl'] <= $posrank['requirements']['minfclvl']) {
 	      								$skiprank = false;
@@ -364,7 +395,7 @@ if ($refreshpage == true) {
 									}
 	      								if ($skiprank == false) {
 										#If we are not skipping, check if there was no rank change recently or if we have a case of wrong assignment
-	      									if (($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $rankchage || $memberstats[$key]['fc']['wronprom'] == true) {
+	      									if (($curtime - $memberstats[$key]['fc']['ranklvlupd']) / 86400 >= $fcconfig['rankchage'] || $memberstats[$key]['fc']['wronprom'] == true) {
 											#Skip rank if member already has it
 	      										if ($memberstats[$key]['fc']['rank'] !== $rankkey) {
 												#Populate list of possible or alternative promotions
@@ -395,7 +426,7 @@ if ($refreshpage == true) {
 						if ($memberstats[$key]['fc']['wronprom'] == true) {
 							foreach ($fcranks as $rankkey=>$posrank) {
 								#If no ranks were suggested, suggest lowest one
-								if ($posrank['level'] == $defrank) {
+								if ($posrank['level'] == $fcconfig['defrank']) {
 									$memberstats[$key]['fc']['nextprom'] = $memberstats[$key]['fc']['nextprom'].",".$rankkey;
 								}
 							}
@@ -414,13 +445,13 @@ if ($refreshpage == true) {
 			}
 		}
 		#Write the data to the file
-		file_put_contents("./cache/members/".$fcid.".json", json_encode($memberstats, JSON_PRETTY_PRINT));
+		file_put_contents("./cache/".$fcid."/members.json", json_encode($memberstats, JSON_PRETTY_PRINT));
 	} else {
-		file_put_contents("./cache/members/".$fcid.".json", json_encode($memberstats, JSON_PRETTY_PRINT));
+		file_put_contents("./cache/".$fcid."/members.json", json_encode($memberstats, JSON_PRETTY_PRINT));
 	}
 	error_reporting($preverrors);
 } else {
-	$memberstats = json_decode(file_get_contents("./cache/members/".$fcid.".json"), true);
+	$memberstats = json_decode(file_get_contents("./cache/".$fcid."/members.json"), true);
 }
 unset($api);
 

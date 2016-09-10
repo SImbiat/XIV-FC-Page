@@ -1,7 +1,8 @@
 {
-	"King": {
+	"Company Founder": {
+		"id": 0,
 		"level": 0,
-		"howto": "Create Free Company or get assigned by previous King",
+		"howto": "Create Free Company or get assigned by previous holder of the rank",
 		"requirements": {
 				"assign": false,
 				"minage": 0,
@@ -99,9 +100,10 @@
 			}
 		}
 	},
-	"Chieftain": {
+	"2nd in command": {
+		"id": 1,
 		"level": 1,
-		"howto": "Get assigned by King or another Chieftain",
+		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 31104000,
@@ -199,7 +201,8 @@
 			}
 		}
 	},
-	"Hotpom": {
+	"3rd in command": {
+		"id": 2,
 		"level": 2,
 		"howto": "",
 		"requirements": {
@@ -299,14 +302,15 @@
 			}
 		}
 	},
-	"Mogbouncer": {
+	"DPS 2nd level": {
+		"id": 3,
 		"level": 3,
 		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 5184000,
 				"minfclvl": 4,
-				"recrank": "Moghitter",
+				"recrank": "",
 				"mintotlvl": 180,
 				"mingathlvl": 0,
 				"mincraftlvl": 0,
@@ -399,14 +403,15 @@
 			}
 		}
 	},
-	"Pomknight": {
-		"level": 3,
+	"Tank 2nd level": {
+		"id": 4,
+		"level": 4,
 		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 5184000,
 				"minfclvl": 4,
-				"recrank": "Pomguard",
+				"recrank": "",
 				"mintotlvl": 180,
 				"mingathlvl": 0,
 				"mincraftlvl": 0,
@@ -499,14 +504,15 @@
 			}
 		}
 	},
-	"Pompriest": {
-		"level": 3,
+	"Healer 2nd level": {
+		"id": 5,
+		"level": 5,
 		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 5184000,
 				"minfclvl": 4,
-				"recrank": "Pomquack",
+				"recrank": "",
 				"mintotlvl": 180,
 				"mingathlvl": 0,
 				"mincraftlvl": 0,
@@ -599,14 +605,15 @@
 			}
 		}
 	},
-	"Mogmender": {
-		"level": 3,
+	"Crafter 2nd level": {
+		"id": 6,
+		"level": 6,
 		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 5184000,
 				"minfclvl": 4,
-				"recrank": "Pomsmith",
+				"recrank": "",
 				"mintotlvl": 180,
 				"mingathlvl": 0,
 				"mincraftlvl": 60,
@@ -699,14 +706,15 @@
 			}
 		}
 	},
-	"Kuponator": {
-		"level": 3,
+	"Gatherer 2nd level": {
+		"id": 7,
+		"level": 7,
 		"howto": "",
 		"requirements": {
 				"assign": true,
 				"minage": 5184000,
 				"minfclvl": 4,
-				"recrank": "Nutseeker",
+				"recrank": "",
 				"mintotlvl": 180,
 				"mingathlvl": 60,
 				"mincraftlvl": 0,
@@ -799,8 +807,9 @@
 			}
 		}
 	},
-	"Moghitter": {
-		"level": 4,
+	"DPS 1st level": {
+		"id": 8,
+		"level": 8,
 		"howto": "",
 		"requirements": {
 				"assign": true,
@@ -899,8 +908,9 @@
 			}
 		}
 	},
-	"Pomguard": {
-		"level": 4,
+	"Tank 1st level": {
+		"id": 9,
+		"level": 9,
 		"howto": "",
 		"requirements": {
 				"assign": true,
@@ -999,8 +1009,9 @@
 			}
 		}
 	},
-	"Pomquack": {
-		"level": 4,
+	"Healer 1st level": {
+		"id": 10,
+		"level": 10,
 		"howto": "",
 		"requirements": {
 				"assign": true,
@@ -1099,8 +1110,9 @@
 			}
 		}
 	},
-	"Pomsmith": {
-		"level": 4,
+	"Crafter 1st level": {
+		"id": 11,
+		"level": 11,
 		"howto": "",
 		"requirements": {
 				"assign": true,
@@ -1199,8 +1211,9 @@
 			}
 		}
 	},
-	"Nutseeker": {
-		"level": 4,
+	"Gatherer 1st level": {
+		"id": 12,
+		"level": 12,
 		"howto": "",
 		"requirements": {
 				"assign": true,
@@ -1299,8 +1312,9 @@
 			}
 		}
 	},
-	"Pom-pom": {
-		"level": 5,
+	"New Recruit": {
+		"id": 13,
+		"level": 13,
 		"howto": "Get recruited",
 		"requirements": {
 				"assign": false,
@@ -1399,9 +1413,10 @@
 			}
 		}
 	},
-	"Lazypom": {
-		"level": 6,
-		"howto": "Be inactive for more than 30 days without due notice. Stay in here for 60 and more days without notice - get kicked out",
+	"Lazybone": {
+		"id": 14,
+		"level": 14,
+		"howto": "Be inactive for more than allowed without due notice. Stay in here for even more without notice - get kicked out",
 		"requirements": {
 				"assign": false,
 				"minage": 0,

@@ -234,7 +234,7 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/14.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2f21a984aab9ff20acc2cc9bcf0ffe544a33f3a1.png",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8873ffdf5f7c80770bc40f5b82ae1be6fa1f8305.png",
                 "level": "60"
             },
             "grandcompany": {
@@ -414,8 +414,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/11.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8e82259fcd979378632cde0c9767c15dba3790af.png",
-                "level": "60"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/343bce834add76f5d714f33154d0c70e99d495a3.png",
+                "level": "57"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
@@ -594,8 +594,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/13.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8e82259fcd979378632cde0c9767c15dba3790af.png",
-                "level": "50"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/36ce9c4cc01581d4f900102cd51e09c60c3876a6.png",
+                "level": "52"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
@@ -1520,7 +1520,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/e2a98c81ca279607fc1706e5e1b11bc08cac2578.png",
-                "level": "27"
+                "level": "29"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_1.png",
@@ -1555,8 +1555,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/d39804e8810aa3d8e467b7a476d01965510c5d18.png",
-                "level": "20"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/c460e288d5db83ebc90d0654bee6d0d0a0a9582d.png",
+                "level": "50"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_6.png",
@@ -1680,7 +1680,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/6157497a98f55a73af4c277f383d0a23551e9e98.png",
-                "level": "25"
+                "level": "26"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_1.png",
@@ -1707,5 +1707,5 @@
             }
         }
     ],
-    "hash": "8732ca9585fad1611d23589dcada40ff9e0e8632"
+    "hash": "5ece603c474319a2089340351c87251da729548f"
 }

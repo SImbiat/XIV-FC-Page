@@ -17,10 +17,11 @@
         "fc": {
             "rankprev": "First Sin",
             "rank": "First Sin",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "0.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "0",
+            "rankid": "0",
+            "ranklvlprev": 0,
+            "ranklvl": 0,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -148,8 +149,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10779634": {
         "id": "10779634",
@@ -169,10 +170,11 @@
         "fc": {
             "rankprev": "Hat Prophet",
             "rank": "Hat Prophet",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "9.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "9",
+            "rankid": "9",
+            "ranklvlprev": 9,
+            "ranklvl": 9,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -300,8 +302,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "12924129": {
         "id": "12924129",
@@ -321,10 +323,11 @@
         "fc": {
             "rankprev": "Secretary",
             "rank": "Secretary",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "8.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "8",
+            "rankid": "8",
+            "ranklvlprev": 8,
+            "ranklvl": 8,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -452,8 +455,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "12739737": {
         "id": "12739737",
@@ -473,10 +476,11 @@
         "fc": {
             "rankprev": "Minister of Sin",
             "rank": "Minister of Sin",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "11.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "11",
+            "rankid": "11",
+            "ranklvlprev": 11,
+            "ranklvl": 11,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -604,8 +608,8 @@
                 "maxcraft": "54"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "4679165": {
         "id": "4679165",
@@ -625,10 +629,11 @@
         "fc": {
             "rankprev": "Minister of Sin",
             "rank": "Minister of Sin",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "11.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "11",
+            "rankid": "11",
+            "ranklvlprev": 11,
+            "ranklvl": 11,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -756,8 +761,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "7794972": {
         "id": "7794972",
@@ -777,10 +782,11 @@
         "fc": {
             "rankprev": "Minister of Sin",
             "rank": "Minister of Sin",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "11.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "11",
+            "rankid": "11",
+            "ranklvlprev": 11,
+            "ranklvl": 11,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -908,8 +914,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "3811613": {
         "id": "3811613",
@@ -929,10 +935,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1060,8 +1067,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "11618091": {
         "id": "11618091",
@@ -1081,10 +1088,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1212,8 +1220,8 @@
                 "maxcraft": "23"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "12672968": {
         "id": "12672968",
@@ -1233,10 +1241,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1364,8 +1373,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10738665": {
         "id": "10738665",
@@ -1385,10 +1394,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1516,8 +1526,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "5947349": {
         "id": "5947349",
@@ -1537,10 +1547,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1555,7 +1566,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "50",
-                "Pugilist": "19",
+                "Pugilist": "21",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1572,19 +1583,19 @@
                 "Goldsmith": "60",
                 "Leatherworker": 0,
                 "Weaver": "14",
-                "Alchemist": "58",
+                "Alchemist": "59",
                 "Culinarian": "60",
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 820,
+                "totallvl": 823,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 203,
-                "totaldpsm": 79,
+                "totaldps": 205,
+                "totaldpsm": 81,
                 "totaldpsr": 124,
                 "totalgath": 80,
-                "totalcraft": 334,
+                "totalcraft": 335,
                 "maxtank": "50",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -1593,7 +1604,7 @@
             },
             "prev": {
                 "Gladiator": "50",
-                "Pugilist": "19",
+                "Pugilist": "21",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1610,19 +1621,19 @@
                 "Goldsmith": "60",
                 "Leatherworker": 0,
                 "Weaver": "14",
-                "Alchemist": "58",
+                "Alchemist": "59",
                 "Culinarian": "60",
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 820,
+                "totallvl": 823,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 203,
-                "totaldpsm": 79,
+                "totaldps": 205,
+                "totaldpsm": 81,
                 "totaldpsr": 124,
                 "totalgath": 80,
-                "totalcraft": 334,
+                "totalcraft": 335,
                 "maxtank": "50",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -1631,7 +1642,7 @@
             },
             "init": {
                 "Gladiator": "50",
-                "Pugilist": "19",
+                "Pugilist": "21",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1648,19 +1659,19 @@
                 "Goldsmith": "60",
                 "Leatherworker": 0,
                 "Weaver": "14",
-                "Alchemist": "58",
+                "Alchemist": "59",
                 "Culinarian": "60",
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 820,
+                "totallvl": 823,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 203,
-                "totaldpsm": 79,
+                "totaldps": 205,
+                "totaldpsm": 81,
                 "totaldpsr": 124,
                 "totalgath": 80,
-                "totalcraft": 334,
+                "totalcraft": 335,
                 "maxtank": "50",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -1668,8 +1679,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13265719": {
         "id": "13265719",
@@ -1689,10 +1700,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1820,8 +1832,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13261900": {
         "id": "13261900",
@@ -1841,10 +1853,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1972,8 +1985,8 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14348213": {
         "id": "14348213",
@@ -1993,10 +2006,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2124,8 +2138,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "1639916": {
         "id": "1639916",
@@ -2145,10 +2159,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2276,8 +2291,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "1640001": {
         "id": "1640001",
@@ -2297,10 +2312,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2325,7 +2341,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "43",
+                "Astrologian": "44",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2337,9 +2353,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 735,
+                "totallvl": 736,
                 "totaltank": 119,
-                "totalheal": 137,
+                "totalheal": 138,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2363,7 +2379,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "43",
+                "Astrologian": "44",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2375,9 +2391,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 735,
+                "totallvl": 736,
                 "totaltank": 119,
-                "totalheal": 137,
+                "totalheal": 138,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2401,7 +2417,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "43",
+                "Astrologian": "44",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2413,9 +2429,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 735,
+                "totallvl": 736,
                 "totaltank": 119,
-                "totalheal": 137,
+                "totalheal": 138,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2428,8 +2444,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "11021556": {
         "id": "11021556",
@@ -2449,10 +2465,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2580,8 +2597,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "4161275": {
         "id": "4161275",
@@ -2601,10 +2618,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2732,8 +2750,8 @@
                 "maxcraft": "37"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "12638770": {
         "id": "12638770",
@@ -2753,10 +2771,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2884,8 +2903,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10677498": {
         "id": "10677498",
@@ -2905,10 +2924,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2928,7 +2948,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "40",
+                "Conjurer": "41",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -2945,9 +2965,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 796,
+                "totallvl": 797,
                 "totaltank": 180,
-                "totalheal": 146,
+                "totalheal": 147,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -2966,7 +2986,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "40",
+                "Conjurer": "41",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -2983,9 +3003,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 796,
+                "totallvl": 797,
                 "totaltank": 180,
-                "totalheal": 146,
+                "totalheal": 147,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -3004,7 +3024,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "40",
+                "Conjurer": "41",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -3021,9 +3041,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 796,
+                "totallvl": 797,
                 "totaltank": 180,
-                "totalheal": 146,
+                "totalheal": 147,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -3036,8 +3056,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "7578873": {
         "id": "7578873",
@@ -3057,10 +3077,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3085,7 +3106,7 @@
                 "Arcanist": "50",
                 "Dark Knight": "31",
                 "Machinist": "30",
-                "Astrologian": "53",
+                "Astrologian": "54",
                 "Carpenter": "32",
                 "Blacksmith": "31",
                 "Armorer": "50",
@@ -3097,9 +3118,9 @@
                 "Miner": "46",
                 "Botanist": "30",
                 "Fisher": "30",
-                "totallvl": 876,
+                "totallvl": 877,
                 "totaltank": 132,
-                "totalheal": 163,
+                "totalheal": 164,
                 "totaldps": 211,
                 "totaldpsm": 91,
                 "totaldpsr": 120,
@@ -3123,7 +3144,7 @@
                 "Arcanist": "50",
                 "Dark Knight": "31",
                 "Machinist": "30",
-                "Astrologian": "53",
+                "Astrologian": "54",
                 "Carpenter": "32",
                 "Blacksmith": "31",
                 "Armorer": "50",
@@ -3135,9 +3156,9 @@
                 "Miner": "46",
                 "Botanist": "30",
                 "Fisher": "30",
-                "totallvl": 876,
+                "totallvl": 877,
                 "totaltank": 132,
-                "totalheal": 163,
+                "totalheal": 164,
                 "totaldps": 211,
                 "totaldpsm": 91,
                 "totaldpsr": 120,
@@ -3161,7 +3182,7 @@
                 "Arcanist": "50",
                 "Dark Knight": "31",
                 "Machinist": "30",
-                "Astrologian": "53",
+                "Astrologian": "54",
                 "Carpenter": "32",
                 "Blacksmith": "31",
                 "Armorer": "50",
@@ -3173,9 +3194,9 @@
                 "Miner": "46",
                 "Botanist": "30",
                 "Fisher": "30",
-                "totallvl": 876,
+                "totallvl": 877,
                 "totaltank": 132,
-                "totalheal": 163,
+                "totalheal": 164,
                 "totaldps": 211,
                 "totaldpsm": 91,
                 "totaldpsr": 120,
@@ -3188,8 +3209,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10734111": {
         "id": "10734111",
@@ -3209,10 +3230,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3227,7 +3249,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "25",
-                "Pugilist": "40",
+                "Pugilist": "42",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3249,11 +3271,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 977,
+                "totallvl": 979,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 278,
-                "totaldpsm": 116,
+                "totaldps": 280,
+                "totaldpsm": 118,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3265,7 +3287,7 @@
             },
             "prev": {
                 "Gladiator": "25",
-                "Pugilist": "40",
+                "Pugilist": "42",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3287,11 +3309,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 977,
+                "totallvl": 979,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 278,
-                "totaldpsm": 116,
+                "totaldps": 280,
+                "totaldpsm": 118,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3303,7 +3325,7 @@
             },
             "init": {
                 "Gladiator": "25",
-                "Pugilist": "40",
+                "Pugilist": "42",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3325,11 +3347,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 977,
+                "totallvl": 979,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 278,
-                "totaldpsm": 116,
+                "totaldps": 280,
+                "totaldpsm": 118,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3340,8 +3362,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14196682": {
         "id": "14196682",
@@ -3361,10 +3383,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3492,8 +3515,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "4986622": {
         "id": "4986622",
@@ -3513,10 +3536,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3531,7 +3555,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "60",
-                "Pugilist": "41",
+                "Pugilist": "42",
                 "Marauder": 0,
                 "Lancer": "15",
                 "Archer": "60",
@@ -3553,11 +3577,11 @@
                 "Miner": 0,
                 "Botanist": "28",
                 "Fisher": 0,
-                "totallvl": 367,
+                "totallvl": 368,
                 "totaltank": 60,
                 "totalheal": 118,
-                "totaldps": 116,
-                "totaldpsm": 56,
+                "totaldps": 117,
+                "totaldpsm": 57,
                 "totaldpsr": 60,
                 "totalgath": 28,
                 "totalcraft": 45,
@@ -3569,7 +3593,7 @@
             },
             "prev": {
                 "Gladiator": "60",
-                "Pugilist": "41",
+                "Pugilist": "42",
                 "Marauder": 0,
                 "Lancer": "15",
                 "Archer": "60",
@@ -3591,11 +3615,11 @@
                 "Miner": 0,
                 "Botanist": "28",
                 "Fisher": 0,
-                "totallvl": 367,
+                "totallvl": 368,
                 "totaltank": 60,
                 "totalheal": 118,
-                "totaldps": 116,
-                "totaldpsm": 56,
+                "totaldps": 117,
+                "totaldpsm": 57,
                 "totaldpsr": 60,
                 "totalgath": 28,
                 "totalcraft": 45,
@@ -3607,7 +3631,7 @@
             },
             "init": {
                 "Gladiator": "60",
-                "Pugilist": "41",
+                "Pugilist": "42",
                 "Marauder": 0,
                 "Lancer": "15",
                 "Archer": "60",
@@ -3629,11 +3653,11 @@
                 "Miner": 0,
                 "Botanist": "28",
                 "Fisher": 0,
-                "totallvl": 367,
+                "totallvl": 368,
                 "totaltank": 60,
                 "totalheal": 118,
-                "totaldps": 116,
-                "totaldpsm": 56,
+                "totaldps": 117,
+                "totaldpsm": 57,
                 "totaldpsr": 60,
                 "totalgath": 28,
                 "totalcraft": 45,
@@ -3644,8 +3668,8 @@
                 "maxcraft": "33"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "7795053": {
         "id": "7795053",
@@ -3665,10 +3689,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3796,8 +3821,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13290936": {
         "id": "13290936",
@@ -3817,10 +3842,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3948,8 +3974,8 @@
                 "maxcraft": "40"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13092226": {
         "id": "13092226",
@@ -3969,10 +3995,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4100,8 +4127,8 @@
                 "maxcraft": "56"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "9603420": {
         "id": "9603420",
@@ -4121,10 +4148,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4252,8 +4280,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "11335022": {
         "id": "11335022",
@@ -4273,10 +4301,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4404,8 +4433,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "9616179": {
         "id": "9616179",
@@ -4425,10 +4454,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4448,7 +4478,7 @@
                 "Lancer": "54",
                 "Archer": "60",
                 "Rogue": "50",
-                "Conjurer": "34",
+                "Conjurer": "35",
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -4465,9 +4495,9 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 891,
+                "totallvl": 892,
                 "totaltank": 179,
-                "totalheal": 133,
+                "totalheal": 134,
                 "totaldps": 306,
                 "totaldpsm": 154,
                 "totaldpsr": 152,
@@ -4486,7 +4516,7 @@
                 "Lancer": "54",
                 "Archer": "60",
                 "Rogue": "50",
-                "Conjurer": "34",
+                "Conjurer": "35",
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -4503,9 +4533,9 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 891,
+                "totallvl": 892,
                 "totaltank": 179,
-                "totalheal": 133,
+                "totalheal": 134,
                 "totaldps": 306,
                 "totaldpsm": 154,
                 "totaldpsr": 152,
@@ -4524,7 +4554,7 @@
                 "Lancer": "54",
                 "Archer": "60",
                 "Rogue": "50",
-                "Conjurer": "34",
+                "Conjurer": "35",
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -4541,9 +4571,9 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 891,
+                "totallvl": 892,
                 "totaltank": 179,
-                "totalheal": 133,
+                "totalheal": 134,
                 "totaldps": 306,
                 "totaldpsm": 154,
                 "totaldpsr": 152,
@@ -4556,8 +4586,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "1623793": {
         "id": "1623793",
@@ -4577,10 +4607,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4708,8 +4739,8 @@
                 "maxcraft": "46"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14259506": {
         "id": "14259506",
@@ -4729,10 +4760,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4860,8 +4892,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14792274": {
         "id": "14792274",
@@ -4881,10 +4913,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4898,7 +4931,7 @@
         },
         "levels": {
             "curr": {
-                "Gladiator": "6",
+                "Gladiator": "10",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -4921,22 +4954,22 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 215,
-                "totaltank": 7,
+                "totallvl": 219,
+                "totaltank": 11,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "6",
+                "maxtank": "10",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             },
             "prev": {
-                "Gladiator": "6",
+                "Gladiator": "10",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -4959,22 +4992,22 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 215,
-                "totaltank": 7,
+                "totallvl": 219,
+                "totaltank": 11,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "6",
+                "maxtank": "10",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             },
             "init": {
-                "Gladiator": "6",
+                "Gladiator": "10",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -4997,23 +5030,23 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 215,
-                "totaltank": 7,
+                "totallvl": 219,
+                "totaltank": 11,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "6",
+                "maxtank": "10",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14269086": {
         "id": "14269086",
@@ -5033,10 +5066,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5051,7 +5085,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "25",
-                "Pugilist": "27",
+                "Pugilist": "28",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5073,11 +5107,11 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 677,
+                "totallvl": 678,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 162,
-                "totaldpsm": 125,
+                "totaldps": 163,
+                "totaldpsm": 126,
                 "totaldpsr": 37,
                 "totalgath": 98,
                 "totalcraft": 272,
@@ -5089,7 +5123,7 @@
             },
             "prev": {
                 "Gladiator": "25",
-                "Pugilist": "27",
+                "Pugilist": "28",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5111,11 +5145,11 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 677,
+                "totallvl": 678,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 162,
-                "totaldpsm": 125,
+                "totaldps": 163,
+                "totaldpsm": 126,
                 "totaldpsr": 37,
                 "totalgath": 98,
                 "totalcraft": 272,
@@ -5127,7 +5161,7 @@
             },
             "init": {
                 "Gladiator": "25",
-                "Pugilist": "27",
+                "Pugilist": "28",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5149,11 +5183,11 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 677,
+                "totallvl": 678,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 162,
-                "totaldpsm": 125,
+                "totaldps": 163,
+                "totaldpsm": 126,
                 "totaldpsr": 37,
                 "totalgath": 98,
                 "totalcraft": 272,
@@ -5164,8 +5198,8 @@
                 "maxcraft": "54"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13808881": {
         "id": "13808881",
@@ -5185,10 +5219,11 @@
         "fc": {
             "rankprev": "The Enlightened",
             "rank": "The Enlightened",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "1.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "1",
+            "rankid": "1",
+            "ranklvlprev": 1,
+            "ranklvl": 1,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5316,8 +5351,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "5662830": {
         "id": "5662830",
@@ -5337,10 +5372,11 @@
         "fc": {
             "rankprev": "Fashion Police",
             "rank": "Fashion Police",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "10.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "10",
+            "rankid": "10",
+            "ranklvlprev": 10,
+            "ranklvl": 10,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5468,8 +5504,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "12429196": {
         "id": "12429196",
@@ -5489,10 +5525,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5620,8 +5657,8 @@
                 "maxcraft": "13"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14022830": {
         "id": "14022830",
@@ -5641,10 +5678,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5772,8 +5810,8 @@
                 "maxcraft": "2"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "6328713": {
         "id": "6328713",
@@ -5793,10 +5831,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5924,8 +5963,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "7686376": {
         "id": "7686376",
@@ -5945,10 +5984,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6076,8 +6116,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13347623": {
         "id": "13347623",
@@ -6097,10 +6137,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6228,8 +6269,8 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14883268": {
         "id": "14883268",
@@ -6249,10 +6290,11 @@
         "fc": {
             "rankprev": "Creed Seeker",
             "rank": "Creed Seeker",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "4.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "4",
+            "rankid": "4",
+            "ranklvlprev": 4,
+            "ranklvl": 4,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6380,8 +6422,8 @@
                 "maxcraft": "1"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10738264": {
         "id": "10738264",
@@ -6401,10 +6443,11 @@
         "fc": {
             "rankprev": "Sinister Saint",
             "rank": "Sinister Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "7.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "7",
+            "rankid": "7",
+            "ranklvlprev": 7,
+            "ranklvl": 7,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6532,8 +6575,8 @@
                 "maxcraft": "57"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14520187": {
         "id": "14520187",
@@ -6553,10 +6596,11 @@
         "fc": {
             "rankprev": "Sinister Saint",
             "rank": "Sinister Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "7.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "7",
+            "rankid": "7",
+            "ranklvlprev": 7,
+            "ranklvl": 7,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6684,8 +6728,8 @@
                 "maxcraft": "3"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "9569162": {
         "id": "9569162",
@@ -6705,10 +6749,11 @@
         "fc": {
             "rankprev": "Sinister Saint",
             "rank": "Sinister Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "7.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "7",
+            "rankid": "7",
+            "ranklvlprev": 7,
+            "ranklvl": 7,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6836,8 +6881,8 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13681776": {
         "id": "13681776",
@@ -6857,10 +6902,11 @@
         "fc": {
             "rankprev": "Saint",
             "rank": "Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "3.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6878,7 +6924,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "30",
+                "Archer": "34",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -6886,7 +6932,7 @@
                 "Dark Knight": "60",
                 "Machinist": "31",
                 "Astrologian": "60",
-                "Carpenter": "29",
+                "Carpenter": "31",
                 "Blacksmith": "9",
                 "Armorer": "11",
                 "Goldsmith": "13",
@@ -6897,14 +6943,14 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 676,
+                "totallvl": 682,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 217,
+                "totaldps": 221,
                 "totaldpsm": 96,
-                "totaldpsr": 121,
+                "totaldpsr": 125,
                 "totalgath": 12,
-                "totalcraft": 173,
+                "totalcraft": 175,
                 "maxtank": "60",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -6916,7 +6962,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "30",
+                "Archer": "34",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -6924,7 +6970,7 @@
                 "Dark Knight": "60",
                 "Machinist": "31",
                 "Astrologian": "60",
-                "Carpenter": "29",
+                "Carpenter": "31",
                 "Blacksmith": "9",
                 "Armorer": "11",
                 "Goldsmith": "13",
@@ -6935,14 +6981,14 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 676,
+                "totallvl": 682,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 217,
+                "totaldps": 221,
                 "totaldpsm": 96,
-                "totaldpsr": 121,
+                "totaldpsr": 125,
                 "totalgath": 12,
-                "totalcraft": 173,
+                "totalcraft": 175,
                 "maxtank": "60",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -6954,7 +7000,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "30",
+                "Archer": "34",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -6962,7 +7008,7 @@
                 "Dark Knight": "60",
                 "Machinist": "31",
                 "Astrologian": "60",
-                "Carpenter": "29",
+                "Carpenter": "31",
                 "Blacksmith": "9",
                 "Armorer": "11",
                 "Goldsmith": "13",
@@ -6973,14 +7019,14 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 676,
+                "totallvl": 682,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 217,
+                "totaldps": 221,
                 "totaldpsm": 96,
-                "totaldpsr": 121,
+                "totaldpsr": 125,
                 "totalgath": 12,
-                "totalcraft": 173,
+                "totalcraft": 175,
                 "maxtank": "60",
                 "maxheal": "60",
                 "maxdps": "60",
@@ -6988,8 +7034,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "11488015": {
         "id": "11488015",
@@ -7009,10 +7055,11 @@
         "fc": {
             "rankprev": "Saint",
             "rank": "Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "3.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7140,8 +7187,8 @@
                 "maxcraft": "44"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14559681": {
         "id": "14559681",
@@ -7161,10 +7208,11 @@
         "fc": {
             "rankprev": "Saint",
             "rank": "Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "3.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7292,8 +7340,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "15265532": {
         "id": "15265532",
@@ -7313,10 +7361,11 @@
         "fc": {
             "rankprev": "Saint",
             "rank": "Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "3.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7444,8 +7493,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "11496830": {
         "id": "11496830",
@@ -7465,10 +7514,11 @@
         "fc": {
             "rankprev": "Saint",
             "rank": "Saint",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "3.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7596,8 +7646,8 @@
                 "maxcraft": "31"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "8501094": {
         "id": "8501094",
@@ -7617,10 +7667,11 @@
         "fc": {
             "rankprev": "Acolyte",
             "rank": "Acolyte",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "2.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "2",
+            "rankid": "2",
+            "ranklvlprev": 2,
+            "ranklvl": 2,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7748,8 +7799,8 @@
                 "maxcraft": "55"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10941650": {
         "id": "10941650",
@@ -7769,10 +7820,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7900,8 +7952,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13909091": {
         "id": "13909091",
@@ -7921,10 +7973,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8052,8 +8105,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14877438": {
         "id": "14877438",
@@ -8073,10 +8126,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8204,8 +8258,8 @@
                 "maxcraft": "1"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10916232": {
         "id": "10916232",
@@ -8225,10 +8279,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8356,8 +8411,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14537202": {
         "id": "14537202",
@@ -8377,10 +8432,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8508,8 +8564,8 @@
                 "maxcraft": "44"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10921620": {
         "id": "10921620",
@@ -8529,10 +8585,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8660,8 +8717,8 @@
                 "maxcraft": "26"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "13622886": {
         "id": "13622886",
@@ -8681,10 +8738,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8812,8 +8870,8 @@
                 "maxcraft": "28"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "10701751": {
         "id": "10701751",
@@ -8833,10 +8891,11 @@
         "fc": {
             "rankprev": "On Holiday",
             "rank": "On Holiday",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "6.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8964,8 +9023,8 @@
                 "maxcraft": "40"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     },
     "14638494": {
         "id": "14638494",
@@ -8985,10 +9044,11 @@
         "fc": {
             "rankprev": "Slave",
             "rank": "Slave",
-            "ranklvlprev": null,
-            "ranklvl": null,
-            "rankicon": "5.png",
-            "ranklvlupd": 1473454173,
+            "rankidprev": "5",
+            "rankid": "5",
+            "ranklvlprev": 5,
+            "ranklvl": 5,
+            "ranklvlupd": 1473500080,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -9116,7 +9176,7 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473454173,
-        "lvlupdate": 1473454173
+        "joined": 1473500080,
+        "lvlupdate": 1473500080
     }
 }
