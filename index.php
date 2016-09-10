@@ -5,7 +5,7 @@ require_once 'api-autoloader.php';
 require_once 'config.php';
 if (empty($_GET['fcid'])) {
 	#Function for Company search
-	$fcpage = "<head><link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\"></head><title>FXIV Free Company Tracker</title>
+	$fcpage = "<head><link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\"></head><title>FFXIV Free Company Tracker</title>
 	<script src=\"jquery-3.1.0.min.js\"></script>
 	<script>
 		$(document).ready ( function () {
@@ -114,12 +114,12 @@ if (!file_exists("./cache/".$fcid."/fc.json") or !file_exists("./cache/".$fcid."
 		echo "<head>
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\">
 </head>
-<title>FXIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update/".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+<title>FFXIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update/".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 	} else {
 		echo "<head>
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\">
 </head>
-<title>FXIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update.php?fcid=".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
+<title>FFXIV Free Company Tracker</title>No cache exists. Need to grab data<br><iframe src=\"./update.php?fcid=".$fcid."\" width=\"400px\" height=\"20px\" frameborder=\"0\" allowtransparency seamless scrolling=\"auto\">You do not like iframes? =(</iframe>";
 	}
 	exit;
 } else {

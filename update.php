@@ -42,7 +42,7 @@ if (!file_exists("./cache/".$fcid."/fc.json") or (file_exists("./cache/".$fcid."
 		echo "<head>
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./defaults/style.css\">
 </head>
-<title>FXIV Free Company Tracker</title>Lodestone is under maintenance or wrong free company ID and the site has no cache saved.<br>Unable to load data";
+<title>FFXIV Free Company Tracker</title>Lodestone is under maintenance or wrong free company ID and the site has no cache saved.<br>Unable to load data";
 		exit;
 	} else {
 		$cacheage=filemtime("./cache/".$fcid."/fc.json");
