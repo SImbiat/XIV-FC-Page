@@ -18,7 +18,7 @@ set_time_limit(320);
 	$zip->addFile("README.md");
 	$zip->addFile("jquery-3.1.0.min.js");
 	$zip->addFile("composer.json");
-	$zip->addFile("defaults/config.php");
+	$zip->addFile("defaults/config.json");
 	$zip->addFile("defaults/fcranks.json");
 	$zip->addFile("fcranks.php");
 	$zip->addFile("functions.php");
