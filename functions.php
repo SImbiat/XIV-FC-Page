@@ -161,7 +161,7 @@ function misdircreate($fcid) {
 		@copy("./defaults/fcranks.json", "./cache/".$fcid."/fcranks.json");
 	}
 	if (!file_exists("./cache/".$fcid."/config.json")) {
-		@copy("./defaults/config.php", "./cache/".$fcid."/config.json");
+		@copy("./defaults/config.json", "./cache/".$fcid."/config.json");
 	}
 	if (!file_exists("./cache/".$fcid."/style.css")) {
 		@copy("./defaults/style.css", "./cache/".$fcid."/style.css");

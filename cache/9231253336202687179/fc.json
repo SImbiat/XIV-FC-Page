@@ -1,0 +1,703 @@
+{
+    "id": "9231253336202687179",
+    "name": "Equilibrium",
+    "server": "Phoenix",
+    "emblum": [
+        "http:\/\/img2.finalfantasyxiv.com\/c\/B3f_2b3f1638e91e9a2b521be9b9e3cb43c5_13_128x128.png",
+        "http:\/\/img2.finalfantasyxiv.com\/c\/F03_51287a2e97459a52fe56d3534ad2ff9b_00_128x128.png",
+        "http:\/\/img2.finalfantasyxiv.com\/c\/S06_c71591351145c0fd6154bc2ce8b33219_03_128x128.png"
+    ],
+    "company": "Maelstrom",
+    "tag": "EQ",
+    "formed": "1386108866",
+    "memberCount": "35",
+    "slogan": "\"hardcore fate farming\"<br \/>http:\/\/eq.guildwork.com",
+    "active": "Always",
+    "recruitment": "Closed",
+    "ranking": {
+        "current": "8",
+        "weekly": "193",
+        "monthly": "127"
+    },
+    "estate": {
+        "zone": "Lala Stable",
+        "address": "Plot 19, 4 Ward, The Goblet (Medium)",
+        "message": "Welcome to the house of shamefur dispray!"
+    },
+    "focus": [
+        {
+            "name": "Role-playing",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/746806d4dbf239cc2fb829143d146739098a0264.png",
+            "active": false
+        },
+        {
+            "name": "Leveling",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/7a75cf01d86905d572141973d574f3497ef7736d.png",
+            "active": false
+        },
+        {
+            "name": "Casual",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/cc00dda5d83b7bf656d4377871e3c705956af1b6.png",
+            "active": false
+        },
+        {
+            "name": "Hardcore",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/eff7ae7c7cc2ee7b4c090a0f2995563c37d16e9c.png",
+            "active": true
+        },
+        {
+            "name": "Dungeons",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/7f3ccad442d2a210df06f518c5d1d24ab5ae4e98.png",
+            "active": true
+        },
+        {
+            "name": "Guildhests",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/7fe8b031a4baeace472ecca2d571a695697f8ac9.png",
+            "active": false
+        },
+        {
+            "name": "Trials",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/14063a8f95b9b02dd1cb77e0d11f1a617d38904e.png",
+            "active": true
+        },
+        {
+            "name": "Raids",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/2bd4d8f2ec381b02f6fcc7945ec6ec817eed9de8.png",
+            "active": true
+        },
+        {
+            "name": "PvP",
+            "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/focus\/5cbbdffcf615cd9a7bec9000e16b866232ec5364.png",
+            "active": false
+        }
+    ],
+    "roles": null,
+    "members": [
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/0fbb582cebaa118da5286b12bc0f2b20_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Saeris Illyan",
+            "id": "2269193",
+            "rank": {
+                "title": "Master",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/0.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/36ce9c4cc01581d4f900102cd51e09c60c3876a6.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/837fee0149092b4c0d7d1939dfd842ca_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Curuda Lionsmane",
+            "id": "3121041",
+            "rank": {
+                "title": "Officer",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/1.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/93db8bce9a0f040cc0544d738ce73671_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Luminaer Runja",
+            "id": "2619167",
+            "rank": {
+                "title": "Officer",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/1.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/c460e288d5db83ebc90d0654bee6d0d0a0a9582d.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5056025a242777697a2da3dbfedb30f1_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Marel Sape",
+            "id": "10651293",
+            "rank": {
+                "title": "Officer",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/1.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_4.png",
+                "name": "Immortal Flames",
+                "rank": "Flame Corporal"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/124a0d70da5ac289ca2630ae460da075_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Amy Clyne",
+            "id": "9430168",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/f358b50ff0a1b1dcb67490ba8f4c480e01e4edd7.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/f4c35bd98bab7391456be5ffc724733b_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Deithwen Feainnewedd",
+            "id": "2366968",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/1d4a1cf6021705ee62c5b5dfc100781f0f272623.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/8497fda0e81067c079c416f8ce684376_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Graham Vino",
+            "id": "3165491",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8873ffdf5f7c80770bc40f5b82ae1be6fa1f8305.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/128098728d74dd5aa25bc72288bf6c65_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Isoke Hayle",
+            "id": "2836969",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ee5788ae748ff28a503fecbec2a523dbc6875298.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5b9cb21b963d432a42e5e3ccfca4d501_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Mikana Teka",
+            "id": "10795732",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/1d4a1cf6021705ee62c5b5dfc100781f0f272623.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/72708d809d0574e16abb83aeef8ef32f_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Ny'meria Hemera",
+            "id": "2990574",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/46efc17e1b0da950b78d0f37aeb753b4_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Pasuno Gremory",
+            "id": "10722842",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/343bce834add76f5d714f33154d0c70e99d495a3.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/c753947087dcaeb77b008d47b350d946_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Ragnvard Worldshatter",
+            "id": "10646338",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/443a572bf4b418a13bf81d472648779a_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Rose Lalonde",
+            "id": "1637549",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8873ffdf5f7c80770bc40f5b82ae1be6fa1f8305.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/3a468b91988d7659921e64f15e42b219_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Sakimed Yosei",
+            "id": "9767520",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/626a1a0927f7d2510a92558e8032831264110f26.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5bb1a149c7551965c2a8b90f3f10b163_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Sandamar Delys",
+            "id": "4649645",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/fa0437f29368c2cae3b8ec72e8518328_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Sentinillia Emilie",
+            "id": "2983294",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/98d95dec1f321f111439032b64bc42b98c063f1b.png",
+                "level": "56"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/389cfa8d9ba99c5593cb4d889c2d2663_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Spool Spoolington",
+            "id": "5711288",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/1d4a1cf6021705ee62c5b5dfc100781f0f272623.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/b202bbb87fa052c303e4c8d094cf59ba_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Yukino Nadeshiko",
+            "id": "8719367",
+            "rank": {
+                "title": "Member",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/a2a6213832a266f8c5145f7cbb8b8e8c9d8c6e25.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/3e1f08c9b8227ba8d9b4cf169dbeb7be_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Bellandy Illyan",
+            "id": "2630916",
+            "rank": {
+                "title": "Server Transfer",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/8.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ee5788ae748ff28a503fecbec2a523dbc6875298.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/4b03879e5deb35ea1e5ab3b4a59cb7c0_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Dave Ackerman",
+            "id": "5696147",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/4d5933e30976c092f0653243dd75d6e2_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Innovating Yeager",
+            "id": "6128429",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/626a1a0927f7d2510a92558e8032831264110f26.png",
+                "level": "58"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/0e38bd427e8d9224b64ba4e5a7e9a911_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Jo Musse",
+            "id": "5297973",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ee5788ae748ff28a503fecbec2a523dbc6875298.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/3f52bb405253dc88f4bff60bef75809b_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Kirikou Dakar",
+            "id": "1333535",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2f21a984aab9ff20acc2cc9bcf0ffe544a33f3a1.png",
+                "level": "40"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/53c0b1598937b016f9ea121d72eec1b0_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Narmorra Lafalia",
+            "id": "2608733",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8873ffdf5f7c80770bc40f5b82ae1be6fa1f8305.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/0a2d443234041b7f22be144251f791ab_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Neelia Eris",
+            "id": "6334422",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/d15e018bec2017d648a6f7d0de66e5f9_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Obsideo Eventus",
+            "id": "8509800",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/626a1a0927f7d2510a92558e8032831264110f26.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/9d10a49fc1f7bfce81d09b7da0b333e9_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Ravias Sunreaver",
+            "id": "2619287",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/a2a6213832a266f8c5145f7cbb8b8e8c9d8c6e25.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/0f11c42e4c58e1de499cde9e3dc15a9b_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Rhodo Dendron",
+            "id": "12694051",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/289dbc0b50956ce10a2195a75a22b500a648284e.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_9.png",
+                "name": "Immortal Flames",
+                "rank": "Second Flame Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/ee0d0692fa6a8be8213eafbdb553dd3d_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Yuzu Yumiko",
+            "id": "9794237",
+            "rank": {
+                "title": "Friend",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/3.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ee5788ae748ff28a503fecbec2a523dbc6875298.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/6feac18e16b17c19827955be898d18ee_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Soren Halcyon",
+            "id": "2614213",
+            "rank": {
+                "title": "Ship Cap'n",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/5.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/86f1875ebc31f88eb917283665be128689a9669b.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_9.png",
+                "name": "Maelstrom",
+                "rank": "Second Storm Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/4ca98de6b3b52727d07e35e68f8028e0_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Luminaer Luna",
+            "id": "14892583",
+            "rank": {
+                "title": "Alt",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/59fde9fca303490477962039f6cd0d0101caeabe.png",
+                "level": "22"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/9133a30f671a471e0b51d2bb50d907b4_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Pasuno Pasu",
+            "id": "15324566",
+            "rank": {
+                "title": "Alt",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/d39804e8810aa3d8e467b7a476d01965510c5d18.png",
+                "level": "24"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_1.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Serpent Private Third Class"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/68a2f2c00c87c77fd9be39ae9422b8d1_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Poupinette Delys",
+            "id": "7845893",
+            "rank": {
+                "title": "Alt",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5ee5c05e60c37b8cc79f6ccc57fa5c0a_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Roduil Lionsmane",
+            "id": "6550052",
+            "rank": {
+                "title": "Alt",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2de279517a8de132f2faad4986a507ed728a067f.png",
+                "level": "60"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_8.png",
+                "name": "Maelstrom",
+                "rank": "Chief Storm Sergeant"
+            }
+        },
+        {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/18a46869d0a24dcbb3c4bfcac6279a8c_5047bc596a4bab2dc7f7c120bb22dec5fc0_96x96.jpg",
+            "name": "Yuki Clyne",
+            "id": "15115064",
+            "rank": {
+                "title": "Alt",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
+                "level": "48"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/limsa_1.png",
+                "name": "Maelstrom",
+                "rank": "Storm Private Third Class"
+            }
+        }
+    ],
+    "hash": "8c5b23f59bd6a74b67a253ab4f75e630fe94676b"
+}

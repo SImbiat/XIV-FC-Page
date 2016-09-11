@@ -21,7 +21,7 @@
             "rankid": "0",
             "ranklvlprev": 0,
             "ranklvl": 0,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -149,8 +149,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10779634": {
         "id": "10779634",
@@ -174,7 +174,7 @@
             "rankid": "9",
             "ranklvlprev": 9,
             "ranklvl": 9,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -302,8 +302,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "12924129": {
         "id": "12924129",
@@ -327,7 +327,7 @@
             "rankid": "8",
             "ranklvlprev": 8,
             "ranklvl": 8,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -455,8 +455,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "12739737": {
         "id": "12739737",
@@ -480,7 +480,7 @@
             "rankid": "11",
             "ranklvlprev": 11,
             "ranklvl": 11,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -608,8 +608,8 @@
                 "maxcraft": "54"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "4679165": {
         "id": "4679165",
@@ -633,7 +633,7 @@
             "rankid": "11",
             "ranklvlprev": 11,
             "ranklvl": 11,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -761,8 +761,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "7794972": {
         "id": "7794972",
@@ -786,7 +786,7 @@
             "rankid": "11",
             "ranklvlprev": 11,
             "ranklvl": 11,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -914,8 +914,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "3811613": {
         "id": "3811613",
@@ -939,7 +939,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1067,8 +1067,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "11618091": {
         "id": "11618091",
@@ -1092,7 +1092,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1112,7 +1112,7 @@
                 "Lancer": "60",
                 "Archer": "46",
                 "Rogue": 0,
-                "Conjurer": "49",
+                "Conjurer": "50",
                 "Thaumaturge": "15",
                 "Arcanist": "15",
                 "Dark Knight": "60",
@@ -1129,16 +1129,16 @@
                 "Miner": "4",
                 "Botanist": 0,
                 "Fisher": "42",
-                "totallvl": 521,
+                "totallvl": 522,
                 "totaltank": 103,
-                "totalheal": 94,
+                "totalheal": 95,
                 "totaldps": 166,
                 "totaldpsm": 75,
                 "totaldpsr": 91,
                 "totalgath": 46,
                 "totalcraft": 112,
                 "maxtank": "60",
-                "maxheal": "49",
+                "maxheal": "50",
                 "maxdps": "60",
                 "maxgath": "42",
                 "maxcraft": "23"
@@ -1150,7 +1150,7 @@
                 "Lancer": "60",
                 "Archer": "46",
                 "Rogue": 0,
-                "Conjurer": "49",
+                "Conjurer": "50",
                 "Thaumaturge": "15",
                 "Arcanist": "15",
                 "Dark Knight": "60",
@@ -1167,16 +1167,16 @@
                 "Miner": "4",
                 "Botanist": 0,
                 "Fisher": "42",
-                "totallvl": 521,
+                "totallvl": 522,
                 "totaltank": 103,
-                "totalheal": 94,
+                "totalheal": 95,
                 "totaldps": 166,
                 "totaldpsm": 75,
                 "totaldpsr": 91,
                 "totalgath": 46,
                 "totalcraft": 112,
                 "maxtank": "60",
-                "maxheal": "49",
+                "maxheal": "50",
                 "maxdps": "60",
                 "maxgath": "42",
                 "maxcraft": "23"
@@ -1188,7 +1188,7 @@
                 "Lancer": "60",
                 "Archer": "46",
                 "Rogue": 0,
-                "Conjurer": "49",
+                "Conjurer": "50",
                 "Thaumaturge": "15",
                 "Arcanist": "15",
                 "Dark Knight": "60",
@@ -1205,23 +1205,23 @@
                 "Miner": "4",
                 "Botanist": 0,
                 "Fisher": "42",
-                "totallvl": 521,
+                "totallvl": 522,
                 "totaltank": 103,
-                "totalheal": 94,
+                "totalheal": 95,
                 "totaldps": 166,
                 "totaldpsm": 75,
                 "totaldpsr": 91,
                 "totalgath": 46,
                 "totalcraft": 112,
                 "maxtank": "60",
-                "maxheal": "49",
+                "maxheal": "50",
                 "maxdps": "60",
                 "maxgath": "42",
                 "maxcraft": "23"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "12672968": {
         "id": "12672968",
@@ -1245,7 +1245,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1373,8 +1373,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10738665": {
         "id": "10738665",
@@ -1398,7 +1398,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1526,8 +1526,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "5947349": {
         "id": "5947349",
@@ -1551,7 +1551,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1566,7 +1566,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "50",
-                "Pugilist": "21",
+                "Pugilist": "23",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1588,11 +1588,11 @@
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 823,
+                "totallvl": 825,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 205,
-                "totaldpsm": 81,
+                "totaldps": 207,
+                "totaldpsm": 83,
                 "totaldpsr": 124,
                 "totalgath": 80,
                 "totalcraft": 335,
@@ -1604,7 +1604,7 @@
             },
             "prev": {
                 "Gladiator": "50",
-                "Pugilist": "21",
+                "Pugilist": "23",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1626,11 +1626,11 @@
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 823,
+                "totallvl": 825,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 205,
-                "totaldpsm": 81,
+                "totaldps": 207,
+                "totaldpsm": 83,
                 "totaldpsr": 124,
                 "totalgath": 80,
                 "totalcraft": 335,
@@ -1642,7 +1642,7 @@
             },
             "init": {
                 "Gladiator": "50",
-                "Pugilist": "21",
+                "Pugilist": "23",
                 "Marauder": "27",
                 "Lancer": "60",
                 "Archer": "34",
@@ -1664,11 +1664,11 @@
                 "Miner": "43",
                 "Botanist": "26",
                 "Fisher": "11",
-                "totallvl": 823,
+                "totallvl": 825,
                 "totaltank": 77,
                 "totalheal": 126,
-                "totaldps": 205,
-                "totaldpsm": 81,
+                "totaldps": 207,
+                "totaldpsm": 83,
                 "totaldpsr": 124,
                 "totalgath": 80,
                 "totalcraft": 335,
@@ -1679,8 +1679,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13265719": {
         "id": "13265719",
@@ -1704,7 +1704,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1832,8 +1832,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13261900": {
         "id": "13261900",
@@ -1857,7 +1857,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -1985,8 +1985,8 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14348213": {
         "id": "14348213",
@@ -2010,7 +2010,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2138,8 +2138,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "1639916": {
         "id": "1639916",
@@ -2163,7 +2163,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2291,8 +2291,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "1640001": {
         "id": "1640001",
@@ -2316,7 +2316,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2341,7 +2341,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "44",
+                "Astrologian": "45",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2353,9 +2353,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 736,
+                "totallvl": 737,
                 "totaltank": 119,
-                "totalheal": 138,
+                "totalheal": 139,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2379,7 +2379,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "44",
+                "Astrologian": "45",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2391,9 +2391,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 736,
+                "totallvl": 737,
                 "totaltank": 119,
-                "totalheal": 138,
+                "totalheal": 139,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2417,7 +2417,7 @@
                 "Arcanist": "60",
                 "Dark Knight": "60",
                 "Machinist": "30",
-                "Astrologian": "44",
+                "Astrologian": "45",
                 "Carpenter": "26",
                 "Blacksmith": "24",
                 "Armorer": "34",
@@ -2429,9 +2429,9 @@
                 "Miner": "34",
                 "Botanist": "33",
                 "Fisher": "23",
-                "totallvl": 736,
+                "totallvl": 737,
                 "totaltank": 119,
-                "totalheal": 138,
+                "totalheal": 139,
                 "totaldps": 154,
                 "totaldpsm": 90,
                 "totaldpsr": 64,
@@ -2444,8 +2444,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "11021556": {
         "id": "11021556",
@@ -2469,7 +2469,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2597,8 +2597,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "4161275": {
         "id": "4161275",
@@ -2622,7 +2622,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2750,8 +2750,8 @@
                 "maxcraft": "37"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "12638770": {
         "id": "12638770",
@@ -2775,7 +2775,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2903,15 +2903,15 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10677498": {
         "id": "10677498",
         "bio": {
             "prevname": "Grimaldus Helsreach",
             "name": "Grimaldus Helsreach",
-            "title": "",
+            "title": "The Meat Shield",
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/bdcbc3005e96c832f0fa92aa3802dc89_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/bdcbc3005e96c832f0fa92aa3802dc89_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
             "race": "Lalafell",
@@ -2928,7 +2928,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -2948,7 +2948,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "41",
+                "Conjurer": "42",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -2965,9 +2965,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 797,
+                "totallvl": 798,
                 "totaltank": 180,
-                "totalheal": 147,
+                "totalheal": 148,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -2986,7 +2986,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "41",
+                "Conjurer": "42",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -3003,9 +3003,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 797,
+                "totallvl": 798,
                 "totaltank": 180,
-                "totalheal": 147,
+                "totalheal": 148,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -3024,7 +3024,7 @@
                 "Lancer": "27",
                 "Archer": "34",
                 "Rogue": "24",
-                "Conjurer": "41",
+                "Conjurer": "42",
                 "Thaumaturge": "58",
                 "Arcanist": "60",
                 "Dark Knight": "60",
@@ -3041,9 +3041,9 @@
                 "Miner": "50",
                 "Botanist": "6",
                 "Fisher": "6",
-                "totallvl": 797,
+                "totallvl": 798,
                 "totaltank": 180,
-                "totalheal": 147,
+                "totalheal": 148,
                 "totaldps": 251,
                 "totaldpsm": 111,
                 "totaldpsr": 140,
@@ -3056,8 +3056,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "7578873": {
         "id": "7578873",
@@ -3081,7 +3081,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3209,8 +3209,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10734111": {
         "id": "10734111",
@@ -3234,7 +3234,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3249,7 +3249,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "25",
-                "Pugilist": "42",
+                "Pugilist": "45",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3271,11 +3271,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 979,
+                "totallvl": 982,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 280,
-                "totaldpsm": 118,
+                "totaldps": 283,
+                "totaldpsm": 121,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3287,7 +3287,7 @@
             },
             "prev": {
                 "Gladiator": "25",
-                "Pugilist": "42",
+                "Pugilist": "45",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3309,11 +3309,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 979,
+                "totallvl": 982,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 280,
-                "totaldpsm": 118,
+                "totaldps": 283,
+                "totaldpsm": 121,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3325,7 +3325,7 @@
             },
             "init": {
                 "Gladiator": "25",
-                "Pugilist": "42",
+                "Pugilist": "45",
                 "Marauder": "45",
                 "Lancer": "26",
                 "Archer": "42",
@@ -3347,11 +3347,11 @@
                 "Miner": "51",
                 "Botanist": "50",
                 "Fisher": "54",
-                "totallvl": 979,
+                "totallvl": 982,
                 "totaltank": 130,
                 "totalheal": 179,
-                "totaldps": 280,
-                "totaldpsm": 118,
+                "totaldps": 283,
+                "totaldpsm": 121,
                 "totaldpsr": 162,
                 "totalgath": 155,
                 "totalcraft": 235,
@@ -3362,8 +3362,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14196682": {
         "id": "14196682",
@@ -3387,7 +3387,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3515,8 +3515,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "4986622": {
         "id": "4986622",
@@ -3540,7 +3540,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3668,8 +3668,8 @@
                 "maxcraft": "33"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "7795053": {
         "id": "7795053",
@@ -3693,7 +3693,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3821,8 +3821,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13290936": {
         "id": "13290936",
@@ -3846,7 +3846,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -3974,8 +3974,8 @@
                 "maxcraft": "40"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13092226": {
         "id": "13092226",
@@ -3999,7 +3999,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4127,8 +4127,8 @@
                 "maxcraft": "56"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "9603420": {
         "id": "9603420",
@@ -4152,7 +4152,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4280,8 +4280,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "11335022": {
         "id": "11335022",
@@ -4305,7 +4305,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4433,8 +4433,8 @@
                 "maxcraft": "50"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "9616179": {
         "id": "9616179",
@@ -4458,7 +4458,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4472,8 +4472,8 @@
         },
         "levels": {
             "curr": {
-                "Gladiator": "59",
-                "Pugilist": "50",
+                "Gladiator": "60",
+                "Pugilist": "51",
                 "Marauder": "60",
                 "Lancer": "54",
                 "Archer": "60",
@@ -4482,7 +4482,7 @@
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
-                "Machinist": "32",
+                "Machinist": "37",
                 "Astrologian": "39",
                 "Carpenter": "8",
                 "Blacksmith": "27",
@@ -4495,12 +4495,12 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 892,
-                "totaltank": 179,
+                "totallvl": 899,
+                "totaltank": 180,
                 "totalheal": 134,
-                "totaldps": 306,
-                "totaldpsm": 154,
-                "totaldpsr": 152,
+                "totaldps": 312,
+                "totaldpsm": 155,
+                "totaldpsr": 157,
                 "totalgath": 125,
                 "totalcraft": 148,
                 "maxtank": "60",
@@ -4510,8 +4510,8 @@
                 "maxcraft": "60"
             },
             "prev": {
-                "Gladiator": "59",
-                "Pugilist": "50",
+                "Gladiator": "60",
+                "Pugilist": "51",
                 "Marauder": "60",
                 "Lancer": "54",
                 "Archer": "60",
@@ -4520,7 +4520,7 @@
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
-                "Machinist": "32",
+                "Machinist": "37",
                 "Astrologian": "39",
                 "Carpenter": "8",
                 "Blacksmith": "27",
@@ -4533,12 +4533,12 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 892,
-                "totaltank": 179,
+                "totallvl": 899,
+                "totaltank": 180,
                 "totalheal": 134,
-                "totaldps": 306,
-                "totaldpsm": 154,
-                "totaldpsr": 152,
+                "totaldps": 312,
+                "totaldpsm": 155,
+                "totaldpsr": 157,
                 "totalgath": 125,
                 "totalcraft": 148,
                 "maxtank": "60",
@@ -4548,8 +4548,8 @@
                 "maxcraft": "60"
             },
             "init": {
-                "Gladiator": "59",
-                "Pugilist": "50",
+                "Gladiator": "60",
+                "Pugilist": "51",
                 "Marauder": "60",
                 "Lancer": "54",
                 "Archer": "60",
@@ -4558,7 +4558,7 @@
                 "Thaumaturge": "60",
                 "Arcanist": "60",
                 "Dark Knight": "60",
-                "Machinist": "32",
+                "Machinist": "37",
                 "Astrologian": "39",
                 "Carpenter": "8",
                 "Blacksmith": "27",
@@ -4571,12 +4571,12 @@
                 "Miner": "60",
                 "Botanist": "60",
                 "Fisher": "5",
-                "totallvl": 892,
-                "totaltank": 179,
+                "totallvl": 899,
+                "totaltank": 180,
                 "totalheal": 134,
-                "totaldps": 306,
-                "totaldpsm": 154,
-                "totaldpsr": 152,
+                "totaldps": 312,
+                "totaldpsm": 155,
+                "totaldpsr": 157,
                 "totalgath": 125,
                 "totalcraft": 148,
                 "maxtank": "60",
@@ -4586,8 +4586,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "1623793": {
         "id": "1623793",
@@ -4611,7 +4611,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4739,8 +4739,8 @@
                 "maxcraft": "46"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14259506": {
         "id": "14259506",
@@ -4764,7 +4764,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4892,8 +4892,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14792274": {
         "id": "14792274",
@@ -4917,7 +4917,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -4931,7 +4931,7 @@
         },
         "levels": {
             "curr": {
-                "Gladiator": "10",
+                "Gladiator": "13",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -4954,22 +4954,22 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 219,
-                "totaltank": 11,
+                "totallvl": 222,
+                "totaltank": 14,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "10",
+                "maxtank": "13",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             },
             "prev": {
-                "Gladiator": "10",
+                "Gladiator": "13",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -4992,22 +4992,22 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 219,
-                "totaltank": 11,
+                "totallvl": 222,
+                "totaltank": 14,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "10",
+                "maxtank": "13",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             },
             "init": {
-                "Gladiator": "10",
+                "Gladiator": "13",
                 "Pugilist": "28",
                 "Marauder": "1",
                 "Lancer": "1",
@@ -5030,23 +5030,23 @@
                 "Miner": "14",
                 "Botanist": "20",
                 "Fisher": "3",
-                "totallvl": 219,
-                "totaltank": 11,
+                "totallvl": 222,
+                "totaltank": 14,
                 "totalheal": 0,
                 "totaldps": 90,
                 "totaldpsm": 30,
                 "totaldpsr": 60,
                 "totalgath": 37,
                 "totalcraft": 81,
-                "maxtank": "10",
+                "maxtank": "13",
                 "maxheal": 0,
                 "maxdps": "60",
                 "maxgath": "20",
                 "maxcraft": "26"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14269086": {
         "id": "14269086",
@@ -5070,7 +5070,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5085,7 +5085,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "25",
-                "Pugilist": "28",
+                "Pugilist": "30",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5098,7 +5098,7 @@
                 "Astrologian": "30",
                 "Carpenter": "54",
                 "Blacksmith": "25",
-                "Armorer": "13",
+                "Armorer": "14",
                 "Goldsmith": "50",
                 "Leatherworker": "42",
                 "Weaver": "51",
@@ -5107,14 +5107,14 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 678,
+                "totallvl": 681,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 163,
-                "totaldpsm": 126,
+                "totaldps": 165,
+                "totaldpsm": 128,
                 "totaldpsr": 37,
                 "totalgath": 98,
-                "totalcraft": 272,
+                "totalcraft": 273,
                 "maxtank": "60",
                 "maxheal": "30",
                 "maxdps": "60",
@@ -5123,7 +5123,7 @@
             },
             "prev": {
                 "Gladiator": "25",
-                "Pugilist": "28",
+                "Pugilist": "30",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5136,7 +5136,7 @@
                 "Astrologian": "30",
                 "Carpenter": "54",
                 "Blacksmith": "25",
-                "Armorer": "13",
+                "Armorer": "14",
                 "Goldsmith": "50",
                 "Leatherworker": "42",
                 "Weaver": "51",
@@ -5145,14 +5145,14 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 678,
+                "totallvl": 681,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 163,
-                "totaldpsm": 126,
+                "totaldps": 165,
+                "totaldpsm": 128,
                 "totaldpsr": 37,
                 "totalgath": 98,
-                "totalcraft": 272,
+                "totalcraft": 273,
                 "maxtank": "60",
                 "maxheal": "30",
                 "maxdps": "60",
@@ -5161,7 +5161,7 @@
             },
             "init": {
                 "Gladiator": "25",
-                "Pugilist": "28",
+                "Pugilist": "30",
                 "Marauder": "60",
                 "Lancer": "38",
                 "Archer": 0,
@@ -5174,7 +5174,7 @@
                 "Astrologian": "30",
                 "Carpenter": "54",
                 "Blacksmith": "25",
-                "Armorer": "13",
+                "Armorer": "14",
                 "Goldsmith": "50",
                 "Leatherworker": "42",
                 "Weaver": "51",
@@ -5183,14 +5183,14 @@
                 "Miner": "25",
                 "Botanist": "55",
                 "Fisher": "18",
-                "totallvl": 678,
+                "totallvl": 681,
                 "totaltank": 115,
                 "totalheal": 30,
-                "totaldps": 163,
-                "totaldpsm": 126,
+                "totaldps": 165,
+                "totaldpsm": 128,
                 "totaldpsr": 37,
                 "totalgath": 98,
-                "totalcraft": 272,
+                "totalcraft": 273,
                 "maxtank": "60",
                 "maxheal": "30",
                 "maxdps": "60",
@@ -5198,8 +5198,8 @@
                 "maxcraft": "54"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13808881": {
         "id": "13808881",
@@ -5223,7 +5223,7 @@
             "rankid": "1",
             "ranklvlprev": 1,
             "ranklvl": 1,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5254,20 +5254,20 @@
                 "Armorer": "7",
                 "Goldsmith": "60",
                 "Leatherworker": "60",
-                "Weaver": "52",
+                "Weaver": "53",
                 "Alchemist": "27",
                 "Culinarian": 0,
                 "Miner": "60",
-                "Botanist": "43",
+                "Botanist": "44",
                 "Fisher": "9",
-                "totallvl": 503,
+                "totallvl": 505,
                 "totaltank": 45,
                 "totalheal": 0,
                 "totaldps": 101,
                 "totaldpsm": 92,
                 "totaldpsr": 9,
-                "totalgath": 112,
-                "totalcraft": 245,
+                "totalgath": 113,
+                "totalcraft": 246,
                 "maxtank": "30",
                 "maxheal": 0,
                 "maxdps": "60",
@@ -5292,20 +5292,20 @@
                 "Armorer": "7",
                 "Goldsmith": "60",
                 "Leatherworker": "60",
-                "Weaver": "52",
+                "Weaver": "53",
                 "Alchemist": "27",
                 "Culinarian": 0,
                 "Miner": "60",
-                "Botanist": "43",
+                "Botanist": "44",
                 "Fisher": "9",
-                "totallvl": 503,
+                "totallvl": 505,
                 "totaltank": 45,
                 "totalheal": 0,
                 "totaldps": 101,
                 "totaldpsm": 92,
                 "totaldpsr": 9,
-                "totalgath": 112,
-                "totalcraft": 245,
+                "totalgath": 113,
+                "totalcraft": 246,
                 "maxtank": "30",
                 "maxheal": 0,
                 "maxdps": "60",
@@ -5330,20 +5330,20 @@
                 "Armorer": "7",
                 "Goldsmith": "60",
                 "Leatherworker": "60",
-                "Weaver": "52",
+                "Weaver": "53",
                 "Alchemist": "27",
                 "Culinarian": 0,
                 "Miner": "60",
-                "Botanist": "43",
+                "Botanist": "44",
                 "Fisher": "9",
-                "totallvl": 503,
+                "totallvl": 505,
                 "totaltank": 45,
                 "totalheal": 0,
                 "totaldps": 101,
                 "totaldpsm": 92,
                 "totaldpsr": 9,
-                "totalgath": 112,
-                "totalcraft": 245,
+                "totalgath": 113,
+                "totalcraft": 246,
                 "maxtank": "30",
                 "maxheal": 0,
                 "maxdps": "60",
@@ -5351,8 +5351,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "5662830": {
         "id": "5662830",
@@ -5376,7 +5376,7 @@
             "rankid": "10",
             "ranklvlprev": 10,
             "ranklvl": 10,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5391,7 +5391,7 @@
         "levels": {
             "curr": {
                 "Gladiator": "55",
-                "Pugilist": "52",
+                "Pugilist": "53",
                 "Marauder": "50",
                 "Lancer": "51",
                 "Archer": "54",
@@ -5413,11 +5413,11 @@
                 "Miner": "20",
                 "Botanist": "23",
                 "Fisher": "60",
-                "totallvl": 714,
+                "totallvl": 715,
                 "totaltank": 165,
                 "totalheal": 114,
-                "totaldps": 310,
-                "totaldpsm": 163,
+                "totaldps": 311,
+                "totaldpsm": 164,
                 "totaldpsr": 147,
                 "totalgath": 103,
                 "totalcraft": 22,
@@ -5429,7 +5429,7 @@
             },
             "prev": {
                 "Gladiator": "55",
-                "Pugilist": "52",
+                "Pugilist": "53",
                 "Marauder": "50",
                 "Lancer": "51",
                 "Archer": "54",
@@ -5451,11 +5451,11 @@
                 "Miner": "20",
                 "Botanist": "23",
                 "Fisher": "60",
-                "totallvl": 714,
+                "totallvl": 715,
                 "totaltank": 165,
                 "totalheal": 114,
-                "totaldps": 310,
-                "totaldpsm": 163,
+                "totaldps": 311,
+                "totaldpsm": 164,
                 "totaldpsr": 147,
                 "totalgath": 103,
                 "totalcraft": 22,
@@ -5467,7 +5467,7 @@
             },
             "init": {
                 "Gladiator": "55",
-                "Pugilist": "52",
+                "Pugilist": "53",
                 "Marauder": "50",
                 "Lancer": "51",
                 "Archer": "54",
@@ -5489,11 +5489,11 @@
                 "Miner": "20",
                 "Botanist": "23",
                 "Fisher": "60",
-                "totallvl": 714,
+                "totallvl": 715,
                 "totaltank": 165,
                 "totalheal": 114,
-                "totaldps": 310,
-                "totaldpsm": 163,
+                "totaldps": 311,
+                "totaldpsm": 164,
                 "totaldpsr": 147,
                 "totalgath": 103,
                 "totalcraft": 22,
@@ -5504,161 +5504,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
-    },
-    "12429196": {
-        "id": "12429196",
-        "bio": {
-            "prevname": "Alessandra Proudmore",
-            "name": "Alessandra Proudmore",
-            "title": "Gentlewoman",
-            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/828f7a1ae8228ceb193cd0ac90915f64_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
-            "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/828f7a1ae8228ceb193cd0ac90915f64_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
-            "race": "Miqo'te",
-            "clan": "Keeper of the Moon",
-            "gender": "female",
-            "nameday": "3rd Sun of the 1st Astral Moon",
-            "guardian": "Azeyma, the Warden",
-            "city": "Limsa Lominsa"
-        },
-        "fc": {
-            "rankprev": "Creed Seeker",
-            "rank": "Creed Seeker",
-            "rankidprev": "4",
-            "rankid": "4",
-            "ranklvlprev": 4,
-            "ranklvl": 4,
-            "ranklvlupd": 1473500080,
-            "rankover": false,
-            "nextprom": "",
-            "altprom": "",
-            "recoprom": "",
-            "wronprom": false,
-            "wronreas": ""
-        },
-        "gc": {
-            "name": "Immortal Flames",
-            "rank": "Second Flame Lieutenant"
-        },
-        "levels": {
-            "curr": {
-                "Gladiator": "1",
-                "Pugilist": "1",
-                "Marauder": "1",
-                "Lancer": "1",
-                "Archer": "1",
-                "Rogue": "1",
-                "Conjurer": "56",
-                "Thaumaturge": "29",
-                "Arcanist": "16",
-                "Dark Knight": "41",
-                "Machinist": "30",
-                "Astrologian": "30",
-                "Carpenter": "1",
-                "Blacksmith": "1",
-                "Armorer": "1",
-                "Goldsmith": "10",
-                "Leatherworker": "1",
-                "Weaver": "13",
-                "Alchemist": "1",
-                "Culinarian": "9",
-                "Miner": "6",
-                "Botanist": "22",
-                "Fisher": "4",
-                "totallvl": 277,
-                "totaltank": 43,
-                "totalheal": 102,
-                "totaldps": 63,
-                "totaldpsm": 3,
-                "totaldpsr": 60,
-                "totalgath": 32,
-                "totalcraft": 37,
-                "maxtank": "41",
-                "maxheal": "56",
-                "maxdps": "30",
-                "maxgath": "22",
-                "maxcraft": "13"
-            },
-            "prev": {
-                "Gladiator": "1",
-                "Pugilist": "1",
-                "Marauder": "1",
-                "Lancer": "1",
-                "Archer": "1",
-                "Rogue": "1",
-                "Conjurer": "56",
-                "Thaumaturge": "29",
-                "Arcanist": "16",
-                "Dark Knight": "41",
-                "Machinist": "30",
-                "Astrologian": "30",
-                "Carpenter": "1",
-                "Blacksmith": "1",
-                "Armorer": "1",
-                "Goldsmith": "10",
-                "Leatherworker": "1",
-                "Weaver": "13",
-                "Alchemist": "1",
-                "Culinarian": "9",
-                "Miner": "6",
-                "Botanist": "22",
-                "Fisher": "4",
-                "totallvl": 277,
-                "totaltank": 43,
-                "totalheal": 102,
-                "totaldps": 63,
-                "totaldpsm": 3,
-                "totaldpsr": 60,
-                "totalgath": 32,
-                "totalcraft": 37,
-                "maxtank": "41",
-                "maxheal": "56",
-                "maxdps": "30",
-                "maxgath": "22",
-                "maxcraft": "13"
-            },
-            "init": {
-                "Gladiator": "1",
-                "Pugilist": "1",
-                "Marauder": "1",
-                "Lancer": "1",
-                "Archer": "1",
-                "Rogue": "1",
-                "Conjurer": "56",
-                "Thaumaturge": "29",
-                "Arcanist": "16",
-                "Dark Knight": "41",
-                "Machinist": "30",
-                "Astrologian": "30",
-                "Carpenter": "1",
-                "Blacksmith": "1",
-                "Armorer": "1",
-                "Goldsmith": "10",
-                "Leatherworker": "1",
-                "Weaver": "13",
-                "Alchemist": "1",
-                "Culinarian": "9",
-                "Miner": "6",
-                "Botanist": "22",
-                "Fisher": "4",
-                "totallvl": 277,
-                "totaltank": 43,
-                "totalheal": 102,
-                "totaldps": 63,
-                "totaldpsm": 3,
-                "totaldpsr": 60,
-                "totalgath": 32,
-                "totalcraft": 37,
-                "maxtank": "41",
-                "maxheal": "56",
-                "maxdps": "30",
-                "maxgath": "22",
-                "maxcraft": "13"
-            }
-        },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14022830": {
         "id": "14022830",
@@ -5682,7 +5529,7 @@
             "rankid": "4",
             "ranklvlprev": 4,
             "ranklvl": 4,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5810,8 +5657,8 @@
                 "maxcraft": "2"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "6328713": {
         "id": "6328713",
@@ -5835,7 +5682,7 @@
             "rankid": "4",
             "ranklvlprev": 4,
             "ranklvl": 4,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -5963,8 +5810,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "7686376": {
         "id": "7686376",
@@ -5988,7 +5835,7 @@
             "rankid": "4",
             "ranklvlprev": 4,
             "ranklvl": 4,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6116,8 +5963,8 @@
                 "maxcraft": "51"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13347623": {
         "id": "13347623",
@@ -6141,7 +5988,7 @@
             "rankid": "4",
             "ranklvlprev": 4,
             "ranklvl": 4,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6269,8 +6116,8 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14883268": {
         "id": "14883268",
@@ -6294,7 +6141,7 @@
             "rankid": "4",
             "ranklvlprev": 4,
             "ranklvl": 4,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6313,7 +6160,7 @@
                 "Marauder": 0,
                 "Lancer": "28",
                 "Archer": 0,
-                "Rogue": "59",
+                "Rogue": "60",
                 "Conjurer": "1",
                 "Thaumaturge": 0,
                 "Arcanist": 0,
@@ -6331,17 +6178,17 @@
                 "Miner": "10",
                 "Botanist": "15",
                 "Fisher": "19",
-                "totallvl": 241,
+                "totallvl": 242,
                 "totaltank": 30,
                 "totalheal": 31,
-                "totaldps": 134,
-                "totaldpsm": 104,
+                "totaldps": 135,
+                "totaldpsm": 105,
                 "totaldpsr": 30,
                 "totalgath": 44,
                 "totalcraft": 2,
                 "maxtank": "30",
                 "maxheal": "30",
-                "maxdps": "59",
+                "maxdps": "60",
                 "maxgath": "19",
                 "maxcraft": "1"
             },
@@ -6351,7 +6198,7 @@
                 "Marauder": 0,
                 "Lancer": "28",
                 "Archer": 0,
-                "Rogue": "59",
+                "Rogue": "60",
                 "Conjurer": "1",
                 "Thaumaturge": 0,
                 "Arcanist": 0,
@@ -6369,17 +6216,17 @@
                 "Miner": "10",
                 "Botanist": "15",
                 "Fisher": "19",
-                "totallvl": 241,
+                "totallvl": 242,
                 "totaltank": 30,
                 "totalheal": 31,
-                "totaldps": 134,
-                "totaldpsm": 104,
+                "totaldps": 135,
+                "totaldpsm": 105,
                 "totaldpsr": 30,
                 "totalgath": 44,
                 "totalcraft": 2,
                 "maxtank": "30",
                 "maxheal": "30",
-                "maxdps": "59",
+                "maxdps": "60",
                 "maxgath": "19",
                 "maxcraft": "1"
             },
@@ -6389,7 +6236,7 @@
                 "Marauder": 0,
                 "Lancer": "28",
                 "Archer": 0,
-                "Rogue": "59",
+                "Rogue": "60",
                 "Conjurer": "1",
                 "Thaumaturge": 0,
                 "Arcanist": 0,
@@ -6407,23 +6254,23 @@
                 "Miner": "10",
                 "Botanist": "15",
                 "Fisher": "19",
-                "totallvl": 241,
+                "totallvl": 242,
                 "totaltank": 30,
                 "totalheal": 31,
-                "totaldps": 134,
-                "totaldpsm": 104,
+                "totaldps": 135,
+                "totaldpsm": 105,
                 "totaldpsr": 30,
                 "totalgath": 44,
                 "totalcraft": 2,
                 "maxtank": "30",
                 "maxheal": "30",
-                "maxdps": "59",
+                "maxdps": "60",
                 "maxgath": "19",
                 "maxcraft": "1"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10738264": {
         "id": "10738264",
@@ -6447,7 +6294,7 @@
             "rankid": "7",
             "ranklvlprev": 7,
             "ranklvl": 7,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6575,8 +6422,8 @@
                 "maxcraft": "57"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14520187": {
         "id": "14520187",
@@ -6600,7 +6447,7 @@
             "rankid": "7",
             "ranklvlprev": 7,
             "ranklvl": 7,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6728,8 +6575,8 @@
                 "maxcraft": "3"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "9569162": {
         "id": "9569162",
@@ -6753,7 +6600,7 @@
             "rankid": "7",
             "ranklvlprev": 7,
             "ranklvl": 7,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6770,7 +6617,7 @@
                 "Gladiator": "15",
                 "Pugilist": "16",
                 "Marauder": "34",
-                "Lancer": "40",
+                "Lancer": "41",
                 "Archer": "60",
                 "Rogue": "26",
                 "Conjurer": "50",
@@ -6790,11 +6637,11 @@
                 "Miner": 0,
                 "Botanist": "15",
                 "Fisher": "51",
-                "totallvl": 549,
+                "totallvl": 550,
                 "totaltank": 79,
                 "totalheal": 157,
-                "totaldps": 208,
-                "totaldpsm": 82,
+                "totaldps": 209,
+                "totaldpsm": 83,
                 "totaldpsr": 126,
                 "totalgath": 66,
                 "totalcraft": 39,
@@ -6808,7 +6655,7 @@
                 "Gladiator": "15",
                 "Pugilist": "16",
                 "Marauder": "34",
-                "Lancer": "40",
+                "Lancer": "41",
                 "Archer": "60",
                 "Rogue": "26",
                 "Conjurer": "50",
@@ -6828,11 +6675,11 @@
                 "Miner": 0,
                 "Botanist": "15",
                 "Fisher": "51",
-                "totallvl": 549,
+                "totallvl": 550,
                 "totaltank": 79,
                 "totalheal": 157,
-                "totaldps": 208,
-                "totaldpsm": 82,
+                "totaldps": 209,
+                "totaldpsm": 83,
                 "totaldpsr": 126,
                 "totalgath": 66,
                 "totalcraft": 39,
@@ -6846,7 +6693,7 @@
                 "Gladiator": "15",
                 "Pugilist": "16",
                 "Marauder": "34",
-                "Lancer": "40",
+                "Lancer": "41",
                 "Archer": "60",
                 "Rogue": "26",
                 "Conjurer": "50",
@@ -6866,11 +6713,11 @@
                 "Miner": 0,
                 "Botanist": "15",
                 "Fisher": "51",
-                "totallvl": 549,
+                "totallvl": 550,
                 "totaltank": 79,
                 "totalheal": 157,
-                "totaldps": 208,
-                "totaldpsm": 82,
+                "totaldps": 209,
+                "totaldpsm": 83,
                 "totaldpsr": 126,
                 "totalgath": 66,
                 "totalcraft": 39,
@@ -6881,15 +6728,15 @@
                 "maxcraft": "17"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13681776": {
         "id": "13681776",
         "bio": {
             "prevname": "Akira Shimizu",
             "name": "Akira Shimizu",
-            "title": "Gentleman",
+            "title": "The Chief Mourner",
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5392603dd86d211ac78358677e5eb06a_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/5392603dd86d211ac78358677e5eb06a_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
             "race": "Hyur",
@@ -6906,7 +6753,7 @@
             "rankid": "3",
             "ranklvlprev": 3,
             "ranklvl": 3,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -6924,7 +6771,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "34",
+                "Archer": "35",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -6943,12 +6790,12 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 682,
+                "totallvl": 683,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 221,
+                "totaldps": 222,
                 "totaldpsm": 96,
-                "totaldpsr": 125,
+                "totaldpsr": 126,
                 "totalgath": 12,
                 "totalcraft": 175,
                 "maxtank": "60",
@@ -6962,7 +6809,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "34",
+                "Archer": "35",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -6981,12 +6828,12 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 682,
+                "totallvl": 683,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 221,
+                "totaldps": 222,
                 "totaldpsm": 96,
-                "totaldpsr": 125,
+                "totaldpsr": 126,
                 "totalgath": 12,
                 "totalcraft": 175,
                 "maxtank": "60",
@@ -7000,7 +6847,7 @@
                 "Pugilist": "40",
                 "Marauder": "26",
                 "Lancer": "26",
-                "Archer": "34",
+                "Archer": "35",
                 "Rogue": "30",
                 "Conjurer": "60",
                 "Thaumaturge": "60",
@@ -7019,12 +6866,12 @@
                 "Miner": 0,
                 "Botanist": "9",
                 "Fisher": "3",
-                "totallvl": 682,
+                "totallvl": 683,
                 "totaltank": 94,
                 "totalheal": 180,
-                "totaldps": 221,
+                "totaldps": 222,
                 "totaldpsm": 96,
-                "totaldpsr": 125,
+                "totaldpsr": 126,
                 "totalgath": 12,
                 "totalcraft": 175,
                 "maxtank": "60",
@@ -7034,8 +6881,161 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
+    },
+    "8501094": {
+        "id": "8501094",
+        "bio": {
+            "prevname": "Graam Balder",
+            "name": "Graam Balder",
+            "title": "",
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/525ceffee9619e4b9c16cccabb6f2aa7_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/525ceffee9619e4b9c16cccabb6f2aa7_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
+            "race": "Hyur",
+            "clan": "Highlander",
+            "gender": "male",
+            "nameday": "27th Sun of the 1st Umbral Moon",
+            "guardian": "Halone, the Fury",
+            "city": "Ul'dah"
+        },
+        "fc": {
+            "rankprev": "Saint",
+            "rank": "Saint",
+            "rankidprev": "3",
+            "rankid": "3",
+            "ranklvlprev": 3,
+            "ranklvl": 3,
+            "ranklvlupd": 1473581501,
+            "rankover": false,
+            "nextprom": "",
+            "altprom": "",
+            "recoprom": "",
+            "wronprom": false,
+            "wronreas": ""
+        },
+        "gc": {
+            "name": "Maelstrom",
+            "rank": "Second Storm Lieutenant"
+        },
+        "levels": {
+            "curr": {
+                "Gladiator": "60",
+                "Pugilist": "10",
+                "Marauder": "15",
+                "Lancer": "45",
+                "Archer": "15",
+                "Rogue": "5",
+                "Conjurer": "53",
+                "Thaumaturge": "60",
+                "Arcanist": "15",
+                "Dark Knight": "34",
+                "Machinist": "37",
+                "Astrologian": 0,
+                "Carpenter": "55",
+                "Blacksmith": "50",
+                "Armorer": "51",
+                "Goldsmith": "53",
+                "Leatherworker": "38",
+                "Weaver": "52",
+                "Alchemist": "16",
+                "Culinarian": "4",
+                "Miner": "60",
+                "Botanist": "60",
+                "Fisher": "25",
+                "totallvl": 813,
+                "totaltank": 109,
+                "totalheal": 68,
+                "totaldps": 172,
+                "totaldpsm": 60,
+                "totaldpsr": 112,
+                "totalgath": 145,
+                "totalcraft": 319,
+                "maxtank": "60",
+                "maxheal": "53",
+                "maxdps": "60",
+                "maxgath": "60",
+                "maxcraft": "55"
+            },
+            "prev": {
+                "Gladiator": "60",
+                "Pugilist": "10",
+                "Marauder": "15",
+                "Lancer": "45",
+                "Archer": "15",
+                "Rogue": "5",
+                "Conjurer": "53",
+                "Thaumaturge": "60",
+                "Arcanist": "15",
+                "Dark Knight": "34",
+                "Machinist": "37",
+                "Astrologian": 0,
+                "Carpenter": "55",
+                "Blacksmith": "50",
+                "Armorer": "51",
+                "Goldsmith": "53",
+                "Leatherworker": "38",
+                "Weaver": "52",
+                "Alchemist": "16",
+                "Culinarian": "4",
+                "Miner": "60",
+                "Botanist": "60",
+                "Fisher": "25",
+                "totallvl": 813,
+                "totaltank": 109,
+                "totalheal": 68,
+                "totaldps": 172,
+                "totaldpsm": 60,
+                "totaldpsr": 112,
+                "totalgath": 145,
+                "totalcraft": 319,
+                "maxtank": "60",
+                "maxheal": "53",
+                "maxdps": "60",
+                "maxgath": "60",
+                "maxcraft": "55"
+            },
+            "init": {
+                "Gladiator": "60",
+                "Pugilist": "10",
+                "Marauder": "15",
+                "Lancer": "45",
+                "Archer": "15",
+                "Rogue": "5",
+                "Conjurer": "53",
+                "Thaumaturge": "60",
+                "Arcanist": "15",
+                "Dark Knight": "34",
+                "Machinist": "37",
+                "Astrologian": 0,
+                "Carpenter": "55",
+                "Blacksmith": "50",
+                "Armorer": "51",
+                "Goldsmith": "53",
+                "Leatherworker": "38",
+                "Weaver": "52",
+                "Alchemist": "16",
+                "Culinarian": "4",
+                "Miner": "60",
+                "Botanist": "60",
+                "Fisher": "25",
+                "totallvl": 813,
+                "totaltank": 109,
+                "totalheal": 68,
+                "totaldps": 172,
+                "totaldpsm": 60,
+                "totaldpsr": 112,
+                "totalgath": 145,
+                "totalcraft": 319,
+                "maxtank": "60",
+                "maxheal": "53",
+                "maxdps": "60",
+                "maxgath": "60",
+                "maxcraft": "55"
+            }
+        },
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "11488015": {
         "id": "11488015",
@@ -7059,7 +7059,7 @@
             "rankid": "3",
             "ranklvlprev": 3,
             "ranklvl": 3,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7187,8 +7187,8 @@
                 "maxcraft": "44"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14559681": {
         "id": "14559681",
@@ -7212,7 +7212,7 @@
             "rankid": "3",
             "ranklvlprev": 3,
             "ranklvl": 3,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7340,8 +7340,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "15265532": {
         "id": "15265532",
@@ -7365,7 +7365,7 @@
             "rankid": "3",
             "ranklvlprev": 3,
             "ranklvl": 3,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7493,8 +7493,8 @@
                 "maxcraft": "15"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "11496830": {
         "id": "11496830",
@@ -7518,7 +7518,7 @@
             "rankid": "3",
             "ranklvlprev": 3,
             "ranklvl": 3,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7646,32 +7646,32 @@
                 "maxcraft": "31"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
-    "8501094": {
-        "id": "8501094",
+    "12429196": {
+        "id": "12429196",
         "bio": {
-            "prevname": "Graam Balder",
-            "name": "Graam Balder",
-            "title": "",
-            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/525ceffee9619e4b9c16cccabb6f2aa7_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
-            "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/525ceffee9619e4b9c16cccabb6f2aa7_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
-            "race": "Hyur",
-            "clan": "Highlander",
-            "gender": "male",
-            "nameday": "27th Sun of the 1st Umbral Moon",
-            "guardian": "Halone, the Fury",
-            "city": "Ul'dah"
+            "prevname": "Alessandra Proudmore",
+            "name": "Alessandra Proudmore",
+            "title": "Gentlewoman",
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/828f7a1ae8228ceb193cd0ac90915f64_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "portrait": "http:\/\/img2.finalfantasyxiv.com\/f\/828f7a1ae8228ceb193cd0ac90915f64_777c57311d510ca65dac3c1077dee435fl0_640x873.jpg",
+            "race": "Miqo'te",
+            "clan": "Keeper of the Moon",
+            "gender": "female",
+            "nameday": "3rd Sun of the 1st Astral Moon",
+            "guardian": "Azeyma, the Warden",
+            "city": "Limsa Lominsa"
         },
         "fc": {
-            "rankprev": "Acolyte",
-            "rank": "Acolyte",
-            "rankidprev": "2",
-            "rankid": "2",
-            "ranklvlprev": 2,
-            "ranklvl": 2,
-            "ranklvlupd": 1473500080,
+            "rankprev": "On Holiday",
+            "rank": "On Holiday",
+            "rankidprev": "6",
+            "rankid": "6",
+            "ranklvlprev": 6,
+            "ranklvl": 6,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7680,127 +7680,127 @@
             "wronreas": ""
         },
         "gc": {
-            "name": "Maelstrom",
-            "rank": "Second Storm Lieutenant"
+            "name": "Immortal Flames",
+            "rank": "Second Flame Lieutenant"
         },
         "levels": {
             "curr": {
-                "Gladiator": "60",
-                "Pugilist": "10",
-                "Marauder": "15",
-                "Lancer": "45",
-                "Archer": "15",
-                "Rogue": "5",
-                "Conjurer": "53",
-                "Thaumaturge": "60",
-                "Arcanist": "15",
-                "Dark Knight": "34",
-                "Machinist": "37",
-                "Astrologian": 0,
-                "Carpenter": "55",
-                "Blacksmith": "50",
-                "Armorer": "51",
-                "Goldsmith": "53",
-                "Leatherworker": "38",
-                "Weaver": "52",
-                "Alchemist": "16",
-                "Culinarian": "4",
-                "Miner": "60",
-                "Botanist": "60",
-                "Fisher": "25",
-                "totallvl": 813,
-                "totaltank": 109,
-                "totalheal": 68,
-                "totaldps": 172,
-                "totaldpsm": 60,
-                "totaldpsr": 112,
-                "totalgath": 145,
-                "totalcraft": 319,
-                "maxtank": "60",
-                "maxheal": "53",
-                "maxdps": "60",
-                "maxgath": "60",
-                "maxcraft": "55"
+                "Gladiator": "1",
+                "Pugilist": "1",
+                "Marauder": "1",
+                "Lancer": "1",
+                "Archer": "1",
+                "Rogue": "1",
+                "Conjurer": "56",
+                "Thaumaturge": "29",
+                "Arcanist": "16",
+                "Dark Knight": "41",
+                "Machinist": "30",
+                "Astrologian": "30",
+                "Carpenter": "1",
+                "Blacksmith": "1",
+                "Armorer": "1",
+                "Goldsmith": "10",
+                "Leatherworker": "1",
+                "Weaver": "13",
+                "Alchemist": "1",
+                "Culinarian": "9",
+                "Miner": "6",
+                "Botanist": "22",
+                "Fisher": "4",
+                "totallvl": 277,
+                "totaltank": 43,
+                "totalheal": 102,
+                "totaldps": 63,
+                "totaldpsm": 3,
+                "totaldpsr": 60,
+                "totalgath": 32,
+                "totalcraft": 37,
+                "maxtank": "41",
+                "maxheal": "56",
+                "maxdps": "30",
+                "maxgath": "22",
+                "maxcraft": "13"
             },
             "prev": {
-                "Gladiator": "60",
-                "Pugilist": "10",
-                "Marauder": "15",
-                "Lancer": "45",
-                "Archer": "15",
-                "Rogue": "5",
-                "Conjurer": "53",
-                "Thaumaturge": "60",
-                "Arcanist": "15",
-                "Dark Knight": "34",
-                "Machinist": "37",
-                "Astrologian": 0,
-                "Carpenter": "55",
-                "Blacksmith": "50",
-                "Armorer": "51",
-                "Goldsmith": "53",
-                "Leatherworker": "38",
-                "Weaver": "52",
-                "Alchemist": "16",
-                "Culinarian": "4",
-                "Miner": "60",
-                "Botanist": "60",
-                "Fisher": "25",
-                "totallvl": 813,
-                "totaltank": 109,
-                "totalheal": 68,
-                "totaldps": 172,
-                "totaldpsm": 60,
-                "totaldpsr": 112,
-                "totalgath": 145,
-                "totalcraft": 319,
-                "maxtank": "60",
-                "maxheal": "53",
-                "maxdps": "60",
-                "maxgath": "60",
-                "maxcraft": "55"
+                "Gladiator": "1",
+                "Pugilist": "1",
+                "Marauder": "1",
+                "Lancer": "1",
+                "Archer": "1",
+                "Rogue": "1",
+                "Conjurer": "56",
+                "Thaumaturge": "29",
+                "Arcanist": "16",
+                "Dark Knight": "41",
+                "Machinist": "30",
+                "Astrologian": "30",
+                "Carpenter": "1",
+                "Blacksmith": "1",
+                "Armorer": "1",
+                "Goldsmith": "10",
+                "Leatherworker": "1",
+                "Weaver": "13",
+                "Alchemist": "1",
+                "Culinarian": "9",
+                "Miner": "6",
+                "Botanist": "22",
+                "Fisher": "4",
+                "totallvl": 277,
+                "totaltank": 43,
+                "totalheal": 102,
+                "totaldps": 63,
+                "totaldpsm": 3,
+                "totaldpsr": 60,
+                "totalgath": 32,
+                "totalcraft": 37,
+                "maxtank": "41",
+                "maxheal": "56",
+                "maxdps": "30",
+                "maxgath": "22",
+                "maxcraft": "13"
             },
             "init": {
-                "Gladiator": "60",
-                "Pugilist": "10",
-                "Marauder": "15",
-                "Lancer": "45",
-                "Archer": "15",
-                "Rogue": "5",
-                "Conjurer": "53",
-                "Thaumaturge": "60",
-                "Arcanist": "15",
-                "Dark Knight": "34",
-                "Machinist": "37",
-                "Astrologian": 0,
-                "Carpenter": "55",
-                "Blacksmith": "50",
-                "Armorer": "51",
-                "Goldsmith": "53",
-                "Leatherworker": "38",
-                "Weaver": "52",
-                "Alchemist": "16",
-                "Culinarian": "4",
-                "Miner": "60",
-                "Botanist": "60",
-                "Fisher": "25",
-                "totallvl": 813,
-                "totaltank": 109,
-                "totalheal": 68,
-                "totaldps": 172,
-                "totaldpsm": 60,
-                "totaldpsr": 112,
-                "totalgath": 145,
-                "totalcraft": 319,
-                "maxtank": "60",
-                "maxheal": "53",
-                "maxdps": "60",
-                "maxgath": "60",
-                "maxcraft": "55"
+                "Gladiator": "1",
+                "Pugilist": "1",
+                "Marauder": "1",
+                "Lancer": "1",
+                "Archer": "1",
+                "Rogue": "1",
+                "Conjurer": "56",
+                "Thaumaturge": "29",
+                "Arcanist": "16",
+                "Dark Knight": "41",
+                "Machinist": "30",
+                "Astrologian": "30",
+                "Carpenter": "1",
+                "Blacksmith": "1",
+                "Armorer": "1",
+                "Goldsmith": "10",
+                "Leatherworker": "1",
+                "Weaver": "13",
+                "Alchemist": "1",
+                "Culinarian": "9",
+                "Miner": "6",
+                "Botanist": "22",
+                "Fisher": "4",
+                "totallvl": 277,
+                "totaltank": 43,
+                "totalheal": 102,
+                "totaldps": 63,
+                "totaldpsm": 3,
+                "totaldpsr": 60,
+                "totalgath": 32,
+                "totalcraft": 37,
+                "maxtank": "41",
+                "maxheal": "56",
+                "maxdps": "30",
+                "maxgath": "22",
+                "maxcraft": "13"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10941650": {
         "id": "10941650",
@@ -7824,7 +7824,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -7952,8 +7952,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13909091": {
         "id": "13909091",
@@ -7977,7 +7977,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8105,8 +8105,8 @@
                 "maxcraft": 0
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14877438": {
         "id": "14877438",
@@ -8130,7 +8130,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8258,8 +8258,8 @@
                 "maxcraft": "1"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10916232": {
         "id": "10916232",
@@ -8283,7 +8283,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8411,8 +8411,8 @@
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14537202": {
         "id": "14537202",
@@ -8436,7 +8436,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8564,8 +8564,8 @@
                 "maxcraft": "44"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10921620": {
         "id": "10921620",
@@ -8589,7 +8589,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8717,8 +8717,8 @@
                 "maxcraft": "26"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "13622886": {
         "id": "13622886",
@@ -8742,7 +8742,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -8870,8 +8870,8 @@
                 "maxcraft": "28"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "10701751": {
         "id": "10701751",
@@ -8895,7 +8895,7 @@
             "rankid": "6",
             "ranklvlprev": 6,
             "ranklvl": 6,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -9023,8 +9023,8 @@
                 "maxcraft": "40"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     },
     "14638494": {
         "id": "14638494",
@@ -9048,7 +9048,7 @@
             "rankid": "5",
             "ranklvlprev": 5,
             "ranklvl": 5,
-            "ranklvlupd": 1473500080,
+            "ranklvlupd": 1473581501,
             "rankover": false,
             "nextprom": "",
             "altprom": "",
@@ -9082,21 +9082,21 @@
                 "Weaver": "54",
                 "Alchemist": "50",
                 "Culinarian": "37",
-                "Miner": "49",
-                "Botanist": "50",
+                "Miner": "50",
+                "Botanist": "54",
                 "Fisher": 0,
-                "totallvl": 525,
+                "totallvl": 530,
                 "totaltank": 0,
                 "totalheal": 75,
                 "totaldps": 30,
                 "totaldpsm": 0,
                 "totaldpsr": 30,
-                "totalgath": 99,
+                "totalgath": 104,
                 "totalcraft": 321,
                 "maxtank": 0,
                 "maxheal": "60",
                 "maxdps": "26",
-                "maxgath": "50",
+                "maxgath": "54",
                 "maxcraft": "60"
             },
             "prev": {
@@ -9120,21 +9120,21 @@
                 "Weaver": "54",
                 "Alchemist": "50",
                 "Culinarian": "37",
-                "Miner": "49",
-                "Botanist": "50",
+                "Miner": "50",
+                "Botanist": "54",
                 "Fisher": 0,
-                "totallvl": 525,
+                "totallvl": 530,
                 "totaltank": 0,
                 "totalheal": 75,
                 "totaldps": 30,
                 "totaldpsm": 0,
                 "totaldpsr": 30,
-                "totalgath": 99,
+                "totalgath": 104,
                 "totalcraft": 321,
                 "maxtank": 0,
                 "maxheal": "60",
                 "maxdps": "26",
-                "maxgath": "50",
+                "maxgath": "54",
                 "maxcraft": "60"
             },
             "init": {
@@ -9158,25 +9158,25 @@
                 "Weaver": "54",
                 "Alchemist": "50",
                 "Culinarian": "37",
-                "Miner": "49",
-                "Botanist": "50",
+                "Miner": "50",
+                "Botanist": "54",
                 "Fisher": 0,
-                "totallvl": 525,
+                "totallvl": 530,
                 "totaltank": 0,
                 "totalheal": 75,
                 "totaldps": 30,
                 "totaldpsm": 0,
                 "totaldpsr": 30,
-                "totalgath": 99,
+                "totalgath": 104,
                 "totalcraft": 321,
                 "maxtank": 0,
                 "maxheal": "60",
                 "maxdps": "26",
-                "maxgath": "50",
+                "maxgath": "54",
                 "maxcraft": "60"
             }
         },
-        "joined": 1473500080,
-        "lvlupdate": 1473500080
+        "joined": 1473581501,
+        "lvlupdate": 1473581501
     }
 }

@@ -164,3 +164,58 @@ span[id^="lnk"] {
 input { 
     text-align: center; 
 }
+
+.fcnamecss { 
+    font-size: 80px;color:gold;font-weight: bold; 
+}
+.serverncss { 
+    color: green; 
+}
+.formeddate { 
+    color: darkblue; 
+}
+.gctwinadder { 
+    color: darkorange; 
+}
+.gcmaelstorm { 
+    color: red; 
+}
+.gcimmortalflames { 
+    color: brown; 
+}
+.estatename { 
+    color: darkgreen; 
+}
+.estateaddress { 
+    font-size: xx-small;
+    vertical-align: sub; 
+}
+.ranknum { 
+    color: darkviolet;
+    font-weight: bold; 
+}
+.rankmax { 
+    font-size: xx-small;
+    vertical-align: sub; 
+}
+.membercount { 
+    color:gold; 
+}
+.membertag { 
+    color:darkblue; 
+}
+
+.hovershadow {
+	text-shadow: 0px 0px 5px #ffff99, 0 0 1em #ffff99;
+}
+
+.avamark {
+	box-shadow: 0px 0px 10px #ffd700, 0 0 1em #ffd700;
+	z-index: 10;
+	transform: scale(1.2);
+}
+
+.avamark2 {
+	z-index: 10;
+	transform: scale(1.2);
+}

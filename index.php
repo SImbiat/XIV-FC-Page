@@ -172,26 +172,20 @@ $fcpage = $fcpage . "
 		var search = document.getElementById('search_input');
 		var elements = Array.from(document.getElementsByTagName('img'));
 		elements.forEach(function(entry) {
-	    		if (entry.className == \"membertd\") {
+	    		if (entry.classList.contains(\"membertd\")) {
 				var entryid = entry.id.toUpperCase();
 				if (entryid.includes(search.value.toUpperCase()) && search.value != \"\") {
-					entry.style.boxShadow = \"".$fcconfig['avashadow']."\";
-					entry.style.zIndex = \"10\";
-					entry.style.transform = \"scale(1.2)\";
+					entry.classList.add(\"avamark\");
 				} else {
-					entry.style.boxShadow = \"\";
-					entry.style.zIndex = \"\";
-					entry.style.transform = \"scale(1)\";
+					entry.classList.remove(\"avamark\");
 				}
 			}
-			if (entry.className == \"membertdover\") {
+			if (entry.classList.contains(\"membertdover\")) {
 				var entryid = entry.id.toUpperCase();
 				if (entryid.includes(search.value.toUpperCase()) && search.value != \"\") {
-					entry.style.zIndex = \"10\";
-					entry.style.transform = \"scale(1.2)\";
+					entry.classList.add(\"avamark2\");
 				} else {
-					entry.style.zIndex = \"\";
-					entry.style.transform = \"scale(1)\";
+					entry.classList.remove(\"avamark2\");
 				}
 			}
 		});
@@ -215,13 +209,13 @@ function shadowlnks(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"hvr-pulse\";
 	var e = document.getElementById('lnk' + search + 'text');
-	e.style.textShadow = \"".$fcconfig['hovershadow']."\";
+	e.className = \"hovershadow\";
 }
 function shadowlnkh(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"\";
 	var e = document.getElementById('lnk' + search + 'text');
-	e.style.textShadow = \"\";
+	e.className = \"\";
 }
 function showtip(rank) {
 	var e = document.getElementById('fcranktip');
@@ -282,8 +276,8 @@ $fcpage = $fcpage . "
 <img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdata['emblum'][1]."\" height=\"64\" width=\"64\">
 <img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdata['emblum'][2]."\" height=\"64\" width=\"64\">
 </span>
-<span style=\"display: inline-block;position: relative;height: 68px;text-align:center;vertical-align:middle;margin-left:-10px;margin-right:-90px;margin-top:-70px;margin-bottom:20px;".$fcconfig['fcnamecss']."\">".$fcdata['name']."</span></a>
-<span style=\"height: 68px;text-align:right;vertical-align:bottom;\">from <span style=\"".$fcconfig['serverncss']."\">".$fcdata['server']."</span>
+<span class=\"fcnamecss\" style=\"display: inline-block;position: relative;height: 68px;text-align:center;vertical-align:middle;margin-left:-10px;margin-right:-90px;margin-top:-70px;margin-bottom:20px;\">".$fcdata['name']."</span></a>
+<span style=\"height: 68px;text-align:right;vertical-align:bottom;\">from <span class=\"serverncss\">".$fcdata['server']."</span>
 </div>
 <div style=\"align:center;\"><i>".$fcdata['slogan']."</i></div>
 <div style=\"align:center;\"><br><br><table style=\"border: 0px;\" class=\"memberstbl\"><tr><td style=\"border: 0px;padding-right:5px;\">We participate in</td><td style=\"border: 0px;padding-left:5px;\">We are looking for</td></tr><tr><td style=\"border: 0px;padding-right:5px;\">";
@@ -302,25 +296,25 @@ foreach($roles as $role) {
 		$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/roles/".imgnamesane($role['name']).".png\" title=\"".$role['name']."\"></span>";
 	}
 }
-$fcpage = $fcpage . "</td></tr></table></div><div style=\"align:center;\"><br>We were found on <span style=\"".$fcconfig['formeddate']."\">".date("d F Y" ,$fcdata['formed'])."</span> as affiliate of <span style=\"";
+$fcpage = $fcpage . "</td></tr></table></div><div style=\"align:center;\"><br>We were found on <span class=\"formeddate\">".date("d F Y" ,$fcdata['formed'])."</span> as affiliate of <span class=\"";
 
 #Show Company affiliation
 if (strtolower($fcdata['company']) == strtolower("Order of the Twin Adder")) {
-	$fcpage = $fcpage . $fcconfig['gctwinadder'];
+	$fcpage = $fcpage . "gctwinadder";
 } elseif (strtolower($fcdata['company']) == strtolower("Maelstrom")) {
-	$fcpage = $fcpage . $fcconfig['gcmaelstorm'];
+	$fcpage = $fcpage . "gcmaelstorm";
 } elseif (strtolower($fcdata['company']) == strtolower("Immortal Flames")) {
-	$fcpage = $fcpage . $fcconfig['gcimmortalflames'];
+	$fcpage = $fcpage . "gcimmortalflames";
 }
 
 #Get last 10 Company ranks
 $lastranks=getlastranks($fcdata['ranking']['weekly'], $fcid);
 
 $fcpage = $fcpage . "\">".$fcdata['company']."</span><br><br>
-We live in <span style=\"".$fcconfig['estatename']."\">".$fcdata['estate']['zone']."</span> <span style=\"".$fcconfig['estateaddress']."\">(".$fcdata['estate']['address'].")</span> and rank <span style=\"".$fcconfig['ranknum']."\" onmouseover=\"document.getElementById('ranking').style.display = 'inline-block';\" onmouseout=\"document.getElementById('ranking').style.display = 'none';\">".$fcdata['ranking']['weekly']."<sup>[?]</sup><div id=\"ranking\" style=\"position:absolute;z-index: 100;background-color:gray;display:none;width:300px;height:200px;\"><canvas id=\"myChart\"></canvas></div>
-</span> among the companies <span style=\"".$fcconfig['rankmax']."\">(".maxValueInArray($lastranks, "rank")." min, ".minValueInArray($lastranks, "rank")." max)</span>
+We live in <span class=\"estatename\">".$fcdata['estate']['zone']."</span> <span class=\"estateaddress\">(".$fcdata['estate']['address'].")</span> and rank <span class=\"ranknum\" onmouseover=\"document.getElementById('ranking').style.display = 'inline-block';\" onmouseout=\"document.getElementById('ranking').style.display = 'none';\">".$fcdata['ranking']['weekly']."<sup>[?]</sup><div id=\"ranking\" style=\"position:absolute;z-index: 100;background-color:gray;display:none;width:300px;height:200px;\"><canvas id=\"myChart\"></canvas></div>
+</span> among the companies <span class=\"rankmax\">(".maxValueInArray($lastranks, "rank")." min, ".minValueInArray($lastranks, "rank")." max)</span>
 <br><br>
-We have <b><span style=\"".$fcconfig['membercount']."\">".$fcdata['memberCount']."</span></b> members and counting. Want to join? Search for those with <span style=\"".$fcconfig['membertag']."\">".$fcdata['tag']."</span> tag on them.<br>
+We have <b><span class=\"membercount\">".$fcdata['memberCount']."</span></b> members and counting. Want to join? Search for those with <span class=\"membertag\">".$fcdata['tag']."</span> tag on them.<br>
 </div>";
 
 #Prepare ranking chart

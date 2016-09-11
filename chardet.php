@@ -51,13 +51,13 @@ function shadowlnks(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"hvr-pulse\";
 	var e = document.getElementById('lnk' + search + 'text');
-	e.style.textShadow = \"".$fcconfig['hovershadow']."\";
+	e.className = \"hovershadow\";
 }
 function shadowlnkh(search) {
 	var e = document.getElementById('lnk' + search + 'img');
 	e.className = \"\";
 	var e = document.getElementById('lnk' + search + 'text');
-	e.style.textShadow = \"\";
+	e.className = \"\";
 }
 function showtip(rank) {
 	var e = document.getElementById('fcranktip');
