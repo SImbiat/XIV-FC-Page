@@ -2,6 +2,7 @@
 <?php
 #Back-end initialization
 require_once 'functions.php';
+require_once 'config.php';
 if (empty($_GET['fcid'])) {
 	header("Location: ./index.php");
 	die();
