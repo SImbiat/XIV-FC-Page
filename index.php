@@ -50,9 +50,9 @@ if (empty($_GET['fcid'])) {
 			}
 		};
 	</script>
-	<div style=\"text-align:center\">";
+	<div style=\"text-align:center\"><h1>FFXIV Free Company Tracker</h1><i>Enter a Company ID to register it for tracking</i><br><br>";
 	#Company Search field
-	$fcpage = $fcpage . "<input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"Type Name or ID to highlight a Free Company. Press Enter to open Company page or register it.\" size=\"95px\"><br><br><input id=\"Register\ type=\"button\" value=\"Register\" onclick=\"newcompany();\" style=\"background:#aaa; border:0 none; cursor:pointer; -webkit-border-radius: 5px; border-radius: 5px;\"/><br><br>";
+	$fcpage = $fcpage . "<input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"Type Name or ID to highlight a Free Company\" size=\"45px\"><br><br><input id=\"Register\ type=\"button\" value=\"Register\" onclick=\"newcompany();\" style=\"background:#aaa; border:0 none; cursor:pointer; -webkit-border-radius: 5px; border-radius: 5px;\"/><br><br>";
 	#Showing Free Companies, if any
 	if (!is_dir("./cache")) {
 		$fcpage = $fcpage . "No Free Companes are registered";
@@ -81,7 +81,13 @@ if (empty($_GET['fcid'])) {
 			$fcpage = $fcpage . "No Free Companes are registered";
 		}
 	}
-	$fcpage = $fcpage . "</div>";
+	$fcpage = $fcpage . "<div style=\"font-size:xx-small;\"><br><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
+	if ($modrw == true) {
+		$fcpage = $fcpage . "zip";
+	} else {
+		$fcpage = $fcpage . "zip.php";
+	}
+	$fcpage = $fcpage . "\">here</a> or on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
 	echo $fcpage;
 	exit;
 } else {
@@ -471,7 +477,7 @@ foreach ($memberstats as $memberid=>$member) {
 	}
 }
 
-$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
+$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br>Wrong Company? Choose another or register a new one <a href=\"./\">here</a><br><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
 if ($modrw == true) {
 	$fcpage = $fcpage . "zip";
 } else {
