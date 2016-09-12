@@ -280,23 +280,45 @@ $fcpage = $fcpage . "
 <span style=\"height: 68px;text-align:right;vertical-align:bottom;\">from <span class=\"serverncss\">".$fcdata['server']."</span>
 </div>
 <div style=\"align:center;\"><i>".$fcdata['slogan']."</i></div>
-<div style=\"align:center;\"><br><br><table style=\"border: 0px;\" class=\"memberstbl\"><tr><td style=\"border: 0px;padding-right:5px;\">We participate in</td><td style=\"border: 0px;padding-left:5px;\">We are looking for</td></tr><tr><td style=\"border: 0px;padding-right:5px;\">";
+<div style=\"align:center;\"><br><br>";
 
-#Show all activities the Company is interested in
-foreach($focus as $interest) {
-	if ($interest['active'] == 1) {
-		$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/focus/".imgnamesane($interest['name']).".png\" title=\"".$interest['name']."\"></span>";
+if (!empty($focus) || !empty($roles)) {
+	#Prepare headers
+	$fcpage = $fcpage . "<table style=\"border: 0px;\" class=\"memberstbl\"><tr>";
+	if (!empty($focus)) {
+		$fcpage = $fcpage . "<td style=\"border: 0px;padding-right:5px;\">We participate in</td>";
 	}
-}	
-$fcpage = $fcpage . "</td><td style=\"border: 0px;padding-left:5px;\">";
-
-#Show all roles the Company is looking for
-foreach($roles as $role) {
-	if ($role['active'] == 1) {
-		$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/roles/".imgnamesane($role['name']).".png\" title=\"".$role['name']."\"></span>";
+	if (!empty($roles)) {
+		$fcpage = $fcpage . "<td style=\"border: 0px;padding-left:5px;\">We are looking for</td>";
 	}
+	$fcpage = $fcpage . "</tr><tr>";
+	
+	#Show all activities the Company is interested in
+	if (!empty($focus)) {
+		$fcpage = $fcpage . "<td style=\"border: 0px;padding-right:5px;\">";
+		foreach($focus as $interest) {
+			if ($interest['active'] == 1) {
+				$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/focus/".imgnamesane($interest['name']).".png\" title=\"".$interest['name']."\"></span>";
+			}
+		}
+		$fcpage = $fcpage . "</td>";
+	}
+	
+	#Show all roles the Company is looking for
+	if (!empty($roles)) {
+		$fcpage = $fcpage . "<td style=\"border: 0px;padding-left:5px;\">";
+		foreach($roles as $role) {
+			if ($role['active'] == 1) {
+				$fcpage = $fcpage . "<span><img height=\"32\" width=\"32\" src=\"./img/roles/".imgnamesane($role['name']).".png\" title=\"".$role['name']."\"></span>";
+			}
+		}
+		$fcpage = $fcpage . "</td>";
+	}
+	
+	$fcpage = $fcpage . "</tr></table>";
 }
-$fcpage = $fcpage . "</td></tr></table></div><div style=\"align:center;\"><br>We were found on <span class=\"formeddate\">".date("d F Y" ,$fcdata['formed'])."</span> as affiliate of <span class=\"";
+
+$fcpage = $fcpage . "</div><div style=\"align:center;\"><br>We were found on <span class=\"formeddate\">".date("d F Y" ,$fcdata['formed'])."</span> as affiliate of <span class=\"";
 
 #Show Company affiliation
 if (strtolower($fcdata['company']) == strtolower("Order of the Twin Adder")) {
