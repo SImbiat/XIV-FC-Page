@@ -81,13 +81,7 @@ if (empty($_GET['fcid'])) {
 			$fcpage = $fcpage . "No Free Companes are registered";
 		}
 	}
-	$fcpage = $fcpage . "<div style=\"font-size:xx-small;\"><br><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
-	if ($modrw == true) {
-		$fcpage = $fcpage . "zip";
-	} else {
-		$fcpage = $fcpage . "zip.php";
-	}
-	$fcpage = $fcpage . "\">here</a> or on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
+	$fcpage = $fcpage . "<div style=\"font-size:xx-small;\"><br><br><div style=\"font-size:xx-small;\">Source code of the page can be checked on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
 	echo $fcpage;
 	exit;
 } else {
@@ -477,13 +471,10 @@ foreach ($memberstats as $memberid=>$member) {
 	}
 }
 
-$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br>Wrong Company? Choose another or register a new one <a href=\"./\">here</a><br><br><div style=\"font-size:xx-small;\">Source code of the page can be downloaded <a target=\"_blank\" href=\"";
-if ($modrw == true) {
-	$fcpage = $fcpage . "zip";
-} else {
-	$fcpage = $fcpage . "zip.php";
-}
-$fcpage = $fcpage . "\">here</a> or on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
+$fcpage = $fcpage . "</table></div><div style=\"font-size:xx-small;\"><br>Wrong Company? Choose another or register a new one <a href=\"./\">here</a><br><br>
+Want to customize the page a bit? Download <a href=\"./cache/".$fcid."/style.css\" target=\"_blank\">style</a>, <a href=\"./cache/".$fcid."/fcranks.json\" target=\"_blank\">company ranks</a> and/or <a href=\"./cache/".$fcid."/config.json\" target=\"_blank\">timers</a> configurations and, after updating them, send them to <a target=\"_blank\" href=\"mailto:simbiat@bk.ru\">me</a><br>
+If you want to check Company <a href=\"./cache/".$fcid."/fc.json\" target=\"_blank\">details</a>, populate <a href=\"./cache/".$fcid."/ranking.json\" target=\"_blank\">ratings</a> or lock some <a href=\"./cache/".$fcid."/members.json\" target=\"_blank\">members</a> from rank suggestions, click appropriate links and send the modifed files, too<br><br>
+<div style=\"font-size:xx-small;\">Source code of the page can be checked on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
 unset($api);
 
 echo $fcpage;
