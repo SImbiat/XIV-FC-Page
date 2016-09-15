@@ -59,6 +59,19 @@ table.memberstbl {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
+table.fctable {
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.fctable td {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
 table.levelstbl {
 	margin-left:auto;
 	margin-right:auto;

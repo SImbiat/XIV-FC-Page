@@ -50,20 +50,20 @@ if (empty($_GET['fcid'])) {
 			}
 		};
 	</script>
-	<div style=\"text-align:center\"><h1>FFXIV Free Company Tracker</h1><i>Enter a Company ID to register it for tracking</i><br><br>";
+	<div style=\"text-align:center\"><h1>FFXIV Free Company Tracker</h1><i>Enter a Company ID to register it for tracking and/or name to search for one</i><br><br>";
 	#Company Search field
-	$fcpage = $fcpage . "<input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"Type Name or ID to highlight a Free Company\" size=\"45px\"><br><br><input id=\"Register\ type=\"button\" value=\"Register\" onclick=\"newcompany();\" style=\"background:#aaa; border:0 none; cursor:pointer; -webkit-border-radius: 5px; border-radius: 5px;\"/><br><br>";
+	$fcpage = $fcpage . "<i>http://eu.finalfantasyxiv.com/lodestone/freecompany/ <input autofocus alt=\"Search\" id=\"search_input\" placeholder=\"9234631035923213559\" size=\"20p5x\">/</i><br><br><input id=\"Register\ type=\"button\" value=\"Register\" onclick=\"newcompany();\" style=\"background:#aaa; border:0 none; cursor:pointer; -webkit-border-radius: 5px; border-radius: 5px;\"/><br><br>";
 	#Showing Free Companies, if any
 	if (!is_dir("./cache")) {
 		$fcpage = $fcpage . "No Free Companes are registered";
 	} else {
 		$fcs = scandir("./cache");
-		if (!is_null($fcs[2])) {
-			$fcpage = $fcpage . "Registered Free Companies:<br>";
+		if (count($fcs) - 2 > 0) {
+			$fcpage = $fcpage . (count($fcs) - 2) . " registered Free Companies:<br><table class=\"fctable\"><tr><td><b>Name</b></td><td><b>Last Update</b></td><td><b>Members Count</b></td></tr>";
 			foreach ($fcs as $fcdir) {
-				if ($fcdir != "." && $fcdir != ".." && file_exists("./cache/".$fcdir."/members.json") && file_exists("./cache/".$fcdir."/fc.json")) {
+				if ($fcdir != "." && $fcdir != ".." && file_exists("./cache/".$fcdir."/fc.json")) {
 					$fcdirname=json_decode(file_get_contents("./cache/".$fcdir."/fc.json"), true);
-					$fcpage = $fcpage . "<span id=\"".$fcdirname['name']." ".$fcdir."\">";
+					$fcpage = $fcpage . "<tr><td style=\"text-align:left\"><span id=\"".$fcdirname['name']." ".$fcdir."\">";
 					if ($modrw == true) {
 						$fcpage = $fcpage . "<a href=\"./".$fcdir;
 					} else {
@@ -73,7 +73,7 @@ if (empty($_GET['fcid'])) {
 								<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdirname['emblum'][0]."\" height=\"16\" width=\"16\">
 								<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdirname['emblum'][1]."\" height=\"16\" width=\"16\">
 								<img style=\"position: absolute; top: 0; left: 0;\" src=\"".$fcdirname['emblum'][2]."\" height=\"16\" width=\"16\">
-							</span> ".$fcdirname['name']."</a> (Updated on ".date("d F Y H:i" ,filemtime("./cache/".$fcdir."/fc.json")).")</span><br>";
+							</span> ".$fcdirname['name']."</a></span></td><td>".date("d F Y H:i" ,filemtime("./cache/".$fcdir."/fc.json"))."</td><td>".count($fcdirname['members'])."</td></tr>";
 				}
 				
 			}
@@ -81,7 +81,7 @@ if (empty($_GET['fcid'])) {
 			$fcpage = $fcpage . "No Free Companes are registered";
 		}
 	}
-	$fcpage = $fcpage . "<div style=\"font-size:xx-small;\"><br><br><div style=\"font-size:xx-small;\">Source code of the page can be checked on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
+	$fcpage = $fcpage . "</table><div style=\"font-size:xx-small;\"><br><br><div style=\"font-size:xx-small;\">Source code of the page can be checked on <a href=\"https://github.com/Simbiat/XIV-FC-Page\" target=\"_blank\">GitHub</a></div><div style=\"font-size:xx-small;\">Coded by &copy; <a href=\"http://simbiat.net\" target=\"_blank\">Simbiat</a> with use of &copy; <a href=\"https://github.com/viion/XIVPads-LodestoneAPI\" target=\"_blank\">XIVSync</a></div></div>";
 	echo $fcpage;
 	exit;
 } else {

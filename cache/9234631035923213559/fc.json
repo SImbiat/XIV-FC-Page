@@ -10,7 +10,7 @@
     "company": "Order of the Twin Adder",
     "tag": "MogSt",
     "formed": "1384703015",
-    "memberCount": "99",
+    "memberCount": "101",
     "slogan": "Friendly and casual company of moogles. Come and increase our fluffiness",
     "active": "Always",
     "recruitment": "Open",
@@ -127,7 +127,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/2f21a984aab9ff20acc2cc9bcf0ffe544a33f3a1.png",
-                "level": "50"
+                "level": "51"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
@@ -234,7 +234,7 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/14.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/36ce9c4cc01581d4f900102cd51e09c60c3876a6.png",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/626a1a0927f7d2510a92558e8032831264110f26.png",
                 "level": "60"
             },
             "grandcompany": {
@@ -388,6 +388,24 @@
             }
         },
         {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/58f05f25c6ae150daf09881249b01035_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "name": "Tirendar Beatbringer",
+            "id": "15005927",
+            "rank": {
+                "title": "Kuponutor",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/5.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/289dbc0b50956ce10a2195a75a22b500a648284e.png",
+                "level": "57"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Second Serpent Lieutenant"
+            }
+        },
+        {
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/7c5d116310b9c4a81481d8b79c6f169c_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "name": "Arkanan Zorander",
             "id": "14272106",
@@ -406,6 +424,24 @@
             }
         },
         {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/b0fac1fcc989d89e499e19c73760b734_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "name": "Captain Kaveman",
+            "id": "14686159",
+            "rank": {
+                "title": "Moghitter",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/11.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/98d95dec1f321f111439032b64bc42b98c063f1b.png",
+                "level": "51"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_3.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Serpent Private First Class"
+            }
+        },
+        {
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/3c4a0feac1deac31c7e5890a1822eb38_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "name": "Hope Kitsune",
             "id": "14572977",
@@ -421,24 +457,6 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
                 "name": "Order of the Twin Adder",
                 "rank": "Serpent Corporal"
-            }
-        },
-        {
-            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/58f05f25c6ae150daf09881249b01035_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
-            "name": "Tirendar Beatbringer",
-            "id": "15005927",
-            "rank": {
-                "title": "Moghitter",
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/11.png"
-            },
-            "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
-                "level": "60"
-            },
-            "grandcompany": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_9.png",
-                "name": "Order of the Twin Adder",
-                "rank": "Second Serpent Lieutenant"
             }
         },
         {
@@ -576,8 +594,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/7.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/36ce9c4cc01581d4f900102cd51e09c60c3876a6.png",
-                "level": "57"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/8873ffdf5f7c80770bc40f5b82ae1be6fa1f8305.png",
+                "level": "54"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_8.png",
@@ -631,7 +649,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/36ce9c4cc01581d4f900102cd51e09c60c3876a6.png",
-                "level": "53"
+                "level": "54"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
@@ -1204,6 +1222,24 @@
             }
         },
         {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/406cbcf1a0bc9b68b92937a4539c1166_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "name": "Rowan Highwind",
+            "id": "15173349",
+            "rank": {
+                "title": "Lazypom",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/6.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
+                "level": "41"
+            },
+            "grandcompany": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
+                "name": "Order of the Twin Adder",
+                "rank": "Serpent Corporal"
+            }
+        },
+        {
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/53a8d19ba792f0299ef4d7bf77eba84f_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "name": "Roxas Dolem",
             "id": "14685566",
@@ -1439,24 +1475,6 @@
             }
         },
         {
-            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/b0fac1fcc989d89e499e19c73760b734_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
-            "name": "Captain Kaveman",
-            "id": "14686159",
-            "rank": {
-                "title": "Pom-pom",
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
-            },
-            "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/98d95dec1f321f111439032b64bc42b98c063f1b.png",
-                "level": "51"
-            },
-            "grandcompany": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_3.png",
-                "name": "Order of the Twin Adder",
-                "rank": "Serpent Private First Class"
-            }
-        },
-        {
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/75793370de58e189e20e0c39b515ac46_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "name": "Dejan Gazic",
             "id": "15405804",
@@ -1466,7 +1484,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/924ded09293b2a04c4cd662afbf7cda7b0576888.png",
-                "level": "18"
+                "level": "22"
             }
         },
         {
@@ -1537,6 +1555,19 @@
             }
         },
         {
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/e4d6deafb3e5d02d86b15a015f7abd65_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "name": "Jihye'sae Qhaavra",
+            "id": "14730303",
+            "rank": {
+                "title": "Pom-pom",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
+            },
+            "class": {
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ec5d264e53ea7749d916d7d8bc235ec9c8bb7b51.png",
+                "level": "20"
+            }
+        },
+        {
             "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/e145946bc70505adc6e108840a5878c6_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
             "name": "Linkss Hylia",
             "id": "15211821",
@@ -1545,8 +1576,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/e2a98c81ca279607fc1706e5e1b11bc08cac2578.png",
-                "level": "31"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/d39804e8810aa3d8e467b7a476d01965510c5d18.png",
+                "level": "10"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_1.png",
@@ -1594,8 +1625,8 @@
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/d39804e8810aa3d8e467b7a476d01965510c5d18.png",
-                "level": "23"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/c460e288d5db83ebc90d0654bee6d0d0a0a9582d.png",
+                "level": "52"
             },
             "grandcompany": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/uldah_7.png",
@@ -1661,21 +1692,16 @@
             }
         },
         {
-            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/406cbcf1a0bc9b68b92937a4539c1166_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
-            "name": "Rowan Highwind",
-            "id": "15173349",
+            "avatar": "http:\/\/img2.finalfantasyxiv.com\/f\/5160d49a36d2097de5d2fda5b6bd6748_777c57311d510ca65dac3c1077dee435fc0_96x96.jpg",
+            "name": "Shana Blcat",
+            "id": "15424454",
             "rank": {
                 "title": "Pom-pom",
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/class\/2.png"
             },
             "class": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/7a72ef2dc1918f56e573dd28cffcec7e33a595df.png",
-                "level": "41"
-            },
-            "grandcompany": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
-                "name": "Order of the Twin Adder",
-                "rank": "Serpent Corporal"
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/ec5d264e53ea7749d916d7d8bc235ec9c8bb7b51.png",
+                "level": "17"
             }
         },
         {
@@ -1714,7 +1740,7 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/e2a98c81ca279607fc1706e5e1b11bc08cac2578.png",
-                "level": "20"
+                "level": "22"
             }
         },
         {
@@ -1745,12 +1771,12 @@
             },
             "class": {
                 "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/class\/24\/c460e288d5db83ebc90d0654bee6d0d0a0a9582d.png",
-                "level": "34"
+                "level": "39"
             },
             "grandcompany": {
-                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_3.png",
+                "icon": "http:\/\/img.finalfantasyxiv.com\/lds\/pc\/global\/images\/freecompany\/ic\/gcrank\/gridania_4.png",
                 "name": "Order of the Twin Adder",
-                "rank": "Serpent Private First Class"
+                "rank": "Serpent Corporal"
             }
         },
         {
@@ -1772,5 +1798,5 @@
             }
         }
     ],
-    "hash": "f3fd3d50883b068d9746790aa186299a19a5af21"
+    "hash": "f9180d0ee2fd760e3cf26a74b99f3a531fd01757"
 }

@@ -147,6 +147,8 @@ if ($refreshpage == true) {
 		}
 		#Setting defaults based on the data grab
 		$fc = [];
+		$fc['fcid'] = $fcdata['id'];
+		$fc['fcname'] = $fcdata['name'];
 		$fc['rank'] = $fc['rankprev'] = $member['rank']['title'];
 		$fc['rankid'] = $fc['rankidprev'] = str_replace(".png", "", str_replace("http://img.finalfantasyxiv.com/lds/pc/global/images/freecompany/ic/class/", "", $member['rank']['icon']));
 		foreach($fcranks as $fcranktag=>$fcrankval){

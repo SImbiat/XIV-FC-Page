@@ -209,7 +209,13 @@ $charpage = $charpage .$member['bio']['gender']." ".$member['bio']['race']." of 
 if ($member['bio']['name'] != $member['bio']['prevname']) {
 	$charpage = $charpage." (a.k.a. <a href=\"http://eu.finalfantasyxiv.com/lodestone/character/".$member['id']."/\">".$member['bio']['prevname']."</a>)";
 }
-$charpage = $charpage . ", came to us on ".date("d F Y" ,$member['joined']).".
+$charpage = $charpage . ", came to <a href=\"";
+if ($modrw == true) {
+	$charpage = $charpage . "/fctracker/".$member['fc']['fcid'];
+} else {
+	$charpage = $charpage . "./index.php?fcid=".$member['fc']['fcid'];
+}
+$charpage = $charpage . "\" target=\"_blank\">".$member['fc']['fcname']."</a> on ".date("d F Y" ,$member['joined']).".
  From information provided to us, ".sexcheck($member['bio']['gender'])[0]." was born on ".$member['bio']['nameday']."
  and has <span onmouseover=\"shadowlnks('guard');\" onmouseout=\"shadowlnkh('guard');\" id=\"lnkguardtext\">".$member['bio']['guardian']."</span> as ".sexcheck($member['bio']['gender'])[2]." Guardian.
  Last known city of residence is <span onmouseover=\"shadowlnks('city');\" onmouseout=\"shadowlnkh('city');\" id=\"lnkcitytext\">".$member['bio']['city']."</span>.";

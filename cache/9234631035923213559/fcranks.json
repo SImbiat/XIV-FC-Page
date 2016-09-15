@@ -706,107 +706,6 @@
             }
         }
     },
-    "Kuponator": {
-        "id": 5,
-        "level": 3,
-        "howto": "",
-        "requirements": {
-            "assign": true,
-            "minage": 5184000,
-            "minfclvl": 4,
-            "recrank": "Nutseeker",
-            "mintotlvl": 180,
-            "mingathlvl": 60,
-            "mincraftlvl": 0,
-            "mindpslvl": 0,
-            "minheallvl": 0,
-            "mintanklvl": 0,
-            "classtypes": 1
-        },
-        "generalsettings": {
-            "Settings": {
-                "CompanyProfile": false,
-                "RankSettings": false,
-                "CrestDesign": false
-            },
-            "Members": {
-                "Invitations": true,
-                "MemberDismissal": false,
-                "PromotionDemotion": false,
-                "Applications": false
-            },
-            "Community": {
-                "CompanyBoard": false,
-                "ShortMessage": true
-            },
-            "Actions": {
-                "CompanyCredits": true,
-                "ExecutingActions": true,
-                "DiscardingActions": false
-            }
-        },
-        "ChestAccess": {
-            "Items1": 3,
-            "Items2": 3,
-            "Items3": 2,
-            "Crystals": 3,
-            "Gil": 3
-        },
-        "Housing1": {
-            "Settings": {
-                "EstateHallAccess": true,
-                "EstateRenaming": false,
-                "GreetingsCustomization": false,
-                "GuestAccessSettings": false
-            },
-            "Estate": {
-                "PurchaseLand": false,
-                "HallConstruction": false
-            },
-            "Customization": {
-                "HallRemodeling": false,
-                "Paint": true,
-                "FurnishingPrivileges": 2,
-                "RetainerDispatchment": true,
-                "AetherialWheelUse": true
-            }
-        },
-        "Housing2": {
-            "Garden": {
-                "Planting": true,
-                "Harvesting": true,
-                "CropDisposal": true
-            },
-            "Chocobos": {
-                "StablingChocobos": true,
-                "TrainingMembersChocobos": true
-            },
-            "Orchestrion": {
-                "OrchestrionOperation": true
-            }
-        },
-        "Workshop": {
-            "Workshop": {
-                "WorkshopConstruction": false
-            },
-            "Company Projects": {
-                "ProjectCommencement": false,
-                "ProjectMaterialDelivery": true,
-                "ProjectProgression": true,
-                "ProjectItemCollection": false,
-                "PrototypeCreation": false
-            },
-            "Airships": {
-                "AirshipRegistration": false,
-                "AirshipOutfitting": false,
-                "AirshipColor": false,
-                "AirshipRenaming": false,
-                "ExploratoryVoyageDeployment": false,
-                "ExploratoryVoyageFinalization": false,
-                "ExploratoryMissionEmbarkation": true
-            }
-        }
-    },
     "Moghitter": {
         "id": 11,
         "level": 4,
@@ -1511,6 +1410,107 @@
                 "ExploratoryVoyageDeployment": false,
                 "ExploratoryVoyageFinalization": false,
                 "ExploratoryMissionEmbarkation": false
+            }
+        }
+    },
+    "Kuponutor": {
+        "id": 5,
+        "level": 3,
+        "howto": "",
+        "requirements": {
+            "assign": true,
+            "minage": 5184000,
+            "minfclvl": 4,
+            "recrank": "Nutseeker",
+            "mintotlvl": 180,
+            "mingathlvl": 60,
+            "mincraftlvl": 0,
+            "mindpslvl": 0,
+            "minheallvl": 0,
+            "mintanklvl": 0,
+            "classtypes": 1
+        },
+        "generalsettings": {
+            "Settings": {
+                "CompanyProfile": false,
+                "RankSettings": false,
+                "CrestDesign": false
+            },
+            "Members": {
+                "Invitations": true,
+                "MemberDismissal": false,
+                "PromotionDemotion": false,
+                "Applications": false
+            },
+            "Community": {
+                "CompanyBoard": false,
+                "ShortMessage": true
+            },
+            "Actions": {
+                "CompanyCredits": true,
+                "ExecutingActions": true,
+                "DiscardingActions": false
+            }
+        },
+        "ChestAccess": {
+            "Items1": 3,
+            "Items2": 3,
+            "Items3": 2,
+            "Crystals": 3,
+            "Gil": 3
+        },
+        "Housing1": {
+            "Settings": {
+                "EstateHallAccess": true,
+                "EstateRenaming": false,
+                "GreetingsCustomization": false,
+                "GuestAccessSettings": false
+            },
+            "Estate": {
+                "PurchaseLand": false,
+                "HallConstruction": false
+            },
+            "Customization": {
+                "HallRemodeling": false,
+                "Paint": true,
+                "FurnishingPrivileges": 2,
+                "RetainerDispatchment": true,
+                "AetherialWheelUse": true
+            }
+        },
+        "Housing2": {
+            "Garden": {
+                "Planting": true,
+                "Harvesting": true,
+                "CropDisposal": true
+            },
+            "Chocobos": {
+                "StablingChocobos": true,
+                "TrainingMembersChocobos": true
+            },
+            "Orchestrion": {
+                "OrchestrionOperation": true
+            }
+        },
+        "Workshop": {
+            "Workshop": {
+                "WorkshopConstruction": false
+            },
+            "Company Projects": {
+                "ProjectCommencement": false,
+                "ProjectMaterialDelivery": true,
+                "ProjectProgression": true,
+                "ProjectItemCollection": false,
+                "PrototypeCreation": false
+            },
+            "Airships": {
+                "AirshipRegistration": false,
+                "AirshipOutfitting": false,
+                "AirshipColor": false,
+                "AirshipRenaming": false,
+                "ExploratoryVoyageDeployment": false,
+                "ExploratoryVoyageFinalization": false,
+                "ExploratoryMissionEmbarkation": true
             }
         }
     }
